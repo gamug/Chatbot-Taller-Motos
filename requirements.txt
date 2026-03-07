@@ -1,0 +1,6 @@
+langchain==1.2.10
+langchain-community==0.4.1
+langchain-openai==1.1.10
+pymongo==4.16.0
+sentence_transformers==5.2.3
+streamlit==1.54.0
