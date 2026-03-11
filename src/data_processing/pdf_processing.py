@@ -1,25 +1,39 @@
-import fitz, os, pytesseract, re
-import pandas as pd
+import fitz, json, os, pytesseract, re
 
-from .utils import get_output_path, get_nlp_tools, process_image
+from commons.utils import get_output_path, get_nlp_tools, process_image
+from tools.tools import extract_moto_models
+from commons import AWSClient
 
 pytesseract.pytesseract.tesseract_cmd = os.environ['TESSERACT_PATH']
-splitter, embeddings = get_nlp_tools()
+
+splitter, aws_client = get_nlp_tools(), AWSClient()
 
 def process_pdf(text: list[str], base_path: str, file: str) -> None:
-    text = [re.sub('(\n* *\n)+', '\n', page) for page in text]
-    text = [re.sub(' +', ' ', page).strip().lower() for page in text]
-    text = [[re.sub('\n', ' ', chunk) for chunk in splitter.split_text(page)] for page in text]
-    text = [pd.DataFrame({
-            'text': page,
-            'page': [i+1 for _ in range(len(page))],
-            'chunk': range(1, len(page)+1)
-        }) for i, page in enumerate(text) if len(page)]
-    text = pd.concat(text).reset_index(drop=True).assign(file=file)
-    text["embedding"] = [emb.tolist() for emb in embeddings.encode(text.text.tolist())]
+    metadatas = [re.sub('(\n* *\n)+', '\n', page) for page in text]
+    metadatas = [re.sub(' +', ' ', page).strip().lower() for page in metadatas]
+    metadatas = [[re.sub('\n', ' ', chunk) for chunk in splitter.split_text(page) if len(chunk)>20] for page in metadatas]
+    brand_model = {}
+    for _ in range(5):
+        brand_model = extract_moto_models(file)
+        if brand_model:
+            del brand_model["query"]
+            del brand_model["text"]
+            break
+    if not brand_model:
+        brand_model = {'model': 'no model', 'brand': 'no brand'}
+    metadatas = [{
+        'file': file,
+        'text': chunk,
+        'page': i+1,
+        'chunk': j+1,
+        'type': 'text'
+        }|brand_model for i, page in enumerate(metadatas) for j, chunk in enumerate(page) if len(page)]
+    texts = [chunk['text'] for chunk in metadatas]
+    aws_client.insert_vectors(texts, metadatas)
     output_path = get_output_path(base_path, file)
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    text.to_parquet(output_path)
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(metadatas, f, ensure_ascii=False, indent=4, default=str)
 
 def process_database(base_path: str, errors: dict):
     folder = os.path.dirname(base_path)
@@ -31,9 +45,9 @@ def process_database(base_path: str, errors: dict):
     elif not os.path.exists(output_path):
         try:
             print(f'\tprocessing file {file}')
-            doc = fitz.open(os.path.join(base_path, file))
+            doc = fitz.open(base_path)
             text = [page.get_text() for page in doc]
-            process_pdf(folder, file, text)
+            process_pdf(text, folder, file)
         except Exception as e:
             errors[base_path] = str(e)
     
@@ -67,3 +81,4 @@ def process_pdf_images(errors: dict[str, str]) -> dict[str, str]:
                 process_pdf(text, base_path, file)
             except Exception as e:
                 errors_image[folder] = str(e)
+    return errors_image

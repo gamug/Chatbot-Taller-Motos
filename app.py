@@ -1,12 +1,14 @@
-import os
-import streamlit as st
-from langchain_openai import ChatOpenAI
-from langchain_community.chat_message_histories import ChatMessageHistory
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.runnables.history import RunnableWithMessageHistory
+import os, sys
 from dotenv import load_dotenv
+from langchain_core.messages import HumanMessage
+import streamlit as st
 
 load_dotenv()
+
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))
+import config
+from moto_assistant import assistant_graph
+
 
 st.set_page_config(page_title="Manual de Motos", page_icon="🏍️")
 
@@ -14,45 +16,16 @@ st.set_page_config(page_title="Manual de Motos", page_icon="🏍️")
 # LLM (cached for performance)
 # ----------------------------
 @st.cache_resource
-def get_conversation_chain():
-    llm = ChatOpenAI(
-        api_key=os.environ["DEEPSEEK_API_KEY"],
-        model=os.environ["DEEPSEEK_MODEL"],
-        base_url=os.environ["DEEPSEEK_URL"],
-        temperature=0.7,
-    )
+def load_assistant_graph():
+    return assistant_graph
 
-    prompt = ChatPromptTemplate.from_messages([
-        ("system", "You are a helpful assistant specialized in motorcycle manuals."),
-        ("human", "{input}")
-    ])
-
-    chain = prompt | llm
-
-    store = {}
-
-    def get_session_history(session_id: str):
-        if session_id not in store:
-            store[session_id] = ChatMessageHistory()
-        return store[session_id]
-
-    conversation = RunnableWithMessageHistory(
-        chain,
-        get_session_history,
-        input_messages_key="input",
-        history_messages_key="history",
-    )
-
-    return conversation
-
-
-conversation = get_conversation_chain()
+conversation = load_assistant_graph()
 
 # ----------------------------
 # Session state
 # ----------------------------
 if "messages" not in st.session_state:
-    st.session_state.messages = []
+    st.session_state.messages = [{ "role": "assistant", "content": f"Hola, soy tu asistente {config.agent_name} ¿En qué te puedo ayudar hoy? Proporciona marca, modelo y descripción de la consulta para proceder a ayudarte ☺️"}]
 
 # ----------------------------
 # UI
@@ -78,12 +51,15 @@ if user_input := st.chat_input("Realiza tu consulta..."):
     # Generate response
     with st.chat_message("assistant"):
         with st.spinner("Consultando manual..."):
-            response = conversation.invoke(
-                {"input": user_input},
-                config={"configurable": {"session_id": "user1"}}
-            )
+            response = conversation.invoke({
+                "query": HumanMessage(content=user_input),
+                "messages": [],
+                "context": "",
+                "intent": "",
+                "brand_model": ""
+            })
 
-            assistant_reply = response.content
+            assistant_reply = response["messages"][-1].content
             st.markdown(assistant_reply)
 
     st.session_state.messages.append({

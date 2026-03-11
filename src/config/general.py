@@ -2,6 +2,9 @@
 import os
 
 path = {
-    'raw_data': os.path.join('input'),
-    'curated_data': os.path.join('output')
+    'raw_data': 'input',
+    'curated_data': 'output',
+    'logs': 'logs'
 }
+
+agent_name = os.getenv("AGENT_NAME")
