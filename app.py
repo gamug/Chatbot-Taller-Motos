@@ -7,7 +7,7 @@ load_dotenv()
 
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))
 import config
-from moto_assistant import assistant_graph
+from moto_assistant import graph
 
 
 st.set_page_config(page_title="Manual de Motos", page_icon="🏍️")
@@ -17,7 +17,7 @@ st.set_page_config(page_title="Manual de Motos", page_icon="🏍️")
 # ----------------------------
 @st.cache_resource
 def load_assistant_graph():
-    return assistant_graph
+    return graph
 
 conversation = load_assistant_graph()
 
@@ -52,17 +52,14 @@ if user_input := st.chat_input("Realiza tu consulta..."):
     with st.chat_message("assistant"):
         with st.spinner("Consultando manual..."):
             response = conversation.invoke({
-                "query": HumanMessage(content=user_input),
-                "messages": [],
-                "context": "",
-                "intent": "",
-                "brand_model": ""
+                "query": user_input,
+                "retries_retrieval": 0,
+                "retries_generation": 0,
+                "embedding_cache": {}
             })
-
-            assistant_reply = response["messages"][-1].content
-            st.markdown(assistant_reply)
+            st.markdown(response["answer"])
 
     st.session_state.messages.append({
         "role": "assistant",
-        "content": assistant_reply
+        "content": response["answer"]
     })
