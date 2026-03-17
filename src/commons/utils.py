@@ -1,7 +1,11 @@
-import config, cv2, os, re
-import numpy as np
+import difflib, json, cv2, os, re
+import numpy as np, pandas as pd
+from typing import List
 
+from langchain_openai import ChatOpenAI
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+
+import config
 
 def check_directories():
     """Ensure that all configured directories exist on the filesystem.
@@ -25,6 +29,15 @@ def map_files(path: str, file_list: list[str]):
             map_files(os.path.join(path, file), file_list)
         else:
             file_list.append(os.path.join(path, file))
+
+def extract_moto_models(query:str, llm: ChatOpenAI, brands: dict[str, dict]) -> List[dict]:
+    result = llm.invoke(config.prompts['moto_models_prompt'].format(query=query))
+    result = json.loads(result.content)
+    motorcycle = f"{result['brand'].lower()}-{result['model'].lower()}"
+    motorcycles = [dict_['motorcycle'] for dict_ in brands.values()]
+    matches_ratio = [difflib.SequenceMatcher(None, motorcycle, dict_['motorcycle']).ratio() for dict_ in brands.values()]
+    df = pd.DataFrame({'brand': motorcycles, 'score': matches_ratio})
+    return df.sort_values(by='score', ascending=False).reset_index(drop=True).head(5).to_dict('records')
 
 def get_brands() -> list[dict[str, str]]:
     """Gets the brands from the raw data folder.

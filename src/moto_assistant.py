@@ -2,8 +2,9 @@ import json
 from langgraph.graph import StateGraph, END
 
 from src.commons import (
-    AWSClient, get_brands, get_llm, AssistantState, extract_moto_models
+    AWSClient, get_brands, get_llm, extract_moto_models
 )
+from src.types.state import AssistantState
 
 
 brands = get_brands()

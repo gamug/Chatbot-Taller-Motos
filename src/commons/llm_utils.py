@@ -4,7 +4,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 
 import config
-from src.commons import AssistantState
+from src.types.state import AssistantState
 
 
 def get_llm() -> ChatOpenAI:
