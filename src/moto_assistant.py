@@ -1,217 +1,262 @@
-from typing import TypedDict, List, Literal
-
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-
+import difflib, json
+import pandas as pd
 from langgraph.graph import StateGraph, END
 
 import config
-from commons import get_llm, AWSClient
-from src.tools.tools import extract_moto_models
+from src.commons import AWSClient, get_brands, get_llm, AssistantState
 
 
-# --------------------------------------
-# State
-# --------------------------------------
-
-class AssistantState(TypedDict):
-    query: HumanMessage
-    messages: List[BaseMessage]
-    context: str
-    intent: Literal["VALID", "INVALID", "GREETINGS", "END"]
-    brand_model: dict
-
-
-# --------------------------------------
-# LLM and AWS
-# --------------------------------------
-
+brands = get_brands()
 llm = get_llm()
-llm_with_tools = llm.bind_tools([])
 aws_client = AWSClient()
 
-
-# --------------------------------------
-# Prompts
-# --------------------------------------
-
-chat_prompt = ChatPromptTemplate.from_messages([
-    ("system", config.prompts["chat_prompt"])
-])
-
-retrieval_prompt = ChatPromptTemplate.from_messages([
-    ("system", config.prompts["retriever_prompt"])
-])
-
-intent_prompt = ChatPromptTemplate.from_messages([
-    ("system", config.prompts["intent_prompt"]),
-    ("human", "{query}")
-])
-
-greetings_prompt = ChatPromptTemplate.from_messages([
-    ("system", config.prompts["greetings_prompt"].format(
-        assistant_name=config.agent_name)),
-    MessagesPlaceholder("messages")
-])
-
-wrong_intent_prompt = ChatPromptTemplate.from_messages([
-    ("system", config.prompts["invalid_prompt"]),
-    MessagesPlaceholder("messages")
-])
-
-
-# --------------------------------------
-# Intent Node
-# --------------------------------------
-
-def intent_node(state: AssistantState):
-    state["messages"].append(state["query"])
-    result = llm.invoke(
-        intent_prompt.invoke({
-            "query": state["query"].content
-        })
-    )
+def domain_guard(state: AssistantState):
+    prompt = f"""
+    Determine if the query is about motorcycles.
+    Query: {state['query']}
+    Answer ONLY TRUE or FALSE.
+    """
+    result = llm.invoke(prompt)
     return {
-        "intent": result.content.strip()
+        "is_motorcycle_related": "TRUE" in result.content.upper()
     }
 
-
-# --------------------------------------
-# Brand Model Extraction Node
-# --------------------------------------
-
-def brand_model_node(state: AssistantState):
-    last = state["messages"][-1].content
-    result = extract_moto_models(last)
+def ask_clarification(state):
+    models = state["detected_models"]
+    options = [m['brand'] for m in models]
     return {
-        "brand_model": result
+        "answer": f"Which motorcycle do you mean? {options}"
     }
 
+def extract_moto_models(query:str):
+    result = llm.invoke(config.prompts['moto_models_prompt'].format(query=query))
+    result = json.loads(result.content)
+    motorcycle = f"{result['brand'].lower()}-{result['model'].lower()}"
+    motorcycles = [dict_['motorcycle'] for dict_ in brands.values()]
+    matches_ratio = [difflib.SequenceMatcher(None, motorcycle, dict_['motorcycle']).ratio() for dict_ in brands.values()]
+    df = pd.DataFrame({'brand': motorcycles, 'score': matches_ratio})
+    return df.sort_values(by='score', ascending=False).reset_index(drop=True).head(5).to_dict('records')
 
-# --------------------------------------
-# Retriever Node
-# --------------------------------------
+def model_extraction(state: AssistantState):
+    """
+    Extracts the motorcycle models from the user query.
 
-def retrieve_node(state: AssistantState):
-    brand_model = state.get("brand_model", {})
-    if not brand_model:
-        return {"context": ""}
+    Args:
+        state: AssistantState
+
+    Returns:
+        dict: A dictionary containing the detected motorcycle models.
+    """
+    models = extract_moto_models(state["query"])
+    return {"detected_models": models}
+
+def model_resolution(state: AssistantState):
+    models = state["detected_models"]
+    if not models:
+        return {"model_confident": False}
+    best = sorted(models, key=lambda x: x["score"], reverse=True)[0]
+    if best["score"] < 0.75:
+        return {"model_confident": False}
+    return {
+        "model_confident": True,
+        "selected_model": best
+    }
+
+def query_rewriter(state: AssistantState):
+    model = state["selected_model"]
+    prompt = f"""
+    Rewrite the query to improve search in a motorcycle manual.
+    Motorcycle: {model['brand']}
+    User query: {state['query']}
+    Provide the rewritten query without introductory text or additional comments.
+    Provide a single version, the best for the query.
+    """
+    result = llm.invoke(prompt)
+    return {
+        "rewritten_query": result.content
+    }
+
+def vector_retrieval(state: AssistantState):
+    query = state["rewritten_query"]
+    model = state["selected_model"]
     filtering = {
         "$and": [
-            {"brand": {"$eq": brand_model["brand"]}},
-            {"model": {"$eq": brand_model["model"]}}
+            {"brand": {"$eq": model["brand"].split('-')[0]}},
+            {"model": {"$eq": model["brand"].split('-')[1]}}
         ]
     }
-    context = aws_client.query_db(
-        brand_model["query"],
-        filtering
+    chunks = aws_client.query_db(
+        query,
+        filtering,
+        cache=state
     )
-    context = "\n".join([text.replace("\n", " ").strip() for text in context])
-    if not context:
-        return {"context": "Not context found"}
-    context = llm.invoke(
-        retrieval_prompt.invoke({
-            "query": brand_model["query"],
-            "context": context
-        })
-    ).content.strip()
-    return {"context": context}
+    return {
+        "retrieved_chunks": chunks
+    }
+
+def grade_chunks(state):
+    """
+    Grades retrieved document chunks for relevance to the user query. It returns only the
+    chunks that are considered relevant based on the model response.
+    Args:
+        state: The assistant state containing the user query and retrieved chunks.
+    Returns:
+        dict: A dictionary with a single key "relevant_chunks" mapping to a list of relevant
+        document chunks.
+    """
+    chunks = state.get("retrieved_chunks", [])
+    prompt = f"""
+        You are filtering relevant documents.
+        Question:
+        {state['query']}
+        Documents:
+        {chr(10).join([f"{i}. {c}" for i, c in enumerate(chunks)])}
+        Return a list of relevant document indices (e.g., [0,2,3]).
+        """
+    result = llm.invoke(prompt)
+    try:
+        indices = json.loads(result.content)
+    except Exception:
+        indices = []
+    relevant = [chunks[i] for i in indices if i < len(chunks)]
+    return {"relevant_chunks": relevant}
+
+def retry_retrieval(state):
+    return {
+        "retries_retrieval": state["retries_retrieval"] + 1
+    }
+
+def answer_generation(state: AssistantState):
+    context = "\n\n".join(state["relevant_chunks"])
+    prompt = f"""Answer the question using ONLY the context.
+            Context:
+            {context}
+            Question:
+            {state['query']}
+            In case there isn't enough context, return "No pude encontrar la información solicitada en los manuales."
+            Answer ONLY in spanish
+            """
+    result = llm.invoke(prompt)
+    return {"answer": result.content}
+
+def grounding_validator(state):
+    context = "\n\n".join(state["relevant_chunks"])
+    prompt = f"""Question:
+        {state['query']}
+        Answer:
+        {state['answer']}
+        Documents:
+        {context}
+        Is the answer supported by the documents?
+        Answer SUPPORTED or NOT_SUPPORTED.
+        """
+    result = llm.invoke(prompt)
+    if "SUPPORTED" in result.content:
+        return {"validated": True}
+    return {"validated": False}
+
+def route_domain(state: AssistantState):
+    return "model_extraction" if state["is_motorcycle_related"] else "out_of_scope"
+
+def retry_generation(state):
+    return {
+        "retries_generation": state["retries_generation"] + 1
+    }
+
+def unknown_answer(state):
+    return {
+        "answer": "I could not find this information in the motorcycle manual."
+    }
+
+def route_model(state):
+    return "query_rewriter" if state["model_confident"] else "ask_clarification"
+
+def route_retrieval(state):
+    if state["relevant_chunks"]:
+        return "answer_generation"
+    if state["retries_retrieval"] < 2:
+        return "retry_retrieval"
+    return "unknown_answer"
+
+def route_validation(state):
+    if state["validated"]:
+        return "final_answer"
+    if state["retries_generation"] < 2:
+        return "retry_generation"
+    return "unknown_answer"
 
 
-# --------------------------------------
-# Response Node
-# --------------------------------------
-
-def response_node(state: AssistantState):
-    intent = state["intent"]
-    if intent == "INVALID":
-        response = llm_with_tools.invoke(
-            wrong_intent_prompt.invoke({
-                "messages": state["messages"]
-            })
-        )
-    elif intent == "VALID":
-        if state.get("brand_model"):
-            response = llm_with_tools.invoke(
-                chat_prompt.invoke({
-                    "assistant_name": config.agent_name,
-                    "query": state["brand_model"]["query"],
-                    "context": state["context"]
-                })
-            )
-        else:
-            response = AIMessage(
-                content=(
-                    "No pude identificar la marca y modelo de motocicleta en tu consulta. Por favor proporciona tanto la marca como el modelo, no olvides la pregunta de nuevo 😉"
-                )
-            )
-    else:  # greetings
-        response = llm_with_tools.invoke(
-            greetings_prompt.invoke({
-                "messages": state["messages"]
-            })
-        )
-
-    state["messages"].append(response)
-    return {"messages": state["messages"]}
 
 
-# --------------------------------------
-# Routers
-# --------------------------------------
-
-def intent_router(state: AssistantState):
-    intent = state["intent"]
-    if intent == "END":
-        return "end"
-    if intent in ["INVALID", "GREETINGS"]:
-        return "respond"
-    return "brand"
 
 
-def brand_model_router(state: AssistantState):
-    brand_model = state.get("brand_model", {})
-    if brand_model:
-        return "retrieve"
-    return "respond"
+builder = StateGraph(AssistantState)
 
+builder.add_node("domain_guard", domain_guard)
+builder.add_node("model_extraction", model_extraction)
+builder.add_node("model_resolution", model_resolution)
+builder.add_node("ask_clarification", ask_clarification)
+builder.add_node("query_rewriter", query_rewriter)
+builder.add_node("vector_retrieval", vector_retrieval)
+builder.add_node("grade_chunks", grade_chunks)
+builder.add_node("retry_retrieval", retry_retrieval)
+builder.add_node("answer_generation", answer_generation)
+builder.add_node("grounding_validator", grounding_validator)
+builder.add_node("retry_generation", retry_generation)
+builder.add_node("unknown_answer", unknown_answer)
 
-# --------------------------------------
-# Graph
-# --------------------------------------
+builder.set_entry_point("domain_guard")
 
-graph = StateGraph(AssistantState)
-
-graph.add_node("intent", intent_node)
-graph.add_node("brand_model", brand_model_node)
-graph.add_node("retrieval", retrieve_node)
-graph.add_node("response_node", response_node)
-
-graph.set_entry_point("intent")
-
-
-graph.add_conditional_edges(
-    "intent",
-    intent_router,
+builder.add_conditional_edges(
+    "domain_guard",
+    route_domain,
     {
-        "respond": "response_node",
-        "brand": "brand_model",
-        "end": END
+        "model_extraction": "model_extraction",
+        "out_of_scope": "unknown_answer"
     }
 )
 
+builder.add_edge("model_extraction", "model_resolution")
 
-graph.add_conditional_edges(
-    "brand_model",
-    brand_model_router,
+builder.add_conditional_edges(
+    "model_resolution",
+    route_model,
     {
-        "retrieve": "retrieval",
-        "respond": "response_node"
+        "query_rewriter": "query_rewriter",
+        "ask_clarification": "ask_clarification"
     }
 )
 
+builder.add_edge("query_rewriter", "vector_retrieval")
+builder.add_edge("vector_retrieval", "grade_chunks")
 
-graph.add_edge("retrieval", "response_node")
+builder.add_conditional_edges(
+    "grade_chunks",
+    route_retrieval,
+    {
+        "answer_generation": "answer_generation",
+        "retry_retrieval": "retry_retrieval",
+        "unknown_answer": "unknown_answer"
+    }
+)
 
+builder.add_edge("retry_retrieval", "vector_retrieval")
 
-assistant_graph = graph.compile()
+builder.add_edge("answer_generation", "grounding_validator")
+
+builder.add_conditional_edges(
+    "grounding_validator",
+    route_validation,
+    {
+        "final_answer": END,
+        "retry_generation": "retry_generation",
+        "unknown_answer": "unknown_answer"
+    }
+)
+
+builder.add_edge("retry_generation", "answer_generation")
+
+builder.add_edge("unknown_answer", END)
+builder.add_edge("ask_clarification", END)
+
+graph = builder.compile()

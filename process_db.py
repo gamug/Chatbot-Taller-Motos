@@ -5,12 +5,13 @@ load_dotenv()
 sys.path.append(os.path.join(os.getcwd(), 'src'))
 
 import src.config as config
+from src.commons.utils import get_brands
 from src.data_processing.pdf_processing import process_database, process_pdf_images
 
 base_path, errors = config.path['raw_data'], {}
+brands = get_brands()
 print('processing text pdf...')
-process_database(base_path, errors)
-# print(errors)
+process_database(base_path, errors, brands)
 print('processing image pdf...')
 errors_image = process_pdf_images(errors)
 

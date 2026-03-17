@@ -34,7 +34,6 @@ def extract_moto_models(text: str) -> dict:
                 'text': str,  # The text where the brand and model were mentioned
                 'brand': str, # The identified motorcycle brand
                 'model': str  # The identified motorcycle model
-                'query': str  # The user query without the brand and model information
             }
             If no motorcycle brand is mentioned in the input text, it returns an empty dictionary.
     """
@@ -47,5 +46,3 @@ def extract_moto_models(text: str) -> dict:
             moto_models.invoke({"input": [("human", text)]})
         )
     return {key: value.lower() for key, value in json.loads(result.content).items()}
-
-# tools = [search_knowledge, extract_moto_models]

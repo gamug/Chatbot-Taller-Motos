@@ -88,13 +88,20 @@ prompts = {
                         that you can only assist with motorcycle-related questions and suggest they ask about
                         motorcycle maintenance, repair, diagnostics, parts, or mechanical troubleshooting.""",
     
-    "moto_models_prompt": """In the provided text is a question about motorcycle brand and model.
-                            Extract the info in json format like dict('text'='¿Cual es la apertura del
-                            piston de la moto AKT 115 KOMFORT?', 'brand'='Bajaj', 'model'='Boxer BM100',
-                            'query'='¿Cual es la apertura del piston?'). In case there's no mention to any
-                            motorcycle brand return empty dictionary. If there isn't a question but brand
-                            and model are there, return same dictionary with 'query=''. Don't use introductory
-                            text or complementary response in your answer nor ``` markdown format, just the json.""",
+    "moto_models_prompt": """In the provided text is the motorcyle brand and model. Extract the commercial name
+                        in json format like dict('text'='¿Cual es la apertura del
+                        piston de la moto AKT 115 KOMFORT?', 'brand'='Bajaj', 'model'='Boxer BM100).
+                        In case there's no mention to any motorcycle brand return a dictionary with the key 'text'.
+                        Don't use introductory text or complementary response in your answer nor ```
+                        markdown format, just the  with 'text', 'brand' and 'model' keys. \n\nText:\n{query}""",
+
+    "question_prompt": """In the provided text is a motorcycle related question-topic-part of. We need to extract
+                        it ignoring the rest of the text (motorcycle brands-models, non motorcicly things, other 
+                        non question related stuff, etc). Extract the question-topic-part of in json format like
+                        dict('text'='¿Cual es la apertura del piston de la moto AKT 115 KOMFORT?', 'query'=
+                        "¿Cual es la apertura del piston?"). In case there isn't any question-topic-part of, return
+                        an empty json. Don't use introductory text or complementary response in your answer nor ```
+                        markdown format, just the json.""",
     
     "retriever_prompt": """Given the following question and context, determine if the context is relevant
                           to answer the question. each chunk is separated by \n char, return only the relevant contexts.

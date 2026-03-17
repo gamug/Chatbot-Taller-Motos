@@ -1,7 +1,22 @@
-import config, cv2, os
+from typing import List, Optional, TypedDict
+import config, cv2, os, re
 import numpy as np
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+
+class AssistantState(TypedDict):
+    query: str
+    is_motorcycle_related: Optional[bool]
+    detected_models: Optional[list]
+    selected_model: Optional[dict]
+    model_confident: Optional[bool]
+    rewritten_query: Optional[str]
+    retrieved_chunks: Optional[List[str]]
+    relevant_chunks: Optional[List[str]]
+    answer: Optional[str]
+    retries_retrieval: int
+    retries_generation: int
+    embedding_cache: dict
 
 def check_directories():
     """Ensure that all configured directories exist on the filesystem.
@@ -17,6 +32,40 @@ def check_directories():
     """
     for dir in config.path.values():
         os.makedirs(dir, exist_ok=True)
+
+def map_files(path: str, file_list: list[str]):
+    files = os.listdir(path)
+    for file in files:
+        if os.path.isdir(os.path.join(path, file)):
+            map_files(os.path.join(path, file), file_list)
+        else:
+            file_list.append(os.path.join(path, file))
+
+def get_brands() -> list[dict[str, str]]:
+    """Gets the brands from the raw data folder.
+    Uses regex to extract the brand and model from the file name.
+
+    Returns:
+        list[dict[str, str]]: List of brands
+    """
+    files = []
+    map_files(config.path['raw_data'], files)
+    brand_extraction = {}
+    brands = [file.split('\\')[1] for file in files]
+    manuals = [file.split('\\')[-1].split('.')[0] for file in files]
+    for i, manual in enumerate(manuals):
+        string = manual
+        for patt in config.brand_regexes:
+            string = re.sub(patt, '', string, flags=re.IGNORECASE)
+        string = re.sub(brands[i], '', re.sub(' {2,}', ' ', string, flags=re.IGNORECASE)).strip()
+        model = None if string in [manual.split('.')[0], ''] else string.lower()
+        brand_extraction[manual] = {
+            'manual': manual,
+            'motorcycle': f'{brands[i].strip().lower()}-{model}' if model else brands[i].strip().lower(),
+            'brand': brands[i].strip().lower(),
+            'model': model
+        }
+    return brand_extraction
 
 def get_output_path(base_path: str, file: str) -> str:
     end = base_path.split(config.path['raw_data']+'\\')[-1]
