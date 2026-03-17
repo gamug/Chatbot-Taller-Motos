@@ -1,5 +1,4 @@
-import boto3, json, math, random, secrets, time
-from botocore.exceptions import ClientError
+import boto3, json, math, secrets, time
 from langchain_openai import ChatOpenAI
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
@@ -8,7 +7,7 @@ import config
 from src.commons import AssistantState
 
 
-def get_llm():
+def get_llm() -> ChatOpenAI:
     return ChatOpenAI(
             api_key=config.llm_config["api_key"],
             model=config.llm_config["model"],

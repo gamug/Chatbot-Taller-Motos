@@ -1,9 +1,9 @@
-import difflib, json
-import pandas as pd
+import json
 from langgraph.graph import StateGraph, END
 
-import config
-from src.commons import AWSClient, get_brands, get_llm, AssistantState
+from src.commons import (
+    AWSClient, get_brands, get_llm, AssistantState, extract_moto_models
+)
 
 
 brands = get_brands()
@@ -28,26 +28,15 @@ def ask_clarification(state):
         "answer": f"Which motorcycle do you mean? {options}"
     }
 
-def extract_moto_models(query:str):
-    result = llm.invoke(config.prompts['moto_models_prompt'].format(query=query))
-    result = json.loads(result.content)
-    motorcycle = f"{result['brand'].lower()}-{result['model'].lower()}"
-    motorcycles = [dict_['motorcycle'] for dict_ in brands.values()]
-    matches_ratio = [difflib.SequenceMatcher(None, motorcycle, dict_['motorcycle']).ratio() for dict_ in brands.values()]
-    df = pd.DataFrame({'brand': motorcycles, 'score': matches_ratio})
-    return df.sort_values(by='score', ascending=False).reset_index(drop=True).head(5).to_dict('records')
-
 def model_extraction(state: AssistantState):
     """
     Extracts the motorcycle models from the user query.
-
     Args:
         state: AssistantState
-
     Returns:
         dict: A dictionary containing the detected motorcycle models.
     """
-    models = extract_moto_models(state["query"])
+    models = extract_moto_models(state["query"], llm, brands)
     return {"detected_models": models}
 
 def model_resolution(state: AssistantState):
