@@ -90,10 +90,11 @@ prompts = {
     
     "moto_models_prompt": """In the provided text is the motorcyle brand and model. Extract the commercial name
                         in json format like dict('text'='¿Cual es la apertura del
-                        piston de la moto AKT 115 KOMFORT?', 'brand'='Bajaj', 'model'='Boxer BM100).
+                        piston de la moto AKT 115 KOMFORT?', 'brand'='AKT', 'model'='115 KOMFORT'). Take in consideration
+                        that user possibly provide model but not brand, in that case, infer the brand based in the model.
                         In case there's no mention to any motorcycle brand return a dictionary with the key 'text'.
                         Don't use introductory text or complementary response in your answer nor ```
-                        markdown format, just the  with 'text', 'brand' and 'model' keys. \n\nText:\n{query}""",
+                        markdown format, just the dictionary with 'text', 'brand' and 'model' keys. \n\nText:\n{query}""",
 
     "question_prompt": """In the provided text is a motorcycle related question-topic-part of. We need to extract
                         it ignoring the rest of the text (motorcycle brands-models, non motorcicly things, other 
