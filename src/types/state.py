@@ -1,4 +1,5 @@
 from typing import List, Optional, TypedDict
+import streamlit as st
 
 class AssistantState(TypedDict):
     query: str
@@ -13,3 +14,4 @@ class AssistantState(TypedDict):
     retries_retrieval: int
     retries_generation: int
     embedding_cache: dict
+    streamlit_state: st.session_state

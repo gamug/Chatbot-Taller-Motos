@@ -10,22 +10,24 @@ import config
 from moto_assistant import graph
 
 
-st.set_page_config(page_title="Manual de Motos", page_icon="🏍️")
-
 # ----------------------------
-# LLM (cached for performance)
+# graph (cached for performance)
 # ----------------------------
 @st.cache_resource
 def load_assistant_graph():
     return graph
 
-conversation = load_assistant_graph()
+st.set_page_config(page_title="Manual de Motos", page_icon="🏍️")
 
 # ----------------------------
 # Session state
 # ----------------------------
 if "messages" not in st.session_state:
     st.session_state.messages = [{ "role": "assistant", "content": f"Hola, soy tu asistente {config.agent_name} ¿En qué te puedo ayudar hoy? Proporciona marca, modelo y descripción de la consulta para proceder a ayudarte ☺️"}]
+
+if "solved" not in st.session_state or st.session_state.solved:
+    st.session_state.solved = False
+    conversation = load_assistant_graph()
 
 # ----------------------------
 # UI
@@ -55,7 +57,8 @@ if user_input := st.chat_input("Realiza tu consulta..."):
                 "query": user_input,
                 "retries_retrieval": 0,
                 "retries_generation": 0,
-                "embedding_cache": {}
+                "embedding_cache": {},
+                "streamlit_state": st.session_state
             })
             st.markdown(response["answer"])
 

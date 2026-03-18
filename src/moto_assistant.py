@@ -4,6 +4,7 @@ from langgraph.graph import StateGraph, END
 from src.commons import (
     AWSClient, get_brands, get_llm, extract_moto_models
 )
+from src import app_logger
 from src.types.state import AssistantState
 
 
@@ -12,19 +13,27 @@ llm = get_llm()
 aws_client = AWSClient()
 
 def domain_guard(state: AssistantState):
+    app_logger.info("="*20)
+    app_logger.info("INSIDE intent NODE")
+    app_logger.info("New question sent")
     prompt = f"""
     Determine if the query is about motorcycles.
     Query: {state['query']}
     Answer ONLY TRUE or FALSE.
     """
     result = llm.invoke(prompt)
+    app_logger.info(f"query: {state['query']}")
+    app_logger.info(f"Intent: {result.content.upper()}")
     return {
         "is_motorcycle_related": "TRUE" in result.content.upper()
     }
 
 def ask_clarification(state):
+    app_logger.info("INSIDE ask_clarification NODE")
+    app_logger.warning("Agent was unable to get brand-model, the system will respond asking for user clarification")
     models = state["detected_models"]
     options = [m['brand'] for m in models]
+    app_logger.info(f"Possible motorcycle options: {options}")
     return {
         "answer": f"Which motorcycle do you mean? {options}"
     }
@@ -37,10 +46,13 @@ def model_extraction(state: AssistantState):
     Returns:
         dict: A dictionary containing the detected motorcycle models.
     """
+    app_logger.info("INSIDE model_extraction NODE")
     models = extract_moto_models(state["query"], llm, brands)
+    app_logger.info(f"Detected motorcycle models: {models}")
     return {"detected_models": models}
 
 def model_resolution(state: AssistantState):
+    app_logger.info("INSIDE model_resolution NODE")
     models = state["detected_models"]
     if not models:
         return {"model_confident": False}
@@ -53,6 +65,7 @@ def model_resolution(state: AssistantState):
     }
 
 def query_rewriter(state: AssistantState):
+    app_logger.info("INSIDE query_rewriter NODE")
     model = state["selected_model"]
     prompt = f"""
     Rewrite the query to improve search in a motorcycle manual.
@@ -62,11 +75,13 @@ def query_rewriter(state: AssistantState):
     Provide a single version, the best for the query.
     """
     result = llm.invoke(prompt)
+    app_logger.info(f"Rewritten query: {result.content}")
     return {
         "rewritten_query": result.content
     }
 
 def vector_retrieval(state: AssistantState):
+    app_logger.info("INSIDE vector_retrieval NODE")
     query = state["rewritten_query"]
     model = state["selected_model"]
     filtering = {
@@ -80,6 +95,7 @@ def vector_retrieval(state: AssistantState):
         filtering,
         cache=state
     )
+    app_logger.info(f"Retrieved chunks: {chunks}")
     return {
         "retrieved_chunks": chunks
     }
@@ -94,6 +110,7 @@ def grade_chunks(state):
         dict: A dictionary with a single key "relevant_chunks" mapping to a list of relevant
         document chunks.
     """
+    app_logger.info("INSIDE grade_chunks NODE")
     chunks = state.get("retrieved_chunks", [])
     prompt = f"""
         You are filtering relevant documents.
@@ -109,14 +126,17 @@ def grade_chunks(state):
     except Exception:
         indices = []
     relevant = [chunks[i] for i in indices if i < len(chunks)]
+    app_logger.info(f"Chunks after filtering: {relevant}")
     return {"relevant_chunks": relevant}
 
 def retry_retrieval(state):
+    app_logger.info("INSIDE retry_retrieval NODE")
     return {
         "retries_retrieval": state["retries_retrieval"] + 1
     }
 
 def answer_generation(state: AssistantState):
+    app_logger.info("INSIDE answer_generation NODE")
     context = "\n\n".join(state["relevant_chunks"])
     prompt = f"""Answer the question using ONLY the context.
             Context:
@@ -127,9 +147,11 @@ def answer_generation(state: AssistantState):
             Answer ONLY in spanish
             """
     result = llm.invoke(prompt)
+    app_logger.info(f"Answer: {result.content}")
     return {"answer": result.content}
 
 def grounding_validator(state):
+    app_logger.info("INSIDE grounding_validator NODE")
     context = "\n\n".join(state["relevant_chunks"])
     prompt = f"""Question:
         {state['query']}
@@ -142,6 +164,8 @@ def grounding_validator(state):
         """
     result = llm.invoke(prompt)
     if "SUPPORTED" in result.content:
+        app_logger.success("Answer validated, the system will respond with the final answer")
+        state['streamlit_session'].solved = True
         return {"validated": True}
     return {"validated": False}
 
@@ -154,6 +178,8 @@ def retry_generation(state):
     }
 
 def unknown_answer(state):
+    app_logger.info("INSIDE unknown_answer NODE")
+    app_logger.warning("No answer found, the agent respond with no information available")
     return {
         "answer": "I could not find this information in the motorcycle manual."
     }
