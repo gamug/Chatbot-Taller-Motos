@@ -16,6 +16,7 @@ class AppLogger(logging.Logger):
             os.path.join(config.path['logs'], 'app.log'), maxBytes=5*1024*1024, backupCount=3
         )
         file_handler.setFormatter(formatter)
+        file_handler.stream.reconfigure(encoding='utf-8')
 
         # Console Handler
         console_handler = logging.StreamHandler()
@@ -26,6 +27,11 @@ class AppLogger(logging.Logger):
         self.addHandler(console_handler)
 
     # Succeeded logs
-    def success(self, message: str):
-        """Log personalizado para eventos exitosos"""
-        self.log(logging.INFO, f"SUCCESS: {message}")
+    def success(self, message: str) -> None:
+        """Personalized log for successes"""
+        self.log(logging.INFO, f"SUCCESS ✅: {message}")
+    
+    # Warning logs
+    def warning(self, msg: object) -> None:
+        """Personalized log for warnings"""
+        self.log(logging.WARNING, f"⚠️ {msg}")

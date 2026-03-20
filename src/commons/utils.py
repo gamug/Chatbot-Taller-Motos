@@ -33,19 +33,15 @@ def map_files(path: str, file_list: list[str]):
 def extract_moto_models(query:str, llm: ChatOpenAI, brands: dict[str, dict]) -> List[dict]:
     result = llm.invoke(config.prompts['moto_models_prompt'].format(query=query))
     result = json.loads(result.content)
+    if not result['brand'] or not result['model']:
+        return []
     motorcycle = f"{result['brand'].lower()}-{result['model'].lower()}"
     motorcycles = [dict_['motorcycle'] for dict_ in brands.values()]
     matches_ratio = [difflib.SequenceMatcher(None, motorcycle, dict_['motorcycle']).ratio() for dict_ in brands.values()]
     df = pd.DataFrame({'brand': motorcycles, 'score': matches_ratio})
     return df.sort_values(by='score', ascending=False).reset_index(drop=True).head(5).to_dict('records')
 
-def get_brands() -> list[dict[str, str]]:
-    """Gets the brands from the raw data folder.
-    Uses regex to extract the brand and model from the file name.
-
-    Returns:
-        list[dict[str, str]]: List of brands
-    """
+def extract_brand_from_file_source() -> list[dict[str, str]]:
     files = []
     map_files(config.path['raw_data'], files)
     brand_extraction = {}
@@ -63,6 +59,22 @@ def get_brands() -> list[dict[str, str]]:
             'brand': brands[i].strip().lower(),
             'model': model
         }
+    return brand_extraction
+
+def get_brands() -> list[dict[str, str]]:
+    """Gets the brands from the raw data folder.
+    Uses regex to extract the brand and model from the file name.
+
+    Returns:
+        list[dict[str, str]]: List of brands
+    """
+    if not os.path.exists('brand.json'):
+        brand_extraction = extract_brand_from_file_source()
+        with open('brand.json', 'w') as f:
+            json.dump(brand_extraction, f, indent=4)
+    else:
+        with open('brand.json', 'r') as f:
+            brand_extraction = json.load(f)
     return brand_extraction
 
 def get_output_path(base_path: str, file: str) -> str:

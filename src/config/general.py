@@ -8,3 +8,4 @@ path = {
 }
 
 agent_name = os.getenv("AGENT_NAME")
+language = os.environ.get("LANGUAGE", 'spanish')

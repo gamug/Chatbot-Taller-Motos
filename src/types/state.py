@@ -1,5 +1,4 @@
 from typing import List, Optional, TypedDict
-import streamlit as st
 
 class AssistantState(TypedDict):
     query: str
@@ -11,7 +10,6 @@ class AssistantState(TypedDict):
     retrieved_chunks: Optional[List[str]]
     relevant_chunks: Optional[List[str]]
     answer: Optional[str]
-    retries_retrieval: int
     retries_generation: int
     embedding_cache: dict
-    streamlit_state: st.session_state
+    streamlit_state: bool

@@ -1,0 +1,4868 @@
+{
+    "00 TECNICAS AVANZADAS DE DIAGNOSTICO CON MULTIMETRO DIGITAL": {
+        "manual": "00 TECNICAS AVANZADAS DE DIAGNOSTICO CON MULTIMETRO DIGITAL",
+        "motorcycle": "000 cursos basicos",
+        "brand": "000 cursos basicos",
+        "model": null
+    },
+    "01 GENERALIDADES BASICA MODULO ELECTRONICA AUTOMOTRIZ": {
+        "manual": "01 GENERALIDADES BASICA MODULO ELECTRONICA AUTOMOTRIZ",
+        "motorcycle": "000 cursos basicos",
+        "brand": "000 cursos basicos",
+        "model": null
+    },
+    "02 VALORES NOMINALES DE LOS SENSORES Y ACTUADOR DEL SISITEMA EFI": {
+        "manual": "02 VALORES NOMINALES DE LOS SENSORES Y ACTUADOR DEL SISITEMA EFI",
+        "motorcycle": "000 cursos basicos",
+        "brand": "000 cursos basicos",
+        "model": null
+    },
+    "03 MANEJO DEL MULTIMETRO DIGITAL MODULO ELECTRONICA AUTOMOTRIZ": {
+        "manual": "03 MANEJO DEL MULTIMETRO DIGITAL MODULO ELECTRONICA AUTOMOTRIZ",
+        "motorcycle": "000 cursos basicos",
+        "brand": "000 cursos basicos",
+        "model": null
+    },
+    "04 CURSO DE ELECTRONICA PRACTICA": {
+        "manual": "04 CURSO DE ELECTRONICA PRACTICA",
+        "motorcycle": "000 cursos basicos",
+        "brand": "000 cursos basicos",
+        "model": null
+    },
+    "05 GLOSARIO DE TERMINOS ASE INGLES-ESPANOL": {
+        "manual": "05 GLOSARIO DE TERMINOS ASE INGLES-ESPANOL",
+        "motorcycle": "000 cursos basicos",
+        "brand": "000 cursos basicos",
+        "model": null
+    },
+    "06 MONITOREOS Y VALORES MAP": {
+        "manual": "06 MONITOREOS Y VALORES MAP",
+        "motorcycle": "000 cursos basicos",
+        "brand": "000 cursos basicos",
+        "model": null
+    },
+    "07 SENSORES DE OXIGENO NTK": {
+        "manual": "07 SENSORES DE OXIGENO NTK",
+        "motorcycle": "000 cursos basicos",
+        "brand": "000 cursos basicos",
+        "model": null
+    },
+    "08 INTRODUCCIO A LA INYECCIO ELECTRONICA DE COMBUSTIBLE": {
+        "manual": "08 INTRODUCCIO A LA INYECCIO ELECTRONICA DE COMBUSTIBLE",
+        "motorcycle": "000 cursos basicos",
+        "brand": "000 cursos basicos",
+        "model": null
+    },
+    "09 SOBRE OCTANOS, HEPTANOS Y OTROS TANOS": {
+        "manual": "09 SOBRE OCTANOS, HEPTANOS Y OTROS TANOS",
+        "motorcycle": "000 cursos basicos",
+        "brand": "000 cursos basicos",
+        "model": null
+    },
+    "10 MODULO ELECTRICIDAD": {
+        "manual": "10 MODULO ELECTRICIDAD",
+        "motorcycle": "000 cursos basicos",
+        "brand": "000 cursos basicos",
+        "model": null
+    },
+    "11 MANUAL TALLER MECANICA BASICA INYECCION": {
+        "manual": "11 MANUAL TALLER MECANICA BASICA INYECCION",
+        "motorcycle": "000 cursos basicos-11 mecanica basica inyeccion",
+        "brand": "000 cursos basicos",
+        "model": "11 mecanica basica inyeccion"
+    },
+    "12 REFERENCIAS TECNICAS": {
+        "manual": "12 REFERENCIAS TECNICAS",
+        "motorcycle": "000 cursos basicos",
+        "brand": "000 cursos basicos",
+        "model": null
+    },
+    "YTA BONCE": {
+        "manual": "YTA BONCE",
+        "motorcycle": "000 cursos basicos",
+        "brand": "000 cursos basicos",
+        "model": null
+    },
+    "YTA LA INYECCION ELECTRONICA DE COMBUSTIBLE": {
+        "manual": "YTA LA INYECCION ELECTRONICA DE COMBUSTIBLE",
+        "motorcycle": "000 cursos basicos",
+        "brand": "000 cursos basicos",
+        "model": null
+    },
+    "YTA PLATA": {
+        "manual": "YTA PLATA",
+        "motorcycle": "000 cursos basicos",
+        "brand": "000 cursos basicos",
+        "model": null
+    },
+    "AKT 115 KOMFORT MANUAL TALLER": {
+        "manual": "AKT 115 KOMFORT MANUAL TALLER",
+        "motorcycle": "akt-115 komfort",
+        "brand": "akt",
+        "model": "115 komfort"
+    },
+    "AKT AK 125 SC DYNAMIC MANUAL TALLER": {
+        "manual": "AKT AK 125 SC DYNAMIC MANUAL TALLER",
+        "motorcycle": "akt-ak 125 sc dynamic",
+        "brand": "akt",
+        "model": "ak 125 sc dynamic"
+    },
+    "AKT AK110 SPECIAL S MANUAL TALLER": {
+        "manual": "AKT AK110 SPECIAL S MANUAL TALLER",
+        "motorcycle": "akt-ak110 special s",
+        "brand": "akt",
+        "model": "ak110 special s"
+    },
+    "AKT AK125 DYNAMIC MANUAL TALLER": {
+        "manual": "AKT AK125 DYNAMIC MANUAL TALLER",
+        "motorcycle": "akt-ak125 dynamic",
+        "brand": "akt",
+        "model": "ak125 dynamic"
+    },
+    "AKT AK150RTX MANUAL TALLER 2013": {
+        "manual": "AKT AK150RTX MANUAL TALLER 2013",
+        "motorcycle": "akt-ak150rtx",
+        "brand": "akt",
+        "model": "ak150rtx"
+    },
+    "AKT AK200SM MANUAL TALLER 2013": {
+        "manual": "AKT AK200SM MANUAL TALLER 2013",
+        "motorcycle": "akt-ak200sm",
+        "brand": "akt",
+        "model": "ak200sm"
+    },
+    "AKT AK235R MANUAL TALLER": {
+        "manual": "AKT AK235R MANUAL TALLER",
+        "motorcycle": "akt-ak235r",
+        "brand": "akt",
+        "model": "ak235r"
+    },
+    "AKT CR5 200 MANUAL TALLER": {
+        "manual": "AKT CR5 200 MANUAL TALLER",
+        "motorcycle": "akt-cr5 200",
+        "brand": "akt",
+        "model": "cr5 200"
+    },
+    "AKT DYNAMIC 125 MANUAL USUARIO": {
+        "manual": "AKT DYNAMIC 125 MANUAL USUARIO",
+        "motorcycle": "akt-dynamic 125",
+        "brand": "akt",
+        "model": "dynamic 125"
+    },
+    "AKT DYNAMICS AK125 MANUAL PARTES": {
+        "manual": "AKT DYNAMICS AK125 MANUAL PARTES",
+        "motorcycle": "akt-dynamics ak125",
+        "brand": "akt",
+        "model": "dynamics ak125"
+    },
+    "AKT ENDERVOUR MANUAL TALLER (BICICLETA ELECTRICA)": {
+        "manual": "AKT ENDERVOUR MANUAL TALLER (BICICLETA ELECTRICA)",
+        "motorcycle": "akt-endervour",
+        "brand": "akt",
+        "model": "endervour"
+    },
+    "AKT EVO NE 125 - 150 MANUAL TALLER": {
+        "manual": "AKT EVO NE 125 - 150 MANUAL TALLER",
+        "motorcycle": "akt-evo ne 125 - 150",
+        "brand": "akt",
+        "model": "evo ne 125 - 150"
+    },
+    "AKT EVO R3 125-150 MANUAL TALLER (MOTOR)": {
+        "manual": "AKT EVO R3 125-150 MANUAL TALLER (MOTOR)",
+        "motorcycle": "akt-evo r3 125-150",
+        "brand": "akt",
+        "model": "evo r3 125-150"
+    },
+    "AKT EVO R3 MANUAL TALLER": {
+        "manual": "AKT EVO R3 MANUAL TALLER",
+        "motorcycle": "akt-evo r3",
+        "brand": "akt",
+        "model": "evo r3"
+    },
+    "AKT FLEX 125 MANUAL TALLER 2012": {
+        "manual": "AKT FLEX 125 MANUAL TALLER 2012",
+        "motorcycle": "akt-flex 125",
+        "brand": "akt",
+        "model": "flex 125"
+    },
+    "AKT FLEX CYCLONE MANUAL TALLER": {
+        "manual": "AKT FLEX CYCLONE MANUAL TALLER",
+        "motorcycle": "akt-flex cyclone",
+        "brand": "akt",
+        "model": "flex cyclone"
+    },
+    "AKT JET 4 MANUAL TALLER": {
+        "manual": "AKT JET 4 MANUAL TALLER",
+        "motorcycle": "akt-jet 4",
+        "brand": "akt",
+        "model": "jet 4"
+    },
+    "AKT JET 5 R MANUAL TALLER": {
+        "manual": "AKT JET 5 R MANUAL TALLER",
+        "motorcycle": "akt-jet 5 r",
+        "brand": "akt",
+        "model": "jet 5 r"
+    },
+    "AKT MAVERICK MANUAL TALLER (BICICLETA ELECTRICA)": {
+        "manual": "AKT MAVERICK MANUAL TALLER (BICICLETA ELECTRICA)",
+        "motorcycle": "akt-maverick",
+        "brand": "akt",
+        "model": "maverick"
+    },
+    "AKT NEW EVO 125-150 MANUAL TALLER": {
+        "manual": "AKT NEW EVO 125-150 MANUAL TALLER",
+        "motorcycle": "akt-new evo 125-150",
+        "brand": "akt",
+        "model": "new evo 125-150"
+    },
+    "AKT ROCKZ 125 MANUAL TALLER": {
+        "manual": "AKT ROCKZ 125 MANUAL TALLER",
+        "motorcycle": "akt-rockz 125",
+        "brand": "akt",
+        "model": "rockz 125"
+    },
+    "AKT RTX 150 MANUAL TALLER 2013": {
+        "manual": "AKT RTX 150 MANUAL TALLER 2013",
+        "motorcycle": "akt-rtx 150",
+        "brand": "akt",
+        "model": "rtx 150"
+    },
+    "AKT TT 250 ADVENTOUR MANUAL USUARIO": {
+        "manual": "AKT TT 250 ADVENTOUR MANUAL USUARIO",
+        "motorcycle": "akt-tt 250 adventour",
+        "brand": "akt",
+        "model": "tt 250 adventour"
+    },
+    "AKT TT ADVENTOUR 250 (CABEZA DE FUERZA - CLOCHE - ELECTRICIDAD)": {
+        "manual": "AKT TT ADVENTOUR 250 (CABEZA DE FUERZA - CLOCHE - ELECTRICIDAD)",
+        "motorcycle": "akt-tt adventour 250",
+        "brand": "akt",
+        "model": "tt adventour 250"
+    },
+    "AKT TT ADVENTOUR 250 (CABEZA DE FUERZA)": {
+        "manual": "AKT TT ADVENTOUR 250 (CABEZA DE FUERZA)",
+        "motorcycle": "akt-tt adventour 250",
+        "brand": "akt",
+        "model": "tt adventour 250"
+    },
+    "AKT TT ADVENTOUR 250 (FRENOS)": {
+        "manual": "AKT TT ADVENTOUR 250 (FRENOS)",
+        "motorcycle": "akt-tt adventour 250",
+        "brand": "akt",
+        "model": "tt adventour 250"
+    },
+    "AKT TT250 ADVENTOUR CARBURADA MANUAL TALLER": {
+        "manual": "AKT TT250 ADVENTOUR CARBURADA MANUAL TALLER",
+        "motorcycle": "akt-tt250 adventour carburada",
+        "brand": "akt",
+        "model": "tt250 adventour carburada"
+    },
+    "AKT TT250 ADVENTOUR FI MANUAL TALLER (INYECCION ELECTRONICA)": {
+        "manual": "AKT TT250 ADVENTOUR FI MANUAL TALLER (INYECCION ELECTRONICA)",
+        "motorcycle": "akt-tt250 adventour fi",
+        "brand": "akt",
+        "model": "tt250 adventour fi"
+    },
+    "AKT TTR - TTX 180 - 200  MANUAL TALLER (MOTOR)": {
+        "manual": "AKT TTR - TTX 180 - 200  MANUAL TALLER (MOTOR)",
+        "motorcycle": "akt-ttr - ttx 180 - 200",
+        "brand": "akt",
+        "model": "ttr - ttx 180 - 200"
+    },
+    "AKT TTR 125 - 150 MANUAL TALLER": {
+        "manual": "AKT TTR 125 - 150 MANUAL TALLER",
+        "motorcycle": "akt-ttr 125 - 150",
+        "brand": "akt",
+        "model": "ttr 125 - 150"
+    },
+    "AKT TTR 180 MANUAL USUARIO": {
+        "manual": "AKT TTR 180 MANUAL USUARIO",
+        "motorcycle": "akt-ttr 180",
+        "brand": "akt",
+        "model": "ttr 180"
+    },
+    "APRILIA MXV450 MANUAL USUARIO": {
+        "manual": "APRILIA MXV450 MANUAL USUARIO",
+        "motorcycle": "aprilia-mxv450",
+        "brand": "aprilia",
+        "model": "mxv450"
+    },
+    "APRILIA PEGASO 650 MANUAL TALLER": {
+        "manual": "APRILIA PEGASO 650 MANUAL TALLER",
+        "motorcycle": "aprilia-pegaso 650",
+        "brand": "aprilia",
+        "model": "pegaso 650"
+    },
+    "APRILIA SVX RVX 450-550  MANUAL TALLER": {
+        "manual": "APRILIA SVX RVX 450-550  MANUAL TALLER",
+        "motorcycle": "aprilia-svx rvx 450-550",
+        "brand": "aprilia",
+        "model": "svx rvx 450-550"
+    },
+    "BAJA BOXER BM100 MANUAL TALLER": {
+        "manual": "BAJA BOXER BM100 MANUAL TALLER",
+        "motorcycle": "bajaj-baja boxer bm100",
+        "brand": "bajaj",
+        "model": "baja boxer bm100"
+    },
+    "BAJA BOXER CT100 MANUAL TALLER": {
+        "manual": "BAJA BOXER CT100 MANUAL TALLER",
+        "motorcycle": "bajaj-baja boxer ct100",
+        "brand": "bajaj",
+        "model": "baja boxer ct100"
+    },
+    "BAJAJ AVENGER 220 MANUAL TALLER 2010": {
+        "manual": "BAJAJ AVENGER 220 MANUAL TALLER 2010",
+        "motorcycle": "bajaj-avenger 220",
+        "brand": "bajaj",
+        "model": "avenger 220"
+    },
+    "BAJAJ AVENGER 220 MANUAL TALLER 2016": {
+        "manual": "BAJAJ AVENGER 220 MANUAL TALLER 2016",
+        "motorcycle": "bajaj-avenger 220",
+        "brand": "bajaj",
+        "model": "avenger 220"
+    },
+    "BAJAJ BOXER (KS - ES - TITANIUM) MANUAL TALLER": {
+        "manual": "BAJAJ BOXER (KS - ES - TITANIUM) MANUAL TALLER",
+        "motorcycle": "bajaj-boxer (ks - es - titanium)",
+        "brand": "bajaj",
+        "model": "boxer (ks - es - titanium)"
+    },
+    "BAJAJ BOXER 100  K-TEC MANUAL TALLER": {
+        "manual": "BAJAJ BOXER 100  K-TEC MANUAL TALLER",
+        "motorcycle": "bajaj-boxer 100 k-tec",
+        "brand": "bajaj",
+        "model": "boxer 100 k-tec"
+    },
+    "BAJAJ BOXER BM150 MANUAL PARTES 2017": {
+        "manual": "BAJAJ BOXER BM150 MANUAL PARTES 2017",
+        "motorcycle": "bajaj-boxer bm150",
+        "brand": "bajaj",
+        "model": "boxer bm150"
+    },
+    "BAJAJ BOXER BM150 MANUAL TALLER": {
+        "manual": "BAJAJ BOXER BM150 MANUAL TALLER",
+        "motorcycle": "bajaj-boxer bm150",
+        "brand": "bajaj",
+        "model": "boxer bm150"
+    },
+    "BAJAJ BOXER CT 100 MAUAL PARTES 2009": {
+        "manual": "BAJAJ BOXER CT 100 MAUAL PARTES 2009",
+        "motorcycle": "bajaj-boxer ct 100",
+        "brand": "bajaj",
+        "model": "boxer ct 100"
+    },
+    "BAJAJ BOXER CT100B MANUAL TALLER 2016": {
+        "manual": "BAJAJ BOXER CT100B MANUAL TALLER 2016",
+        "motorcycle": "bajaj-boxer ct100b",
+        "brand": "bajaj",
+        "model": "boxer ct100b"
+    },
+    "BAJAJ BOXER S MANUAL TALLER": {
+        "manual": "BAJAJ BOXER S MANUAL TALLER",
+        "motorcycle": "bajaj-boxer s",
+        "brand": "bajaj",
+        "model": "boxer s"
+    },
+    "BAJAJ CALIBER 115 MANUAL TALLER": {
+        "manual": "BAJAJ CALIBER 115 MANUAL TALLER",
+        "motorcycle": "bajaj-caliber 115",
+        "brand": "bajaj",
+        "model": "caliber 115"
+    },
+    "BAJAJ DISCOVER 100 MANUAL TALLER": {
+        "manual": "BAJAJ DISCOVER 100 MANUAL TALLER",
+        "motorcycle": "bajaj-discover 100",
+        "brand": "bajaj",
+        "model": "discover 100"
+    },
+    "BAJAJ DISCOVER 110 MANNUAL TALLER 2018": {
+        "manual": "BAJAJ DISCOVER 110 MANNUAL TALLER 2018",
+        "motorcycle": "bajaj-discover 110",
+        "brand": "bajaj",
+        "model": "discover 110"
+    },
+    "BAJAJ DISCOVER 125 MANNUAL TALLER": {
+        "manual": "BAJAJ DISCOVER 125 MANNUAL TALLER",
+        "motorcycle": "bajaj-discover 125",
+        "brand": "bajaj",
+        "model": "discover 125"
+    },
+    "BAJAJ DISCOVER 125 MANUAL PARTES 2011": {
+        "manual": "BAJAJ DISCOVER 125 MANUAL PARTES 2011",
+        "motorcycle": "bajaj-discover 125",
+        "brand": "bajaj",
+        "model": "discover 125"
+    },
+    "BAJAJ DISCOVER 125 MANUAL TALLER 2016": {
+        "manual": "BAJAJ DISCOVER 125 MANUAL TALLER 2016",
+        "motorcycle": "bajaj-discover 125",
+        "brand": "bajaj",
+        "model": "discover 125"
+    },
+    "BAJAJ DISCOVER 125 MANUAL TALLER": {
+        "manual": "BAJAJ DISCOVER 125 MANUAL TALLER",
+        "motorcycle": "bajaj-discover 125",
+        "brand": "bajaj",
+        "model": "discover 125"
+    },
+    "BAJAJ DISCOVER 125 ST MANUAL USUARIO": {
+        "manual": "BAJAJ DISCOVER 125 ST MANUAL USUARIO",
+        "motorcycle": "bajaj-discover 125 st",
+        "brand": "bajaj",
+        "model": "discover 125 st"
+    },
+    "BAJAJ DISCOVER 125 UG MANUAL TALLER 2018": {
+        "manual": "BAJAJ DISCOVER 125 UG MANUAL TALLER 2018",
+        "motorcycle": "bajaj-discover 125 ug",
+        "brand": "bajaj",
+        "model": "discover 125 ug"
+    },
+    "BAJAJ DISCOVER 125ST MANUAL PARTES 2017": {
+        "manual": "BAJAJ DISCOVER 125ST MANUAL PARTES 2017",
+        "motorcycle": "bajaj-discover 125st",
+        "brand": "bajaj",
+        "model": "discover 125st"
+    },
+    "BAJAJ DISCOVER 125ST MANUAL TALLER": {
+        "manual": "BAJAJ DISCOVER 125ST MANUAL TALLER",
+        "motorcycle": "bajaj-discover 125st",
+        "brand": "bajaj",
+        "model": "discover 125st"
+    },
+    "BAJAJ DISCOVER 125ST-R MANUAL USUARIO": {
+        "manual": "BAJAJ DISCOVER 125ST-R MANUAL USUARIO",
+        "motorcycle": "bajaj-discover 125st-r",
+        "brand": "bajaj",
+        "model": "discover 125st-r"
+    },
+    "BAJAJ DISCOVER 135 MANUAL TALLER 2007": {
+        "manual": "BAJAJ DISCOVER 135 MANUAL TALLER 2007",
+        "motorcycle": "bajaj-discover 135",
+        "brand": "bajaj",
+        "model": "discover 135"
+    },
+    "BAJAJ DISCOVER 150S MANUAL TALLER": {
+        "manual": "BAJAJ DISCOVER 150S MANUAL TALLER",
+        "motorcycle": "bajaj-discover 150s",
+        "brand": "bajaj",
+        "model": "discover 150s"
+    },
+    "BAJAJ DISCOVER STR 125 MANUAL USUARIO 2022": {
+        "manual": "BAJAJ DISCOVER STR 125 MANUAL USUARIO 2022",
+        "motorcycle": "bajaj-discover str 125",
+        "brand": "bajaj",
+        "model": "discover str 125"
+    },
+    "BAJAJ DOMINAR 250 ABS MANUAL TALLER": {
+        "manual": "BAJAJ DOMINAR 250 ABS MANUAL TALLER",
+        "motorcycle": "bajaj-dominar 250",
+        "brand": "bajaj",
+        "model": "dominar 250"
+    },
+    "BAJAJ DOMINAR 250 MANUAL TALLER 2020": {
+        "manual": "BAJAJ DOMINAR 250 MANUAL TALLER 2020",
+        "motorcycle": "bajaj-dominar 250",
+        "brand": "bajaj",
+        "model": "dominar 250"
+    },
+    "BAJAJ DOMINAR 250 MANUAL USUARIO": {
+        "manual": "BAJAJ DOMINAR 250 MANUAL USUARIO",
+        "motorcycle": "bajaj-dominar 250",
+        "brand": "bajaj",
+        "model": "dominar 250"
+    },
+    "BAJAJ DOMINAR 250 MANUAL USUASRIO 2020": {
+        "manual": "BAJAJ DOMINAR 250 MANUAL USUASRIO 2020",
+        "motorcycle": "bajaj-dominar 250",
+        "brand": "bajaj",
+        "model": "dominar 250"
+    },
+    "BAJAJ DOMINAR 400 BOLETIN TECNICO INTERCAMBIO DE TABLEROS": {
+        "manual": "BAJAJ DOMINAR 400 BOLETIN TECNICO INTERCAMBIO DE TABLEROS",
+        "motorcycle": "bajaj-dominar 400",
+        "brand": "bajaj",
+        "model": "dominar 400"
+    },
+    "BAJAJ DOMINAR 400 MANUAL PARTES 2018": {
+        "manual": "BAJAJ DOMINAR 400 MANUAL PARTES 2018",
+        "motorcycle": "bajaj-dominar 400",
+        "brand": "bajaj",
+        "model": "dominar 400"
+    },
+    "BAJAJ DOMINAR 400 MANUAL TALLER 2017": {
+        "manual": "BAJAJ DOMINAR 400 MANUAL TALLER 2017",
+        "motorcycle": "bajaj-dominar 400",
+        "brand": "bajaj",
+        "model": "dominar 400"
+    },
+    "BAJAJ DOMINAR 400 MANUAL TALLER": {
+        "manual": "BAJAJ DOMINAR 400 MANUAL TALLER",
+        "motorcycle": "bajaj-dominar 400",
+        "brand": "bajaj",
+        "model": "dominar 400"
+    },
+    "BAJAJ DOMINAR 400 UD ALL NEW MANUAL TALLER 2021": {
+        "manual": "BAJAJ DOMINAR 400 UD ALL NEW MANUAL TALLER 2021",
+        "motorcycle": "bajaj-dominar 400 ud all new",
+        "brand": "bajaj",
+        "model": "dominar 400 ud all new"
+    },
+    "BAJAJ DOMINAR 400 UG ALL NEW MANUAL TALLER 2023": {
+        "manual": "BAJAJ DOMINAR 400 UG ALL NEW MANUAL TALLER 2023",
+        "motorcycle": "bajaj-dominar 400 ug all new",
+        "brand": "bajaj",
+        "model": "dominar 400 ug all new"
+    },
+    "BAJAJ DOMINAR 400 UG MANUAL TALLER 2019": {
+        "manual": "BAJAJ DOMINAR 400 UG MANUAL TALLER 2019",
+        "motorcycle": "bajaj-dominar 400 ug",
+        "brand": "bajaj",
+        "model": "dominar 400 ug"
+    },
+    "BAJAJ MANUAL PROCEDIMIENTO SISTEMA DE PRESION DE ACEITE": {
+        "manual": "BAJAJ MANUAL PROCEDIMIENTO SISTEMA DE PRESION DE ACEITE",
+        "motorcycle": "bajaj",
+        "brand": "bajaj",
+        "model": null
+    },
+    "BAJAJ PLATINA 100 MANUAL TALLER 1": {
+        "manual": "BAJAJ PLATINA 100 MANUAL TALLER 1",
+        "motorcycle": "bajaj-platina 100 1",
+        "brand": "bajaj",
+        "model": "platina 100 1"
+    },
+    "BAJAJ PLATINA 100 MANUAL TALLER 2": {
+        "manual": "BAJAJ PLATINA 100 MANUAL TALLER 2",
+        "motorcycle": "bajaj-platina 100 2",
+        "brand": "bajaj",
+        "model": "platina 100 2"
+    },
+    "BAJAJ PLATINO 125 DRL MANUAL TALLER": {
+        "manual": "BAJAJ PLATINO 125 DRL MANUAL TALLER",
+        "motorcycle": "bajaj-platino 125 drl",
+        "brand": "bajaj",
+        "model": "platino 125 drl"
+    },
+    "BAJAJ PLATINO 125 MANUAL TALLER": {
+        "manual": "BAJAJ PLATINO 125 MANUAL TALLER",
+        "motorcycle": "bajaj-platino 125",
+        "brand": "bajaj",
+        "model": "platino 125"
+    },
+    "BAJAJ PLATINO 125UG MANUAL TALLER": {
+        "manual": "BAJAJ PLATINO 125UG MANUAL TALLER",
+        "motorcycle": "bajaj-platino 125ug",
+        "brand": "bajaj",
+        "model": "platino 125ug"
+    },
+    "BAJAJ PUILSAR RS200 MANUAL TALLER": {
+        "manual": "BAJAJ PUILSAR RS200 MANUAL TALLER",
+        "motorcycle": "bajaj-puilsar rs200",
+        "brand": "bajaj",
+        "model": "puilsar rs200"
+    },
+    "BAJAJ PULSAR 125 MANUAL TALLER 2019": {
+        "manual": "BAJAJ PULSAR 125 MANUAL TALLER 2019",
+        "motorcycle": "bajaj-pulsar 125",
+        "brand": "bajaj",
+        "model": "pulsar 125"
+    },
+    "BAJAJ PULSAR 135 MANUAL PARTES 2017": {
+        "manual": "BAJAJ PULSAR 135 MANUAL PARTES 2017",
+        "motorcycle": "bajaj-pulsar 135",
+        "brand": "bajaj",
+        "model": "pulsar 135"
+    },
+    "BAJAJ PULSAR 135 MANUAL TALLER": {
+        "manual": "BAJAJ PULSAR 135 MANUAL TALLER",
+        "motorcycle": "bajaj-pulsar 135",
+        "brand": "bajaj",
+        "model": "pulsar 135"
+    },
+    "BAJAJ PULSAR 135LS MANUAL TALLER": {
+        "manual": "BAJAJ PULSAR 135LS MANUAL TALLER",
+        "motorcycle": "bajaj-pulsar 135ls",
+        "brand": "bajaj",
+        "model": "pulsar 135ls"
+    },
+    "BAJAJ PULSAR 150 - 180 MANUAL TALLER 2017": {
+        "manual": "BAJAJ PULSAR 150 - 180 MANUAL TALLER 2017",
+        "motorcycle": "bajaj-pulsar 150 - 180",
+        "brand": "bajaj",
+        "model": "pulsar 150 - 180"
+    },
+    "BAJAJ PULSAR 150 MANUAL TALLER 2016": {
+        "manual": "BAJAJ PULSAR 150 MANUAL TALLER 2016",
+        "motorcycle": "bajaj-pulsar 150",
+        "brand": "bajaj",
+        "model": "pulsar 150"
+    },
+    "BAJAJ PULSAR 150 NEON MANUAL USUARIO": {
+        "manual": "BAJAJ PULSAR 150 NEON MANUAL USUARIO",
+        "motorcycle": "bajaj-pulsar 150 neon",
+        "brand": "bajaj",
+        "model": "pulsar 150 neon"
+    },
+    "BAJAJ PULSAR 150 NS-AS MANUAL PARTES": {
+        "manual": "BAJAJ PULSAR 150 NS-AS MANUAL PARTES",
+        "motorcycle": "bajaj-pulsar 150 ns-as",
+        "brand": "bajaj",
+        "model": "pulsar 150 ns-as"
+    },
+    "BAJAJ PULSAR 160 2019 MANUAL TALLER": {
+        "manual": "BAJAJ PULSAR 160 2019 MANUAL TALLER",
+        "motorcycle": "bajaj-pulsar 160",
+        "brand": "bajaj",
+        "model": "pulsar 160"
+    },
+    "BAJAJ PULSAR 180 GT MANUAL PARTES 2017": {
+        "manual": "BAJAJ PULSAR 180 GT MANUAL PARTES 2017",
+        "motorcycle": "bajaj-pulsar 180 gt",
+        "brand": "bajaj",
+        "model": "pulsar 180 gt"
+    },
+    "BAJAJ PULSAR 180 MANUAL PARTES 2009": {
+        "manual": "BAJAJ PULSAR 180 MANUAL PARTES 2009",
+        "motorcycle": "bajaj-pulsar 180",
+        "brand": "bajaj",
+        "model": "pulsar 180"
+    },
+    "BAJAJ PULSAR 180 MANUAL TALLER": {
+        "manual": "BAJAJ PULSAR 180 MANUAL TALLER",
+        "motorcycle": "bajaj-pulsar 180",
+        "brand": "bajaj",
+        "model": "pulsar 180"
+    },
+    "BAJAJ PULSAR 180UG MANUAL TALLER": {
+        "manual": "BAJAJ PULSAR 180UG MANUAL TALLER",
+        "motorcycle": "bajaj-pulsar 180ug",
+        "brand": "bajaj",
+        "model": "pulsar 180ug"
+    },
+    "BAJAJ PULSAR 200 MANUAL TALLER 2007": {
+        "manual": "BAJAJ PULSAR 200 MANUAL TALLER 2007",
+        "motorcycle": "bajaj-pulsar 200",
+        "brand": "bajaj",
+        "model": "pulsar 200"
+    },
+    "BAJAJ PULSAR 200 UG MANUAL PARTES 2009": {
+        "manual": "BAJAJ PULSAR 200 UG MANUAL PARTES 2009",
+        "motorcycle": "bajaj-pulsar 200 ug",
+        "brand": "bajaj",
+        "model": "pulsar 200 ug"
+    },
+    "BAJAJ PULSAR 220 MANUAL PARTES 2011": {
+        "manual": "BAJAJ PULSAR 220 MANUAL PARTES 2011",
+        "motorcycle": "bajaj-pulsar 220",
+        "brand": "bajaj",
+        "model": "pulsar 220"
+    },
+    "BAJAJ PULSAR 220 MANUAL TALLER 2007": {
+        "manual": "BAJAJ PULSAR 220 MANUAL TALLER 2007",
+        "motorcycle": "bajaj-pulsar 220",
+        "brand": "bajaj",
+        "model": "pulsar 220"
+    },
+    "BAJAJ PULSAR AS150 MANUAL TALLER 2015": {
+        "manual": "BAJAJ PULSAR AS150 MANUAL TALLER 2015",
+        "motorcycle": "bajaj-pulsar as150",
+        "brand": "bajaj",
+        "model": "pulsar as150"
+    },
+    "BAJAJ PULSAR AS200 NS 200 MANUAL PARTES 2018": {
+        "manual": "BAJAJ PULSAR AS200 NS 200 MANUAL PARTES 2018",
+        "motorcycle": "bajaj-pulsar as200 ns 200",
+        "brand": "bajaj",
+        "model": "pulsar as200 ns 200"
+    },
+    "BAJAJ PULSAR AS200 NS200 MANUAL PARTES 2019": {
+        "manual": "BAJAJ PULSAR AS200 NS200 MANUAL PARTES 2019",
+        "motorcycle": "bajaj-pulsar as200 ns200",
+        "brand": "bajaj",
+        "model": "pulsar as200 ns200"
+    },
+    "BAJAJ PULSAR AS200 NS200 MANUAL TALLER 2015": {
+        "manual": "BAJAJ PULSAR AS200 NS200 MANUAL TALLER 2015",
+        "motorcycle": "bajaj-pulsar as200 ns200",
+        "brand": "bajaj",
+        "model": "pulsar as200 ns200"
+    },
+    "BAJAJ PULSAR II MANUAL TALLER": {
+        "manual": "BAJAJ PULSAR II MANUAL TALLER",
+        "motorcycle": "bajaj-pulsar ii",
+        "brand": "bajaj",
+        "model": "pulsar ii"
+    },
+    "BAJAJ PULSAR NS 160 MANUAL TALLER 2017": {
+        "manual": "BAJAJ PULSAR NS 160 MANUAL TALLER 2017",
+        "motorcycle": "bajaj-pulsar ns 160",
+        "brand": "bajaj",
+        "model": "pulsar ns 160"
+    },
+    "BAJAJ PULSAR NS125 MANUAL TALLER": {
+        "manual": "BAJAJ PULSAR NS125 MANUAL TALLER",
+        "motorcycle": "bajaj-pulsar ns125",
+        "brand": "bajaj",
+        "model": "pulsar ns125"
+    },
+    "BAJAJ PULSAR NS150 - AS150 MANUAL SERVICIO": {
+        "manual": "BAJAJ PULSAR NS150 - AS150 MANUAL SERVICIO",
+        "motorcycle": "bajaj-pulsar ns150 - as150",
+        "brand": "bajaj",
+        "model": "pulsar ns150 - as150"
+    },
+    "BAJAJ PULSAR NS150 MANUAL TALLER 2016": {
+        "manual": "BAJAJ PULSAR NS150 MANUAL TALLER 2016",
+        "motorcycle": "bajaj-pulsar ns150",
+        "brand": "bajaj",
+        "model": "pulsar ns150"
+    },
+    "BAJAJ PULSAR NS160 FI MANUAL TALLER 2017": {
+        "manual": "BAJAJ PULSAR NS160 FI MANUAL TALLER 2017",
+        "motorcycle": "bajaj-pulsar ns160 fi",
+        "brand": "bajaj",
+        "model": "pulsar ns160 fi"
+    },
+    "BAJAJ PULSAR NS160 MANUAL TALLER 2016": {
+        "manual": "BAJAJ PULSAR NS160 MANUAL TALLER 2016",
+        "motorcycle": "bajaj-pulsar ns160",
+        "brand": "bajaj",
+        "model": "pulsar ns160"
+    },
+    "BAJAJ PULSAR NS200 - AS200 MANUAL USUARIO": {
+        "manual": "BAJAJ PULSAR NS200 - AS200 MANUAL USUARIO",
+        "motorcycle": "bajaj-pulsar ns200 - as200",
+        "brand": "bajaj",
+        "model": "pulsar ns200 - as200"
+    },
+    "BAJAJ PULSAR NS200 FI MANUAL PARTES 2017": {
+        "manual": "BAJAJ PULSAR NS200 FI MANUAL PARTES 2017",
+        "motorcycle": "bajaj-pulsar ns200 fi",
+        "brand": "bajaj",
+        "model": "pulsar ns200 fi"
+    },
+    "BAJAJ PULSAR NS200 FI MANUAL TALLER 2014": {
+        "manual": "BAJAJ PULSAR NS200 FI MANUAL TALLER 2014",
+        "motorcycle": "bajaj-pulsar ns200 fi",
+        "brand": "bajaj",
+        "model": "pulsar ns200 fi"
+    },
+    "BAJAJ PULSAR NS200 FI MANUL TALLER": {
+        "manual": "BAJAJ PULSAR NS200 FI MANUL TALLER",
+        "motorcycle": "bajaj-pulsar ns200 fi",
+        "brand": "bajaj",
+        "model": "pulsar ns200 fi"
+    },
+    "BAJAJ PULSAR NS200 MANUAL PARTES 2013": {
+        "manual": "BAJAJ PULSAR NS200 MANUAL PARTES 2013",
+        "motorcycle": "bajaj-pulsar ns200",
+        "brand": "bajaj",
+        "model": "pulsar ns200"
+    },
+    "BAJAJ PULSAR NS200 MANUAL PARTES SIN-ABS": {
+        "manual": "BAJAJ PULSAR NS200 MANUAL PARTES SIN-ABS",
+        "motorcycle": "bajaj-pulsar ns200",
+        "brand": "bajaj",
+        "model": "pulsar ns200"
+    },
+    "BAJAJ PULSAR NS200 MANUAL TALLER 2014": {
+        "manual": "BAJAJ PULSAR NS200 MANUAL TALLER 2014",
+        "motorcycle": "bajaj-pulsar ns200",
+        "brand": "bajaj",
+        "model": "pulsar ns200"
+    },
+    "BAJAJ PULSAR NS200 MANUAL TALLER 2018": {
+        "manual": "BAJAJ PULSAR NS200 MANUAL TALLER 2018",
+        "motorcycle": "bajaj-pulsar ns200",
+        "brand": "bajaj",
+        "model": "pulsar ns200"
+    },
+    "BAJAJ PULSAR NS200 MANUAL TALLER": {
+        "manual": "BAJAJ PULSAR NS200 MANUAL TALLER",
+        "motorcycle": "bajaj-pulsar ns200",
+        "brand": "bajaj",
+        "model": "pulsar ns200"
+    },
+    "BAJAJ PULSAR NS200 MANUAL USUARIO": {
+        "manual": "BAJAJ PULSAR NS200 MANUAL USUARIO",
+        "motorcycle": "bajaj-pulsar ns200",
+        "brand": "bajaj",
+        "model": "pulsar ns200"
+    },
+    "BAJAJ PULSAR RS200 FI MANUAL TALLER 2015": {
+        "manual": "BAJAJ PULSAR RS200 FI MANUAL TALLER 2015",
+        "motorcycle": "bajaj-pulsar rs200 fi",
+        "brand": "bajaj",
+        "model": "pulsar rs200 fi"
+    },
+    "BAJAJ PULSAR RS200 MANUAL PARTES 2017": {
+        "manual": "BAJAJ PULSAR RS200 MANUAL PARTES 2017",
+        "motorcycle": "bajaj-pulsar rs200",
+        "brand": "bajaj",
+        "model": "pulsar rs200"
+    },
+    "BAJAJ PULSAR RS200 MANUAL TALLER 2015": {
+        "manual": "BAJAJ PULSAR RS200 MANUAL TALLER 2015",
+        "motorcycle": "bajaj-pulsar rs200",
+        "brand": "bajaj",
+        "model": "pulsar rs200"
+    },
+    "BAJAJ PULSAR RS200 MANUAL TALLER": {
+        "manual": "BAJAJ PULSAR RS200 MANUAL TALLER",
+        "motorcycle": "bajaj-pulsar rs200",
+        "brand": "bajaj",
+        "model": "pulsar rs200"
+    },
+    "BAJAJ QUTE RE60 MANUAL TALLER 2016": {
+        "manual": "BAJAJ QUTE RE60 MANUAL TALLER 2016",
+        "motorcycle": "bajaj-qute re60",
+        "brand": "bajaj",
+        "model": "qute re60"
+    },
+    "BAJAJ RE MANUAL TALLER": {
+        "manual": "BAJAJ RE MANUAL TALLER",
+        "motorcycle": "bajaj-re",
+        "brand": "bajaj",
+        "model": "re"
+    },
+    "BAJAJ RE4 175 MANUAL TALLER": {
+        "manual": "BAJAJ RE4 175 MANUAL TALLER",
+        "motorcycle": "bajaj-re4 175",
+        "brand": "bajaj",
+        "model": "re4 175"
+    },
+    "BAJAJ RE4S TORITO MANUAL TALLER 2016": {
+        "manual": "BAJAJ RE4S TORITO MANUAL TALLER 2016",
+        "motorcycle": "bajaj-re4s torito",
+        "brand": "bajaj",
+        "model": "re4s torito"
+    },
+    "BAJAJ V12 MANUAL TALLER": {
+        "manual": "BAJAJ V12 MANUAL TALLER",
+        "motorcycle": "bajaj-v12",
+        "brand": "bajaj",
+        "model": "v12"
+    },
+    "BAJAJ V15 MANUAL TALLER 2016": {
+        "manual": "BAJAJ V15 MANUAL TALLER 2016",
+        "motorcycle": "bajaj-v15",
+        "brand": "bajaj",
+        "model": "v15"
+    },
+    "BAJAJ XCD125 MANUAL TALLER 2007": {
+        "manual": "BAJAJ XCD125 MANUAL TALLER 2007",
+        "motorcycle": "bajaj-xcd125",
+        "brand": "bajaj",
+        "model": "xcd125"
+    },
+    "BENELLI 180S MANUAL TALLER": {
+        "manual": "BENELLI 180S MANUAL TALLER",
+        "motorcycle": "benelli-180s",
+        "brand": "benelli",
+        "model": "180s"
+    },
+    "BENELLI 180S MANUAL USUARIO 2020": {
+        "manual": "BENELLI 180S MANUAL USUARIO 2020",
+        "motorcycle": "benelli-180s",
+        "brand": "benelli",
+        "model": "180s"
+    },
+    "BENELLI TNT 135 MANUAL TALLER 2021": {
+        "manual": "BENELLI TNT 135 MANUAL TALLER 2021",
+        "motorcycle": "benelli-tnt 135",
+        "brand": "benelli",
+        "model": "tnt 135"
+    },
+    "BENELLI TNT 135 MANUAL USUARIO": {
+        "manual": "BENELLI TNT 135 MANUAL USUARIO",
+        "motorcycle": "benelli-tnt 135",
+        "brand": "benelli",
+        "model": "tnt 135"
+    },
+    "BENELLI TNT 25 - 251S MANUAL TALLER": {
+        "manual": "BENELLI TNT 25 - 251S MANUAL TALLER",
+        "motorcycle": "benelli-tnt 25 - 251s",
+        "brand": "benelli",
+        "model": "tnt 25 - 251s"
+    },
+    "BENELLI TNT 25 MANUAL TALLER (DESARME MOTOR)": {
+        "manual": "BENELLI TNT 25 MANUAL TALLER (DESARME MOTOR)",
+        "motorcycle": "benelli-tnt 25",
+        "brand": "benelli",
+        "model": "tnt 25"
+    },
+    "BENELLI TNT 25 MANUAL TALLER": {
+        "manual": "BENELLI TNT 25 MANUAL TALLER",
+        "motorcycle": "benelli-tnt 25",
+        "brand": "benelli",
+        "model": "tnt 25"
+    },
+    "BMW 650 DIAGRAMA ELECTRICO": {
+        "manual": "BMW 650 DIAGRAMA ELECTRICO",
+        "motorcycle": "bmw-650",
+        "brand": "bmw",
+        "model": "650"
+    },
+    "BMW F650 (GS-GS DAKAR) MANUAL TALLER": {
+        "manual": "BMW F650 (GS-GS DAKAR) MANUAL TALLER",
+        "motorcycle": "bmw-f650 (gs-gs dakar)",
+        "brand": "bmw",
+        "model": "f650 (gs-gs dakar)"
+    },
+    "BMW F800GS MANUAL USUARIO 2009": {
+        "manual": "BMW F800GS MANUAL USUARIO 2009",
+        "motorcycle": "bmw-f800gs",
+        "brand": "bmw",
+        "model": "f800gs"
+    },
+    "BMW F800GS MANUAL USUARIO 2016": {
+        "manual": "BMW F800GS MANUAL USUARIO 2016",
+        "motorcycle": "bmw-f800gs",
+        "brand": "bmw",
+        "model": "f800gs"
+    },
+    "BMW F800GS WIRING DIAGRAM 2010": {
+        "manual": "BMW F800GS WIRING DIAGRAM 2010",
+        "motorcycle": "bmw-f800gs",
+        "brand": "bmw",
+        "model": "f800gs"
+    },
+    "BMW F800GS WIRING DIAGRAM": {
+        "manual": "BMW F800GS WIRING DIAGRAM",
+        "motorcycle": "bmw-f800gs",
+        "brand": "bmw",
+        "model": "f800gs"
+    },
+    "BMW G310 GS MANUAL USUARIO": {
+        "manual": "BMW G310 GS MANUAL USUARIO",
+        "motorcycle": "bmw-g310 gs",
+        "brand": "bmw",
+        "model": "g310 gs"
+    },
+    "BMW R850 - R1100(RT-RS-GS-R) 2000 MANUAL TALLER": {
+        "manual": "BMW R850 - R1100(RT-RS-GS-R) 2000 MANUAL TALLER",
+        "motorcycle": "bmw-r850 - r1100(rt-rs-gs-r)",
+        "brand": "bmw",
+        "model": "r850 - r1100(rt-rs-gs-r)"
+    },
+    "BMW-F700GS MANUAL USUARIO": {
+        "manual": "BMW-F700GS MANUAL USUARIO",
+        "motorcycle": "bmw--f700gs",
+        "brand": "bmw",
+        "model": "-f700gs"
+    },
+    "BMW-F800GS MANUAL USUARIO": {
+        "manual": "BMW-F800GS MANUAL USUARIO",
+        "motorcycle": "bmw--f800gs",
+        "brand": "bmw",
+        "model": "-f800gs"
+    },
+    "CANAM SPYDR RS MANUAL DESEMBALAJE E INSTALACION 2013": {
+        "manual": "CANAM SPYDR RS MANUAL DESEMBALAJE E INSTALACION 2013",
+        "motorcycle": "can-am-canam spydr rs",
+        "brand": "can-am",
+        "model": "canam spydr rs"
+    },
+    "CANAM SPYDR RS MANUAL DESEMBALAJE E INSTALACION 2014": {
+        "manual": "CANAM SPYDR RS MANUAL DESEMBALAJE E INSTALACION 2014",
+        "motorcycle": "can-am-canam spydr rs",
+        "brand": "can-am",
+        "model": "canam spydr rs"
+    },
+    "CANAM SPYDR RT MANUAL USUARIO": {
+        "manual": "CANAM SPYDR RT MANUAL USUARIO",
+        "motorcycle": "can-am-canam spydr rt",
+        "brand": "can-am",
+        "model": "canam spydr rt"
+    },
+    "CANAM SPYDR ST MANUAL DESEMBALAJE E INSTALACION 2014": {
+        "manual": "CANAM SPYDR ST MANUAL DESEMBALAJE E INSTALACION 2014",
+        "motorcycle": "can-am-canam spydr st",
+        "brand": "can-am",
+        "model": "canam spydr st"
+    },
+    "CANAM SPYDR ST MANUAL USUARIO 2014": {
+        "manual": "CANAM SPYDR ST MANUAL USUARIO 2014",
+        "motorcycle": "can-am-canam spydr st",
+        "brand": "can-am",
+        "model": "canam spydr st"
+    },
+    "CFMOTO CF400-ACF650-7B MANUAL TALLER 2017": {
+        "manual": "CFMOTO CF400-ACF650-7B MANUAL TALLER 2017",
+        "motorcycle": "cfmoto-cf400-acf650-7b",
+        "brand": "cfmoto",
+        "model": "cf400-acf650-7b"
+    },
+    "CFMOTO CF650-3 MANUAL TALLER": {
+        "manual": "CFMOTO CF650-3 MANUAL TALLER",
+        "motorcycle": "cfmoto-cf650-3",
+        "brand": "cfmoto",
+        "model": "cf650-3"
+    },
+    "CFMOTO CFORCE 450 CF400AU-L MANUAL TALLER V": {
+        "manual": "CFMOTO CFORCE 450 CF400AU-L MANUAL TALLER V",
+        "motorcycle": "cfmoto-cforce 450 cf400au-l",
+        "brand": "cfmoto",
+        "model": "cforce 450 cf400au-l"
+    },
+    "CFMOTO CFORCE 550 CF500AU-6L MANUAL TALLER V": {
+        "manual": "CFMOTO CFORCE 550 CF500AU-6L MANUAL TALLER V",
+        "motorcycle": "cfmoto-cforce 550 cf500au-6l",
+        "brand": "cfmoto",
+        "model": "cforce 550 cf500au-6l"
+    },
+    "CFMOTO CFORCE 800 CF800-2 MANUAL TALLER V": {
+        "manual": "CFMOTO CFORCE 800 CF800-2 MANUAL TALLER V",
+        "motorcycle": "cfmoto-cforce 800 cf800-2",
+        "brand": "cfmoto",
+        "model": "cforce 800 cf800-2"
+    },
+    "CFMOTO MT 650 CF650-3 MANUAL TALLER V": {
+        "manual": "CFMOTO MT 650 CF650-3 MANUAL TALLER V",
+        "motorcycle": "cfmoto-mt 650 cf650-3",
+        "brand": "cfmoto",
+        "model": "mt 650 cf650-3"
+    },
+    "CFMOTO NK 250 CF250-A MANUAL TALLER V": {
+        "manual": "CFMOTO NK 250 CF250-A MANUAL TALLER V",
+        "motorcycle": "cfmoto-nk 250 cf250-a",
+        "brand": "cfmoto",
+        "model": "nk 250 cf250-a"
+    },
+    "CFMOTO NK 400 CF400-A  MANUAL TALLER V": {
+        "manual": "CFMOTO NK 400 CF400-A  MANUAL TALLER V",
+        "motorcycle": "cfmoto-nk 400 cf400-a",
+        "brand": "cfmoto",
+        "model": "nk 400 cf400-a"
+    },
+    "CFMOTO NK650 MANUAL TALLER 2005": {
+        "manual": "CFMOTO NK650 MANUAL TALLER 2005",
+        "motorcycle": "cfmoto-nk650",
+        "brand": "cfmoto",
+        "model": "nk650"
+    },
+    "CFMOTO UFORCE 550 CF500UU MANUAL TALLER V": {
+        "manual": "CFMOTO UFORCE 550 CF500UU MANUAL TALLER V",
+        "motorcycle": "cfmoto-uforce 550 cf500uu",
+        "brand": "cfmoto",
+        "model": "uforce 550 cf500uu"
+    },
+    "CFMOTO UFORCE 800 CF800UU-A MANUAL TALLER V": {
+        "manual": "CFMOTO UFORCE 800 CF800UU-A MANUAL TALLER V",
+        "motorcycle": "cfmoto-uforce 800 cf800uu-a",
+        "brand": "cfmoto",
+        "model": "uforce 800 cf800uu-a"
+    },
+    "CFMOTO ZFORCE 1": {
+        "manual": "CFMOTO ZFORCE 1",
+        "motorcycle": "cfmoto-zforce 1",
+        "brand": "cfmoto",
+        "model": "zforce 1"
+    },
+    "CFMOTO ZFORCE 550 CF500US MANUAL TALLER 2018 V": {
+        "manual": "CFMOTO ZFORCE 550 CF500US MANUAL TALLER 2018 V",
+        "motorcycle": "cfmoto-zforce 550 cf500us",
+        "brand": "cfmoto",
+        "model": "zforce 550 cf500us"
+    },
+    "CFMOTO ZFORCE 800 CF800US-A MANUAL 2018 V": {
+        "manual": "CFMOTO ZFORCE 800 CF800US-A MANUAL 2018 V",
+        "motorcycle": "cfmoto-zforce 800 cf800us-a",
+        "brand": "cfmoto",
+        "model": "zforce 800 cf800us-a"
+    },
+    "DUCATI 748R MANUAL USUARIO": {
+        "manual": "DUCATI 748R MANUAL USUARIO",
+        "motorcycle": "ducati-748r",
+        "brand": "ducati",
+        "model": "748r"
+    },
+    "DUCATI MONSTER 1000 MANUAL PARTES": {
+        "manual": "DUCATI MONSTER 1000 MANUAL PARTES",
+        "motorcycle": "ducati-monster 1000",
+        "brand": "ducati",
+        "model": "monster 1000"
+    },
+    "DUCATI MONSTER 821 MANUAL TALLER": {
+        "manual": "DUCATI MONSTER 821 MANUAL TALLER",
+        "motorcycle": "ducati-monster 821",
+        "brand": "ducati",
+        "model": "monster 821"
+    },
+    "DUCATI MONSTER 821 MANUAL USUARIO": {
+        "manual": "DUCATI MONSTER 821 MANUAL USUARIO",
+        "motorcycle": "ducati-monster 821",
+        "brand": "ducati",
+        "model": "monster 821"
+    },
+    "HARLEY DAVIDSON SPORTER (59-85 V-TWINS 86-87) GLIDES &ELECTRA GLIDES (59-84) EVOLUTION V-TWINS (84-86) MANUAL TALLER": {
+        "manual": "HARLEY DAVIDSON SPORTER (59-85 V-TWINS 86-87) GLIDES &ELECTRA GLIDES (59-84) EVOLUTION V-TWINS (84-86) MANUAL TALLER",
+        "motorcycle": "harley davidson-sporter (59-85 v-twins 86-87) glides &electra glides (59-84) evolution v-twins (84-86)",
+        "brand": "harley davidson",
+        "model": "sporter (59-85 v-twins 86-87) glides &electra glides (59-84) evolution v-twins (84-86)"
+    },
+    "HERO DASH MANNUAL TALLER": {
+        "manual": "HERO DASH MANNUAL TALLER",
+        "motorcycle": "hero-dash",
+        "brand": "hero",
+        "model": "dash"
+    },
+    "HERO ECO DELUXE MANUAL TALLER": {
+        "manual": "HERO ECO DELUXE MANUAL TALLER",
+        "motorcycle": "hero-eco deluxe",
+        "brand": "hero",
+        "model": "eco deluxe"
+    },
+    "HERO GLAMOUR MANUAL TALLER": {
+        "manual": "HERO GLAMOUR MANUAL TALLER",
+        "motorcycle": "hero-glamour",
+        "brand": "hero",
+        "model": "glamour"
+    },
+    "HERO HF DELUXE MANUAL TALLER": {
+        "manual": "HERO HF DELUXE MANUAL TALLER",
+        "motorcycle": "hero-hf deluxe",
+        "brand": "hero",
+        "model": "hf deluxe"
+    },
+    "HERO HONDA CD100 MANUAL TALLER": {
+        "manual": "HERO HONDA CD100 MANUAL TALLER",
+        "motorcycle": "hero-honda cd100",
+        "brand": "hero",
+        "model": "honda cd100"
+    },
+    "HERO HUNK 150 MANUAL TALLER": {
+        "manual": "HERO HUNK 150 MANUAL TALLER",
+        "motorcycle": "hero-hunk 150",
+        "brand": "hero",
+        "model": "hunk 150"
+    },
+    "HERO HUNK 160R MANUAL USUARIO": {
+        "manual": "HERO HUNK 160R MANUAL USUARIO",
+        "motorcycle": "hero-hunk 160r",
+        "brand": "hero",
+        "model": "hunk 160r"
+    },
+    "HERO HUNK160R FI MANUAL TALLER 2022": {
+        "manual": "HERO HUNK160R FI MANUAL TALLER 2022",
+        "motorcycle": "hero-hunk160r fi",
+        "brand": "hero",
+        "model": "hunk160r fi"
+    },
+    "HERO KARIZMA ZMR 225 MANUAL TALLER": {
+        "manual": "HERO KARIZMA ZMR 225 MANUAL TALLER",
+        "motorcycle": "hero-karizma zmr 225",
+        "brand": "hero",
+        "model": "karizma zmr 225"
+    },
+    "HERO KARIZMA ZMR MANUAL TALLER": {
+        "manual": "HERO KARIZMA ZMR MANUAL TALLER",
+        "motorcycle": "hero-karizma zmr",
+        "brand": "hero",
+        "model": "karizma zmr"
+    },
+    "HERO PASION PRO MANUAL TALLER": {
+        "manual": "HERO PASION PRO MANUAL TALLER",
+        "motorcycle": "hero-pasion pro",
+        "brand": "hero",
+        "model": "pasion pro"
+    },
+    "HERO THRILLER SPORT 150 MANUAL TALLER": {
+        "manual": "HERO THRILLER SPORT 150 MANUAL TALLER",
+        "motorcycle": "hero-thriller sport 150",
+        "brand": "hero",
+        "model": "thriller sport 150"
+    },
+    "HERO XPULSE-200 MANUAL USUARIO": {
+        "manual": "HERO XPULSE-200 MANUAL USUARIO",
+        "motorcycle": "hero-xpulse-200",
+        "brand": "hero",
+        "model": "xpulse-200"
+    },
+    "VOLTA BCN-1505216 MANUAL TALLER": {
+        "manual": "VOLTA BCN-1505216 MANUAL TALLER",
+        "motorcycle": "hero-volta bcn-1505216",
+        "brand": "hero",
+        "model": "volta bcn-1505216"
+    },
+    "HONDA AFRICA TIWN CRF 1000L MANUAL TALLER 2015": {
+        "manual": "HONDA AFRICA TIWN CRF 1000L MANUAL TALLER 2015",
+        "motorcycle": "honda-africa tiwn crf 1000l",
+        "brand": "honda",
+        "model": "africa tiwn crf 1000l"
+    },
+    "HONDA AFRICA TWIN CRF1000 ADVENTURE MANUAL TALLER 2017": {
+        "manual": "HONDA AFRICA TWIN CRF1000 ADVENTURE MANUAL TALLER 2017",
+        "motorcycle": "honda-africa twin crf1000 adventure",
+        "brand": "honda",
+        "model": "africa twin crf1000 adventure"
+    },
+    "HONDA AFRICA TWIN CRF1000 MANUAL TALLER 2015": {
+        "manual": "HONDA AFRICA TWIN CRF1000 MANUAL TALLER 2015",
+        "motorcycle": "honda-africa twin crf1000",
+        "brand": "honda",
+        "model": "africa twin crf1000"
+    },
+    "HONDA BIZ125KS MANUAL TALLER": {
+        "manual": "HONDA BIZ125KS MANUAL TALLER",
+        "motorcycle": "honda-biz125ks",
+        "brand": "honda",
+        "model": "biz125ks"
+    },
+    "HONDA C100 BIZ MANUAL TALLER 1998": {
+        "manual": "HONDA C100 BIZ MANUAL TALLER 1998",
+        "motorcycle": "honda-c100 biz",
+        "brand": "honda",
+        "model": "c100 biz"
+    },
+    "HONDA C100 BIZ MANUAL TALLER 2002": {
+        "manual": "HONDA C100 BIZ MANUAL TALLER 2002",
+        "motorcycle": "honda-c100 biz",
+        "brand": "honda",
+        "model": "c100 biz"
+    },
+    "HONDA C100 BIZ MANUAL TALLER APENDICE": {
+        "manual": "HONDA C100 BIZ MANUAL TALLER APENDICE",
+        "motorcycle": "honda-c100 biz",
+        "brand": "honda",
+        "model": "c100 biz"
+    },
+    "HONDA C100 BIZ MANUAL TALLER": {
+        "manual": "HONDA C100 BIZ MANUAL TALLER",
+        "motorcycle": "honda-c100 biz",
+        "brand": "honda",
+        "model": "c100 biz"
+    },
+    "HONDA C100 WAVE MAUAL PARTES": {
+        "manual": "HONDA C100 WAVE MAUAL PARTES",
+        "motorcycle": "honda-c100 wave",
+        "brand": "honda",
+        "model": "c100 wave"
+    },
+    "HONDA C105 BIZ MANUAL TALLER APENDICE ARGENTINA": {
+        "manual": "HONDA C105 BIZ MANUAL TALLER APENDICE ARGENTINA",
+        "motorcycle": "honda-c105 biz",
+        "brand": "honda",
+        "model": "c105 biz"
+    },
+    "HONDA C70 MANUAL TALLER 1982": {
+        "manual": "HONDA C70 MANUAL TALLER 1982",
+        "motorcycle": "honda-c70",
+        "brand": "honda",
+        "model": "c70"
+    },
+    "HONDA CB125 MANUAL PARTES": {
+        "manual": "HONDA CB125 MANUAL PARTES",
+        "motorcycle": "honda-cb125",
+        "brand": "honda",
+        "model": "cb125"
+    },
+    "HONDA CB125E E-STORM MANUAL TALLER 2006": {
+        "manual": "HONDA CB125E E-STORM MANUAL TALLER 2006",
+        "motorcycle": "honda-cb125e e-storm",
+        "brand": "honda",
+        "model": "cb125e e-storm"
+    },
+    "HONDA CB125S MANUAL TALLER 2018": {
+        "manual": "HONDA CB125S MANUAL TALLER 2018",
+        "motorcycle": "honda-cb125s",
+        "brand": "honda",
+        "model": "cb125s"
+    },
+    "HONDA CB150 INVICTA MANUAL PARTES": {
+        "manual": "HONDA CB150 INVICTA MANUAL PARTES",
+        "motorcycle": "honda-cb150 invicta",
+        "brand": "honda",
+        "model": "cb150 invicta"
+    },
+    "HONDA CB160F HORNET MANUAL TALLER 2015": {
+        "manual": "HONDA CB160F HORNET MANUAL TALLER 2015",
+        "motorcycle": "honda-cb160f hornet",
+        "brand": "honda",
+        "model": "cb160f hornet"
+    },
+    "HONDA CB160R HORNET MANUAL TALLER 2015": {
+        "manual": "HONDA CB160R HORNET MANUAL TALLER 2015",
+        "motorcycle": "honda-cb160r hornet",
+        "brand": "honda",
+        "model": "cb160r hornet"
+    },
+    "HONDA CB190R MANUAL TALLER 2016": {
+        "manual": "HONDA CB190R MANUAL TALLER 2016",
+        "motorcycle": "honda-cb190r",
+        "brand": "honda",
+        "model": "cb190r"
+    },
+    "HONDA CB250 TWISTER MANUAL TALLER 2015": {
+        "manual": "HONDA CB250 TWISTER MANUAL TALLER 2015",
+        "motorcycle": "honda-cb250 twister",
+        "brand": "honda",
+        "model": "cb250 twister"
+    },
+    "HONDA CB650R MANUAL TALLER 2019": {
+        "manual": "HONDA CB650R MANUAL TALLER 2019",
+        "motorcycle": "honda-cb650r",
+        "brand": "honda",
+        "model": "cb650r"
+    },
+    "HONDA CB750F2 MANUAL TALLER 1992": {
+        "manual": "HONDA CB750F2 MANUAL TALLER 1992",
+        "motorcycle": "honda-cb750f2",
+        "brand": "honda",
+        "model": "cb750f2"
+    },
+    "HONDA CBF110 MANUAL TALLER": {
+        "manual": "HONDA CBF110 MANUAL TALLER",
+        "motorcycle": "honda-cbf110",
+        "brand": "honda",
+        "model": "cbf110"
+    },
+    "HONDA CBF125 STUNNER MANUAL TALLER 2008": {
+        "manual": "HONDA CBF125 STUNNER MANUAL TALLER 2008",
+        "motorcycle": "honda-cbf125 stunner",
+        "brand": "honda",
+        "model": "cbf125 stunner"
+    },
+    "HONDA CBF150 MANUAL PARTES": {
+        "manual": "HONDA CBF150 MANUAL PARTES",
+        "motorcycle": "honda-cbf150",
+        "brand": "honda",
+        "model": "cbf150"
+    },
+    "HONDA CBF150 MANUAL TALLER 2011": {
+        "manual": "HONDA CBF150 MANUAL TALLER 2011",
+        "motorcycle": "honda-cbf150",
+        "brand": "honda",
+        "model": "cbf150"
+    },
+    "HONDA CBF190WH MANUAL TALLER 2016": {
+        "manual": "HONDA CBF190WH MANUAL TALLER 2016",
+        "motorcycle": "honda-cbf190wh",
+        "brand": "honda",
+        "model": "cbf190wh"
+    },
+    "HONDA CBF250 MANUAL TALLER 2008": {
+        "manual": "HONDA CBF250 MANUAL TALLER 2008",
+        "motorcycle": "honda-cbf250",
+        "brand": "honda",
+        "model": "cbf250"
+    },
+    "HONDA CBF300NA MANUAL TALLER 2019": {
+        "manual": "HONDA CBF300NA MANUAL TALLER 2019",
+        "motorcycle": "honda-cbf300na",
+        "brand": "honda",
+        "model": "cbf300na"
+    },
+    "HONDA CBR1000F MANUAL TALLER 1992": {
+        "manual": "HONDA CBR1000F MANUAL TALLER 1992",
+        "motorcycle": "honda-cbr1000f",
+        "brand": "honda",
+        "model": "cbr1000f"
+    },
+    "HONDA CBR1000RR MANUAL TALLER 2010": {
+        "manual": "HONDA CBR1000RR MANUAL TALLER 2010",
+        "motorcycle": "honda-cbr1000rr",
+        "brand": "honda",
+        "model": "cbr1000rr"
+    },
+    "HONDA CBR1000RR MANUAL TALLER SUPLEMENTARIO 2006": {
+        "manual": "HONDA CBR1000RR MANUAL TALLER SUPLEMENTARIO 2006",
+        "motorcycle": "honda-cbr1000rr",
+        "brand": "honda",
+        "model": "cbr1000rr"
+    },
+    "HONDA CBR250 MANUAL TALLER": {
+        "manual": "HONDA CBR250 MANUAL TALLER",
+        "motorcycle": "honda-cbr250",
+        "brand": "honda",
+        "model": "cbr250"
+    },
+    "HONDA CBR250R MANUAL USUARIO 2010": {
+        "manual": "HONDA CBR250R MANUAL USUARIO 2010",
+        "motorcycle": "honda-cbr250r",
+        "brand": "honda",
+        "model": "cbr250r"
+    },
+    "HONDA CBR250RB MANUAL TALLER 2011": {
+        "manual": "HONDA CBR250RB MANUAL TALLER 2011",
+        "motorcycle": "honda-cbr250rb",
+        "brand": "honda",
+        "model": "cbr250rb"
+    },
+    "HONDA CBR500R MANUAL TALLER 2013": {
+        "manual": "HONDA CBR500R MANUAL TALLER 2013",
+        "motorcycle": "honda-cbr500r",
+        "brand": "honda",
+        "model": "cbr500r"
+    },
+    "HONDA CBR500R MANUAL TALLER 2017": {
+        "manual": "HONDA CBR500R MANUAL TALLER 2017",
+        "motorcycle": "honda-cbr500r",
+        "brand": "honda",
+        "model": "cbr500r"
+    },
+    "HONDA CBR500R MNAUL TALLER 2013": {
+        "manual": "HONDA CBR500R MNAUL TALLER 2013",
+        "motorcycle": "honda-cbr500r",
+        "brand": "honda",
+        "model": "cbr500r"
+    },
+    "HONDA CBR600 (K00) MANUAL TALLER 2000": {
+        "manual": "HONDA CBR600 (K00) MANUAL TALLER 2000",
+        "motorcycle": "honda-cbr600 (k00)",
+        "brand": "honda",
+        "model": "cbr600 (k00)"
+    },
+    "HONDA CBR600F MANUAL TALLER 2001": {
+        "manual": "HONDA CBR600F MANUAL TALLER 2001",
+        "motorcycle": "honda-cbr600f",
+        "brand": "honda",
+        "model": "cbr600f"
+    },
+    "HONDA CBR600F2 MANUAL TALLER 1993": {
+        "manual": "HONDA CBR600F2 MANUAL TALLER 1993",
+        "motorcycle": "honda-cbr600f2",
+        "brand": "honda",
+        "model": "cbr600f2"
+    },
+    "HONDA CBR600F3 MANUAL TALLER 1996": {
+        "manual": "HONDA CBR600F3 MANUAL TALLER 1996",
+        "motorcycle": "honda-cbr600f3",
+        "brand": "honda",
+        "model": "cbr600f3"
+    },
+    "HONDA CBR600RR ABS MANUAL TALLER 2008": {
+        "manual": "HONDA CBR600RR ABS MANUAL TALLER 2008",
+        "motorcycle": "honda-cbr600rr",
+        "brand": "honda",
+        "model": "cbr600rr"
+    },
+    "HONDA CBR650F MANUAL TALLER 2014": {
+        "manual": "HONDA CBR650F MANUAL TALLER 2014",
+        "motorcycle": "honda-cbr650f",
+        "brand": "honda",
+        "model": "cbr650f"
+    },
+    "HONDA CBX250 MANUAL TALLER 2006": {
+        "manual": "HONDA CBX250 MANUAL TALLER 2006",
+        "motorcycle": "honda-cbx250",
+        "brand": "honda",
+        "model": "cbx250"
+    },
+    "HONDA CBX250 TWISTER MANUAL TALLER 2013": {
+        "manual": "HONDA CBX250 TWISTER MANUAL TALLER 2013",
+        "motorcycle": "honda-cbx250 twister",
+        "brand": "honda",
+        "model": "cbx250 twister"
+    },
+    "HONDA CG125 TITAN KS-ES CARGO MANUAL TALLER 2001": {
+        "manual": "HONDA CG125 TITAN KS-ES CARGO MANUAL TALLER 2001",
+        "motorcycle": "honda-cg125 titan ks-es cargo",
+        "brand": "honda",
+        "model": "cg125 titan ks-es cargo"
+    },
+    "HONDA CG125 TITAN KS-ES-KSE CARGO MANUAL TALLER 2002": {
+        "manual": "HONDA CG125 TITAN KS-ES-KSE CARGO MANUAL TALLER 2002",
+        "motorcycle": "honda-cg125 titan ks-es-kse cargo",
+        "brand": "honda",
+        "model": "cg125 titan ks-es-kse cargo"
+    },
+    "HONDA CG125 TITAN- CARGO MANUAL TALLER": {
+        "manual": "HONDA CG125 TITAN- CARGO MANUAL TALLER",
+        "motorcycle": "honda-cg125 titan- cargo",
+        "brand": "honda",
+        "model": "cg125 titan- cargo"
+    },
+    "HONDA CLICK 125 ANC125 MANUAL TALLER 2011": {
+        "manual": "HONDA CLICK 125 ANC125 MANUAL TALLER 2011",
+        "motorcycle": "honda-click 125 anc125",
+        "brand": "honda",
+        "model": "click 125 anc125"
+    },
+    "HONDA CRF150F MANUAL TALLER 2005": {
+        "manual": "HONDA CRF150F MANUAL TALLER 2005",
+        "motorcycle": "honda-crf150f",
+        "brand": "honda",
+        "model": "crf150f"
+    },
+    "HONDA CRF150R-RB MANUAL TALLER 2009": {
+        "manual": "HONDA CRF150R-RB MANUAL TALLER 2009",
+        "motorcycle": "honda-crf150r-rb",
+        "brand": "honda",
+        "model": "crf150r-rb"
+    },
+    "HONDA CRF250L MANUAL TALLER 2012": {
+        "manual": "HONDA CRF250L MANUAL TALLER 2012",
+        "motorcycle": "honda-crf250l",
+        "brand": "honda",
+        "model": "crf250l"
+    },
+    "HONDA CRF250R MANUAL USUARIO 2005": {
+        "manual": "HONDA CRF250R MANUAL USUARIO 2005",
+        "motorcycle": "honda-crf250r",
+        "brand": "honda",
+        "model": "crf250r"
+    },
+    "HONDA CRF450X MANUAL TALLER 2007": {
+        "manual": "HONDA CRF450X MANUAL TALLER 2007",
+        "motorcycle": "honda-crf450x",
+        "brand": "honda",
+        "model": "crf450x"
+    },
+    "HONDA DIO 110 SCV110FB MANUAL TALLER 2012": {
+        "manual": "HONDA DIO 110 SCV110FB MANUAL TALLER 2012",
+        "motorcycle": "honda-dio 110 scv110fb",
+        "brand": "honda",
+        "model": "dio 110 scv110fb"
+    },
+    "HONDA DREAM NEO CB 110 MANUAL TALLER 2013": {
+        "manual": "HONDA DREAM NEO CB 110 MANUAL TALLER 2013",
+        "motorcycle": "honda-dream neo cb 110",
+        "brand": "honda",
+        "model": "dream neo cb 110"
+    },
+    "HONDA ECO DELUXE 100 (NEW) MNUAL PARTES": {
+        "manual": "HONDA ECO DELUXE 100 (NEW) MNUAL PARTES",
+        "motorcycle": "honda-eco deluxe 100",
+        "brand": "honda",
+        "model": "eco deluxe 100"
+    },
+    "HONDA ECO DELUXE CD DELUXE - CD DAWN MANUAL TALLER": {
+        "manual": "HONDA ECO DELUXE CD DELUXE - CD DAWN MANUAL TALLER",
+        "motorcycle": "honda-eco deluxe cd deluxe - cd dawn",
+        "brand": "honda",
+        "model": "eco deluxe cd deluxe - cd dawn"
+    },
+    "HONDA ECO DELUXE CD100 (HERO) MANUAL TALLER": {
+        "manual": "HONDA ECO DELUXE CD100 (HERO) MANUAL TALLER",
+        "motorcycle": "honda-eco deluxe cd100 (hero)",
+        "brand": "honda",
+        "model": "eco deluxe cd100 (hero)"
+    },
+    "HONDA ELITE  SC125 MANUAL TALLER 2004": {
+        "manual": "HONDA ELITE  SC125 MANUAL TALLER 2004",
+        "motorcycle": "honda-elite sc125",
+        "brand": "honda",
+        "model": "elite sc125"
+    },
+    "HONDA ELITE SC125 MANUAL PARTES": {
+        "manual": "HONDA ELITE SC125 MANUAL PARTES",
+        "motorcycle": "honda-elite sc125",
+        "brand": "honda",
+        "model": "elite sc125"
+    },
+    "HONDA ESTORM MANUAL PARTES": {
+        "manual": "HONDA ESTORM MANUAL PARTES",
+        "motorcycle": "honda-estorm",
+        "brand": "honda",
+        "model": "estorm"
+    },
+    "HONDA GLR125 MANUAL TALLER SUPLEMENTARIO 2017": {
+        "manual": "HONDA GLR125 MANUAL TALLER SUPLEMENTARIO 2017",
+        "motorcycle": "honda-glr125",
+        "brand": "honda",
+        "model": "glr125"
+    },
+    "HONDA LEAD NHX110 MANUAL TALLER 2009": {
+        "manual": "HONDA LEAD NHX110 MANUAL TALLER 2009",
+        "motorcycle": "honda-lead nhx110",
+        "brand": "honda",
+        "model": "lead nhx110"
+    },
+    "HONDA MAGNA VF750C MANUAL TALLER 1994": {
+        "manual": "HONDA MAGNA VF750C MANUAL TALLER 1994",
+        "motorcycle": "honda-magna vf750c",
+        "brand": "honda",
+        "model": "magna vf750c"
+    },
+    "HONDA MANUAL COMUN DE SERVICIO 1989": {
+        "manual": "HONDA MANUAL COMUN DE SERVICIO 1989",
+        "motorcycle": "honda",
+        "brand": "honda",
+        "model": null
+    },
+    "HONDA MC250 MANUAL TALLER 2019": {
+        "manual": "HONDA MC250 MANUAL TALLER 2019",
+        "motorcycle": "honda-mc250",
+        "brand": "honda",
+        "model": "mc250"
+    },
+    "HONDA MC3 MANUAL TALLER 2011": {
+        "manual": "HONDA MC3 MANUAL TALLER 2011",
+        "motorcycle": "honda-mc3",
+        "brand": "honda",
+        "model": "mc3"
+    },
+    "HONDA NAVI NVA110 MANUAL TALLER 2021": {
+        "manual": "HONDA NAVI NVA110 MANUAL TALLER 2021",
+        "motorcycle": "honda-navi nva110",
+        "brand": "honda",
+        "model": "navi nva110"
+    },
+    "HONDA NC700X MANUAL TALLER 2013": {
+        "manual": "HONDA NC700X MANUAL TALLER 2013",
+        "motorcycle": "honda-nc700x",
+        "brand": "honda",
+        "model": "nc700x"
+    },
+    "HONDA NC750X MANUAL TALLER 2013": {
+        "manual": "HONDA NC750X MANUAL TALLER 2013",
+        "motorcycle": "honda-nc750x",
+        "brand": "honda",
+        "model": "nc750x"
+    },
+    "HONDA NC750X MANUAL TALLER 2017": {
+        "manual": "HONDA NC750X MANUAL TALLER 2017",
+        "motorcycle": "honda-nc750x",
+        "brand": "honda",
+        "model": "nc750x"
+    },
+    "HONDA NT700VA MANUAL TALLER 2005": {
+        "manual": "HONDA NT700VA MANUAL TALLER 2005",
+        "motorcycle": "honda-nt700va",
+        "brand": "honda",
+        "model": "nt700va"
+    },
+    "HONDA NX-4 FALCON MANUAL PREPARACION 1999": {
+        "manual": "HONDA NX-4 FALCON MANUAL PREPARACION 1999",
+        "motorcycle": "honda-nx-4 falcon",
+        "brand": "honda",
+        "model": "nx-4 falcon"
+    },
+    "HONDA NX-4 FALCON MANUAL TALLER": {
+        "manual": "HONDA NX-4 FALCON MANUAL TALLER",
+        "motorcycle": "honda-nx-4 falcon",
+        "brand": "honda",
+        "model": "nx-4 falcon"
+    },
+    "HONDA NXR 125 MANUAL PARTES": {
+        "manual": "HONDA NXR 125 MANUAL PARTES",
+        "motorcycle": "honda-nxr 125",
+        "brand": "honda",
+        "model": "nxr 125"
+    },
+    "HONDA NXR125 BROSS MANUAL TALLER": {
+        "manual": "HONDA NXR125 BROSS MANUAL TALLER",
+        "motorcycle": "honda-nxr125 bross",
+        "brand": "honda",
+        "model": "nxr125 bross"
+    },
+    "HONDA PASION 100 MANUAL TALLER": {
+        "manual": "HONDA PASION 100 MANUAL TALLER",
+        "motorcycle": "honda-pasion 100",
+        "brand": "honda",
+        "model": "pasion 100"
+    },
+    "HONDA PCX150 MANUAL TALLER 2012": {
+        "manual": "HONDA PCX150 MANUAL TALLER 2012",
+        "motorcycle": "honda-pcx150",
+        "brand": "honda",
+        "model": "pcx150"
+    },
+    "HONDA PCX150 MANUAL TALLER 2021": {
+        "manual": "HONDA PCX150 MANUAL TALLER 2021",
+        "motorcycle": "honda-pcx150",
+        "brand": "honda",
+        "model": "pcx150"
+    },
+    "HONDA SHADOW VT1100 (85-98) MANUAL TALLER 1999": {
+        "manual": "HONDA SHADOW VT1100 (85-98) MANUAL TALLER 1999",
+        "motorcycle": "honda-shadow vt1100 (85-98)",
+        "brand": "honda",
+        "model": "shadow vt1100 (85-98)"
+    },
+    "HONDA SHADOW VT1100C (97-03) VT1100T (98-01) MANUAL TALLER 2003": {
+        "manual": "HONDA SHADOW VT1100C (97-03) VT1100T (98-01) MANUAL TALLER 2003",
+        "motorcycle": "honda-shadow vt1100c (97-03) vt1100t (98-01)",
+        "brand": "honda",
+        "model": "shadow vt1100c (97-03) vt1100t (98-01)"
+    },
+    "HONDA SHADOW VT600C MANUAL TALLER 1996": {
+        "manual": "HONDA SHADOW VT600C MANUAL TALLER 1996",
+        "motorcycle": "honda-shadow vt600c",
+        "brand": "honda",
+        "model": "shadow vt600c"
+    },
+    "HONDA SHADOW VT700 (84-85) VT750 (83) MANUAL TALLER 1984": {
+        "manual": "HONDA SHADOW VT700 (84-85) VT750 (83) MANUAL TALLER 1984",
+        "motorcycle": "honda-shadow vt700 (84-85) vt750 (83)",
+        "brand": "honda",
+        "model": "shadow vt700 (84-85) vt750 (83)"
+    },
+    "HONDA SPLENDOR NXG (NEW) MANUAL PARTES": {
+        "manual": "HONDA SPLENDOR NXG (NEW) MANUAL PARTES",
+        "motorcycle": "honda-splendor nxg",
+        "brand": "honda",
+        "model": "splendor nxg"
+    },
+    "HONDA ST1300 MANUAL TALLER 2002": {
+        "manual": "HONDA ST1300 MANUAL TALLER 2002",
+        "motorcycle": "honda-st1300",
+        "brand": "honda",
+        "model": "st1300"
+    },
+    "HONDA TRX300 MANUAL TALLER": {
+        "manual": "HONDA TRX300 MANUAL TALLER",
+        "motorcycle": "honda-trx300",
+        "brand": "honda",
+        "model": "trx300"
+    },
+    "HONDA TRX350 MANUAL TALLER 2002": {
+        "manual": "HONDA TRX350 MANUAL TALLER 2002",
+        "motorcycle": "honda-trx350",
+        "brand": "honda",
+        "model": "trx350"
+    },
+    "HONDA TRX420 MANUAL TALLER": {
+        "manual": "HONDA TRX420 MANUAL TALLER",
+        "motorcycle": "honda-trx420",
+        "brand": "honda",
+        "model": "trx420"
+    },
+    "HONDA TRX680 MANUAL TALLER 2005": {
+        "manual": "HONDA TRX680 MANUAL TALLER 2005",
+        "motorcycle": "honda-trx680",
+        "brand": "honda",
+        "model": "trx680"
+    },
+    "HONDA VF700F (84-85) VF750F (83-84) MANUAL TALLER 1984": {
+        "manual": "HONDA VF700F (84-85) VF750F (83-84) MANUAL TALLER 1984",
+        "motorcycle": "honda-vf700f (84-85) vf750f (83-84)",
+        "brand": "honda",
+        "model": "vf700f (84-85) vf750f (83-84)"
+    },
+    "HONDA VF750 MANUAL TALLER 1998": {
+        "manual": "HONDA VF750 MANUAL TALLER 1998",
+        "motorcycle": "honda-vf750",
+        "brand": "honda",
+        "model": "vf750"
+    },
+    "HONDA VFR1200F MANUAL TALLER 2010": {
+        "manual": "HONDA VFR1200F MANUAL TALLER 2010",
+        "motorcycle": "honda-vfr1200f",
+        "brand": "honda",
+        "model": "vfr1200f"
+    },
+    "HONDA VFR800F MANUAL TALLER 2014": {
+        "manual": "HONDA VFR800F MANUAL TALLER 2014",
+        "motorcycle": "honda-vfr800f",
+        "brand": "honda",
+        "model": "vfr800f"
+    },
+    "HONDA VTX1800C MANUAL TALLER 2001": {
+        "manual": "HONDA VTX1800C MANUAL TALLER 2001",
+        "motorcycle": "honda-vtx1800c",
+        "brand": "honda",
+        "model": "vtx1800c"
+    },
+    "HONDA WAVE AFS110 MANUAL TALLER 2012": {
+        "manual": "HONDA WAVE AFS110 MANUAL TALLER 2012",
+        "motorcycle": "honda-wave afs110",
+        "brand": "honda",
+        "model": "wave afs110"
+    },
+    "HONDA WAVE NF100 MANUAL TALLER 2002": {
+        "manual": "HONDA WAVE NF100 MANUAL TALLER 2002",
+        "motorcycle": "honda-wave nf100",
+        "brand": "honda",
+        "model": "wave nf100"
+    },
+    "HONDA WAVE NF100 MANUAL TALLER 2011": {
+        "manual": "HONDA WAVE NF100 MANUAL TALLER 2011",
+        "motorcycle": "honda-wave nf100",
+        "brand": "honda",
+        "model": "wave nf100"
+    },
+    "HONDA WAVE NF100M MANUAL PARTES 2005": {
+        "manual": "HONDA WAVE NF100M MANUAL PARTES 2005",
+        "motorcycle": "honda-wave nf100m",
+        "brand": "honda",
+        "model": "wave nf100m"
+    },
+    "HONDA WAVE NF100M MANUAL TALLER 2005": {
+        "manual": "HONDA WAVE NF100M MANUAL TALLER 2005",
+        "motorcycle": "honda-wave nf100m",
+        "brand": "honda",
+        "model": "wave nf100m"
+    },
+    "HONDA XL200 MANUAL PARTES": {
+        "manual": "HONDA XL200 MANUAL PARTES",
+        "motorcycle": "honda-xl200",
+        "brand": "honda",
+        "model": "xl200"
+    },
+    "HONDA XL200 MANUAL TALLER 2001": {
+        "manual": "HONDA XL200 MANUAL TALLER 2001",
+        "motorcycle": "honda-xl200",
+        "brand": "honda",
+        "model": "xl200"
+    },
+    "HONDA XLR125 MANUAL PARTES": {
+        "manual": "HONDA XLR125 MANUAL PARTES",
+        "motorcycle": "honda-xlr125",
+        "brand": "honda",
+        "model": "xlr125"
+    },
+    "HONDA XLR125 MANUAL TALLER APENDICE": {
+        "manual": "HONDA XLR125 MANUAL TALLER APENDICE",
+        "motorcycle": "honda-xlr125",
+        "brand": "honda",
+        "model": "xlr125"
+    },
+    "HONDA XLR125 MANUAL TALLER": {
+        "manual": "HONDA XLR125 MANUAL TALLER",
+        "motorcycle": "honda-xlr125",
+        "brand": "honda",
+        "model": "xlr125"
+    },
+    "HONDA XR125L MANUAL PARTES 2012": {
+        "manual": "HONDA XR125L MANUAL PARTES 2012",
+        "motorcycle": "honda-xr125l",
+        "brand": "honda",
+        "model": "xr125l"
+    },
+    "HONDA XR125L MANUAL TALLER 2012": {
+        "manual": "HONDA XR125L MANUAL TALLER 2012",
+        "motorcycle": "honda-xr125l",
+        "brand": "honda",
+        "model": "xr125l"
+    },
+    "HONDA XR150L MANUAL TALLER 2014": {
+        "manual": "HONDA XR150L MANUAL TALLER 2014",
+        "motorcycle": "honda-xr150l",
+        "brand": "honda",
+        "model": "xr150l"
+    },
+    "HONDA XR190L MANUAL TALLER 2017": {
+        "manual": "HONDA XR190L MANUAL TALLER 2017",
+        "motorcycle": "honda-xr190l",
+        "brand": "honda",
+        "model": "xr190l"
+    },
+    "HONDA XR200R MANUAL TALLER": {
+        "manual": "HONDA XR200R MANUAL TALLER",
+        "motorcycle": "honda-xr200r",
+        "brand": "honda",
+        "model": "xr200r"
+    },
+    "HONDA XR250 TORNADO MANUAL PARTES 2001": {
+        "manual": "HONDA XR250 TORNADO MANUAL PARTES 2001",
+        "motorcycle": "honda-xr250 tornado",
+        "brand": "honda",
+        "model": "xr250 tornado"
+    },
+    "HONDA XR250 TORNADO MANUAL PARTES": {
+        "manual": "HONDA XR250 TORNADO MANUAL PARTES",
+        "motorcycle": "honda-xr250 tornado",
+        "brand": "honda",
+        "model": "xr250 tornado"
+    },
+    "HONDA XR250 TORNADO MANUAL TALLER 2001": {
+        "manual": "HONDA XR250 TORNADO MANUAL TALLER 2001",
+        "motorcycle": "honda-xr250 tornado",
+        "brand": "honda",
+        "model": "xr250 tornado"
+    },
+    "HONDA XR250 TORNADO MANUAL TALLER SUPLEMENTARIO": {
+        "manual": "HONDA XR250 TORNADO MANUAL TALLER SUPLEMENTARIO",
+        "motorcycle": "honda-xr250 tornado",
+        "brand": "honda",
+        "model": "xr250 tornado"
+    },
+    "HONDA XR250 TORNADO MANUAL TALLER": {
+        "manual": "HONDA XR250 TORNADO MANUAL TALLER",
+        "motorcycle": "honda-xr250 tornado",
+        "brand": "honda",
+        "model": "xr250 tornado"
+    },
+    "HONDA XR300A MANUAL PARTES 2013": {
+        "manual": "HONDA XR300A MANUAL PARTES 2013",
+        "motorcycle": "honda-xr300a",
+        "brand": "honda",
+        "model": "xr300a"
+    },
+    "HONDA XR650R MANUAL TALLER 2000": {
+        "manual": "HONDA XR650R MANUAL TALLER 2000",
+        "motorcycle": "honda-xr650r",
+        "brand": "honda",
+        "model": "xr650r"
+    },
+    "HONDA XRE190 MANUAL TALLER 2016": {
+        "manual": "HONDA XRE190 MANUAL TALLER 2016",
+        "motorcycle": "honda-xre190",
+        "brand": "honda",
+        "model": "xre190"
+    },
+    "HONDA XRE190 MANUAL USUARIO 2017": {
+        "manual": "HONDA XRE190 MANUAL USUARIO 2017",
+        "motorcycle": "honda-xre190",
+        "brand": "honda",
+        "model": "xre190"
+    },
+    "HONDA XRE300 ABS MANUAL USUARIO 2020": {
+        "manual": "HONDA XRE300 ABS MANUAL USUARIO 2020",
+        "motorcycle": "honda-xre300",
+        "brand": "honda",
+        "model": "xre300"
+    },
+    "HONDA XRE300 MANUAL TALLER 20": {
+        "manual": "HONDA XRE300 MANUAL TALLER 20",
+        "motorcycle": "honda-xre300",
+        "brand": "honda",
+        "model": "xre300"
+    },
+    "HONDA XRE300 MANUAL TALLER 2013": {
+        "manual": "HONDA XRE300 MANUAL TALLER 2013",
+        "motorcycle": "honda-xre300",
+        "brand": "honda",
+        "model": "xre300"
+    },
+    "HONDA XRE300 MANUAL TALLER 2015": {
+        "manual": "HONDA XRE300 MANUAL TALLER 2015",
+        "motorcycle": "honda-xre300",
+        "brand": "honda",
+        "model": "xre300"
+    },
+    "HONDA XRE300 MANUAL USUARIO 2017": {
+        "manual": "HONDA XRE300 MANUAL USUARIO 2017",
+        "motorcycle": "honda-xre300",
+        "brand": "honda",
+        "model": "xre300"
+    },
+    "HONDA XRE300A MANUAL TALLER 2015": {
+        "manual": "HONDA XRE300A MANUAL TALLER 2015",
+        "motorcycle": "honda-xre300a",
+        "brand": "honda",
+        "model": "xre300a"
+    },
+    "HONDA \u00c9LITE CHA125 MANUAL TALLER 2013": {
+        "manual": "HONDA \u00c9LITE CHA125 MANUAL TALLER 2013",
+        "motorcycle": "honda-\u00e9lite cha125",
+        "brand": "honda",
+        "model": "\u00e9lite cha125"
+    },
+    "HUSQVARNA FE350 MANUAL DE USUARIIO": {
+        "manual": "HUSQVARNA FE350 MANUAL DE USUARIIO",
+        "motorcycle": "husqvarna-fe350",
+        "brand": "husqvarna",
+        "model": "fe350"
+    },
+    "ITALIKA AT110 MANUAL PARTES 2013": {
+        "manual": "ITALIKA AT110 MANUAL PARTES 2013",
+        "motorcycle": "italika-at110",
+        "brand": "italika",
+        "model": "at110"
+    },
+    "ITALIKA CS125 MANUAL TALLER": {
+        "manual": "ITALIKA CS125 MANUAL TALLER",
+        "motorcycle": "italika-cs125",
+        "brand": "italika",
+        "model": "cs125"
+    },
+    "ITALIKA DS 150 MANUL TALLER": {
+        "manual": "ITALIKA DS 150 MANUL TALLER",
+        "motorcycle": "italika-ds 150",
+        "brand": "italika",
+        "model": "ds 150"
+    },
+    "ITALIKA FT150 MANUAL TALLER": {
+        "manual": "ITALIKA FT150 MANUAL TALLER",
+        "motorcycle": "italika-ft150",
+        "brand": "italika",
+        "model": "ft150"
+    },
+    "ITALIKA TANK SPORT (GY6 50CC-150CC) MANUAL TALLER": {
+        "manual": "ITALIKA TANK SPORT (GY6 50CC-150CC) MANUAL TALLER",
+        "motorcycle": "italika-tank sport (gy6 50cc-150cc)",
+        "brand": "italika",
+        "model": "tank sport (gy6 50cc-150cc)"
+    },
+    "KAWASAKI CERSYS 1000 MANUAL TALLER 2015": {
+        "manual": "KAWASAKI CERSYS 1000 MANUAL TALLER 2015",
+        "motorcycle": "kawasaki-cersys 1000",
+        "brand": "kawasaki",
+        "model": "cersys 1000"
+    },
+    "KAWASAKI ER-6N (ER650A7F) MANUAL TALLER 2007": {
+        "manual": "KAWASAKI ER-6N (ER650A7F) MANUAL TALLER 2007",
+        "motorcycle": "kawasaki-er-6n (er650a7f)",
+        "brand": "kawasaki",
+        "model": "er-6n (er650a7f)"
+    },
+    "KAWASAKI KAZE ZX130 MANUAL TALLER 2006": {
+        "manual": "KAWASAKI KAZE ZX130 MANUAL TALLER 2006",
+        "motorcycle": "kawasaki-kaze zx130",
+        "brand": "kawasaki",
+        "model": "kaze zx130"
+    },
+    "KAWASAKI KDX125SR MANUAL PARTES 2006": {
+        "manual": "KAWASAKI KDX125SR MANUAL PARTES 2006",
+        "motorcycle": "kawasaki-kdx125sr",
+        "brand": "kawasaki",
+        "model": "kdx125sr"
+    },
+    "KAWASAKI KE 175 MANUAL TALLER 1983": {
+        "manual": "KAWASAKI KE 175 MANUAL TALLER 1983",
+        "motorcycle": "kawasaki-ke 175",
+        "brand": "kawasaki",
+        "model": "ke 175"
+    },
+    "KAWASAKI KFX450R MANUAL TALLER": {
+        "manual": "KAWASAKI KFX450R MANUAL TALLER",
+        "motorcycle": "kawasaki-kfx450r",
+        "brand": "kawasaki",
+        "model": "kfx450r"
+    },
+    "KAWASAKI KFX700 V-FORCE MANUAL TALLER 2004": {
+        "manual": "KAWASAKI KFX700 V-FORCE MANUAL TALLER 2004",
+        "motorcycle": "kawasaki-kfx700 v-force",
+        "brand": "kawasaki",
+        "model": "kfx700 v-force"
+    },
+    "KAWASAKI KH100 MANUAL TALLER": {
+        "manual": "KAWASAKI KH100 MANUAL TALLER",
+        "motorcycle": "kawasaki-kh100",
+        "brand": "kawasaki",
+        "model": "kh100"
+    },
+    "KAWASAKI KLR 650 MANUAL TALLER 2012": {
+        "manual": "KAWASAKI KLR 650 MANUAL TALLER 2012",
+        "motorcycle": "kawasaki-klr 650",
+        "brand": "kawasaki",
+        "model": "klr 650"
+    },
+    "KAWASAKI KLR650 MANUAL PARTES 2008": {
+        "manual": "KAWASAKI KLR650 MANUAL PARTES 2008",
+        "motorcycle": "kawasaki-klr650",
+        "brand": "kawasaki",
+        "model": "klr650"
+    },
+    "KAWASAKI KLR650 MANUAL TALLER 2002": {
+        "manual": "KAWASAKI KLR650 MANUAL TALLER 2002",
+        "motorcycle": "kawasaki-klr650",
+        "brand": "kawasaki",
+        "model": "klr650"
+    },
+    "KAWASAKI KLX110 MANUAL TALLER 2009": {
+        "manual": "KAWASAKI KLX110 MANUAL TALLER 2009",
+        "motorcycle": "kawasaki-klx110",
+        "brand": "kawasaki",
+        "model": "klx110"
+    },
+    "KAWASAKI KLX110L MANUAL TALLER 2010": {
+        "manual": "KAWASAKI KLX110L MANUAL TALLER 2010",
+        "motorcycle": "kawasaki-klx110l",
+        "brand": "kawasaki",
+        "model": "klx110l"
+    },
+    "KAWASAKI KLX110L MANUAL TALLER 2014": {
+        "manual": "KAWASAKI KLX110L MANUAL TALLER 2014",
+        "motorcycle": "kawasaki-klx110l",
+        "brand": "kawasaki",
+        "model": "klx110l"
+    },
+    "KAWASAKI KLX125 MANUAL TALLER 2010": {
+        "manual": "KAWASAKI KLX125 MANUAL TALLER 2010",
+        "motorcycle": "kawasaki-klx125",
+        "brand": "kawasaki",
+        "model": "klx125"
+    },
+    "KAWASAKI KLX140L MANUAL TALLER 2012": {
+        "manual": "KAWASAKI KLX140L MANUAL TALLER 2012",
+        "motorcycle": "kawasaki-klx140l",
+        "brand": "kawasaki",
+        "model": "klx140l"
+    },
+    "KAWASAKI KLX150 (L-S) MANUAL PARTES 2017": {
+        "manual": "KAWASAKI KLX150 (L-S) MANUAL PARTES 2017",
+        "motorcycle": "kawasaki-klx150 (l-s)",
+        "brand": "kawasaki",
+        "model": "klx150 (l-s)"
+    },
+    "KAWASAKI KLX150 MANUAL TALLER 2009": {
+        "manual": "KAWASAKI KLX150 MANUAL TALLER 2009",
+        "motorcycle": "kawasaki-klx150",
+        "brand": "kawasaki",
+        "model": "klx150"
+    },
+    "KAWASAKI KLX150L MANUAL TALLER 2015": {
+        "manual": "KAWASAKI KLX150L MANUAL TALLER 2015",
+        "motorcycle": "kawasaki-klx150l",
+        "brand": "kawasaki",
+        "model": "klx150l"
+    },
+    "KAWASAKI KLX250 MANUAL TALLER 2012": {
+        "manual": "KAWASAKI KLX250 MANUAL TALLER 2012",
+        "motorcycle": "kawasaki-klx250",
+        "brand": "kawasaki",
+        "model": "klx250"
+    },
+    "KAWASAKI KLX250S MANUAL PARTES 2018": {
+        "manual": "KAWASAKI KLX250S MANUAL PARTES 2018",
+        "motorcycle": "kawasaki-klx250s",
+        "brand": "kawasaki",
+        "model": "klx250s"
+    },
+    "KAWASAKI KLX250S MANUAL PARTES 2019": {
+        "manual": "KAWASAKI KLX250S MANUAL PARTES 2019",
+        "motorcycle": "kawasaki-klx250s",
+        "brand": "kawasaki",
+        "model": "klx250s"
+    },
+    "KAWASAKI KLX250SF MANUAL TALLER 2011": {
+        "manual": "KAWASAKI KLX250SF MANUAL TALLER 2011",
+        "motorcycle": "kawasaki-klx250sf",
+        "brand": "kawasaki",
+        "model": "klx250sf"
+    },
+    "KAWASAKI KLX450R MANUAL TALLER 2011": {
+        "manual": "KAWASAKI KLX450R MANUAL TALLER 2011",
+        "motorcycle": "kawasaki-klx450r",
+        "brand": "kawasaki",
+        "model": "klx450r"
+    },
+    "KAWASAKI KLX650 MANUAL TALLER 1994": {
+        "manual": "KAWASAKI KLX650 MANUAL TALLER 1994",
+        "motorcycle": "kawasaki-klx650",
+        "brand": "kawasaki",
+        "model": "klx650"
+    },
+    "KAWASAKI KMX125 MANUAL TALLER": {
+        "manual": "KAWASAKI KMX125 MANUAL TALLER",
+        "motorcycle": "kawasaki-kmx125",
+        "brand": "kawasaki",
+        "model": "kmx125"
+    },
+    "KAWASAKI KMX125R MANUAL PARTES 2006": {
+        "manual": "KAWASAKI KMX125R MANUAL PARTES 2006",
+        "motorcycle": "kawasaki-kmx125r",
+        "brand": "kawasaki",
+        "model": "kmx125r"
+    },
+    "KAWASAKI KVF750 4X4 (BRUTE FORCE) MANUAL TALLER 2007": {
+        "manual": "KAWASAKI KVF750 4X4 (BRUTE FORCE) MANUAL TALLER 2007",
+        "motorcycle": "kawasaki-kvf750 4x4 (brute force)",
+        "brand": "kawasaki",
+        "model": "kvf750 4x4 (brute force)"
+    },
+    "KAWASAKI KX125-250 (KX125M7F) MANUAL TALLER 2007": {
+        "manual": "KAWASAKI KX125-250 (KX125M7F) MANUAL TALLER 2007",
+        "motorcycle": "kawasaki-kx125-250 (kx125m7f)",
+        "brand": "kawasaki",
+        "model": "kx125-250 (kx125m7f)"
+    },
+    "KAWASAKI KX250 (KX250R7F) MANUAL TALLER 2007": {
+        "manual": "KAWASAKI KX250 (KX250R7F) MANUAL TALLER 2007",
+        "motorcycle": "kawasaki-kx250 (kx250r7f)",
+        "brand": "kawasaki",
+        "model": "kx250 (kx250r7f)"
+    },
+    "KAWASAKI KX250F (KX250T7F) MANUAL TALLER 2007": {
+        "manual": "KAWASAKI KX250F (KX250T7F) MANUAL TALLER 2007",
+        "motorcycle": "kawasaki-kx250f (kx250t7f)",
+        "brand": "kawasaki",
+        "model": "kx250f (kx250t7f)"
+    },
+    "KAWASAKI KX250F MANUAL TALLER 2006": {
+        "manual": "KAWASAKI KX250F MANUAL TALLER 2006",
+        "motorcycle": "kawasaki-kx250f",
+        "brand": "kawasaki",
+        "model": "kx250f"
+    },
+    "KAWASAKI KX250F MANUAL TALLER 2007": {
+        "manual": "KAWASAKI KX250F MANUAL TALLER 2007",
+        "motorcycle": "kawasaki-kx250f",
+        "brand": "kawasaki",
+        "model": "kx250f"
+    },
+    "KAWASAKI KX450F MANUAL TALLER 2006": {
+        "manual": "KAWASAKI KX450F MANUAL TALLER 2006",
+        "motorcycle": "kawasaki-kx450f",
+        "brand": "kawasaki",
+        "model": "kx450f"
+    },
+    "KAWASAKI KX85 KX85-II KX100 MANUAL TALLER 2010": {
+        "manual": "KAWASAKI KX85 KX85-II KX100 MANUAL TALLER 2010",
+        "motorcycle": "kawasaki-kx85 kx85-ii kx100",
+        "brand": "kawasaki",
+        "model": "kx85 kx85-ii kx100"
+    },
+    "KAWASAKI NINJA 1000 ABS MANUAL TALLER 2012": {
+        "manual": "KAWASAKI NINJA 1000 ABS MANUAL TALLER 2012",
+        "motorcycle": "kawasaki-ninja 1000",
+        "brand": "kawasaki",
+        "model": "ninja 1000"
+    },
+    "KAWASAKI NINJA 1000 MANUAL TALLER 2018": {
+        "manual": "KAWASAKI NINJA 1000 MANUAL TALLER 2018",
+        "motorcycle": "kawasaki-ninja 1000",
+        "brand": "kawasaki",
+        "model": "ninja 1000"
+    },
+    "KAWASAKI NINJA 250 MANUAL PARTES 2008": {
+        "manual": "KAWASAKI NINJA 250 MANUAL PARTES 2008",
+        "motorcycle": "kawasaki-ninja 250",
+        "brand": "kawasaki",
+        "model": "ninja 250"
+    },
+    "KAWASAKI NINJA 250R (EX250J8F) MANUAL TALLER 2008": {
+        "manual": "KAWASAKI NINJA 250R (EX250J8F) MANUAL TALLER 2008",
+        "motorcycle": "kawasaki-ninja 250r (ex250j8f)",
+        "brand": "kawasaki",
+        "model": "ninja 250r (ex250j8f)"
+    },
+    "KAWASAKI NINJA 250R (EX250JAF) MANUAL TALLER 2010": {
+        "manual": "KAWASAKI NINJA 250R (EX250JAF) MANUAL TALLER 2010",
+        "motorcycle": "kawasaki-ninja 250r (ex250jaf)",
+        "brand": "kawasaki",
+        "model": "ninja 250r (ex250jaf)"
+    },
+    "KAWASAKI NINJA 250R (EX250K8F) MANUAL TALLER 2008": {
+        "manual": "KAWASAKI NINJA 250R (EX250K8F) MANUAL TALLER 2008",
+        "motorcycle": "kawasaki-ninja 250r (ex250k8f)",
+        "brand": "kawasaki",
+        "model": "ninja 250r (ex250k8f)"
+    },
+    "KAWASAKI NINJA 250R (EX250K9F) MANUAL TALLER 2009": {
+        "manual": "KAWASAKI NINJA 250R (EX250K9F) MANUAL TALLER 2009",
+        "motorcycle": "kawasaki-ninja 250r (ex250k9f)",
+        "brand": "kawasaki",
+        "model": "ninja 250r (ex250k9f)"
+    },
+    "KAWASAKI NINJA 250R (EX250KAF) MANUAL TALLER 2010": {
+        "manual": "KAWASAKI NINJA 250R (EX250KAF) MANUAL TALLER 2010",
+        "motorcycle": "kawasaki-ninja 250r (ex250kaf)",
+        "brand": "kawasaki",
+        "model": "ninja 250r (ex250kaf)"
+    },
+    "KAWASAKI NINJA 250R MANUAL TALLER 2008": {
+        "manual": "KAWASAKI NINJA 250R MANUAL TALLER 2008",
+        "motorcycle": "kawasaki-ninja 250r",
+        "brand": "kawasaki",
+        "model": "ninja 250r"
+    },
+    "KAWASAKI NINJA 300 (ABS) MANUAL TALLER 2012": {
+        "manual": "KAWASAKI NINJA 300 (ABS) MANUAL TALLER 2012",
+        "motorcycle": "kawasaki-ninja 300",
+        "brand": "kawasaki",
+        "model": "ninja 300"
+    },
+    "KAWASAKI NINJA 300 ABS MANUAL TALLER 2013": {
+        "manual": "KAWASAKI NINJA 300 ABS MANUAL TALLER 2013",
+        "motorcycle": "kawasaki-ninja 300",
+        "brand": "kawasaki",
+        "model": "ninja 300"
+    },
+    "KAWASAKI NINJA 300 MANUAL PARTES 2017": {
+        "manual": "KAWASAKI NINJA 300 MANUAL PARTES 2017",
+        "motorcycle": "kawasaki-ninja 300",
+        "brand": "kawasaki",
+        "model": "ninja 300"
+    },
+    "KAWASAKI NINJA 400 MANUAL TALLER 20": {
+        "manual": "KAWASAKI NINJA 400 MANUAL TALLER 20",
+        "motorcycle": "kawasaki-ninja 400",
+        "brand": "kawasaki",
+        "model": "ninja 400"
+    },
+    "KAWASAKI NINJA 650R (EX650A6F) MANUAL TALLER 2006": {
+        "manual": "KAWASAKI NINJA 650R (EX650A6F) MANUAL TALLER 2006",
+        "motorcycle": "kawasaki-ninja 650r (ex650a6f)",
+        "brand": "kawasaki",
+        "model": "ninja 650r (ex650a6f)"
+    },
+    "KAWASAKI NINJA 650R (EX650C9F) MANUAL TALLER 2009": {
+        "manual": "KAWASAKI NINJA 650R (EX650C9F) MANUAL TALLER 2009",
+        "motorcycle": "kawasaki-ninja 650r (ex650c9f)",
+        "brand": "kawasaki",
+        "model": "ninja 650r (ex650c9f)"
+    },
+    "KAWASAKI NINJA 65OR (EX650B7F) MANUAL TALLER 2007": {
+        "manual": "KAWASAKI NINJA 65OR (EX650B7F) MANUAL TALLER 2007",
+        "motorcycle": "kawasaki-ninja 65or (ex650b7f)",
+        "brand": "kawasaki",
+        "model": "ninja 65or (ex650b7f)"
+    },
+    "KAWASAKI NINJA H2 MANUAL TALLER 2015": {
+        "manual": "KAWASAKI NINJA H2 MANUAL TALLER 2015",
+        "motorcycle": "kawasaki-ninja h2",
+        "brand": "kawasaki",
+        "model": "ninja h2"
+    },
+    "KAWASAKI NINJA ZX-10R MANUAL TALLER 2007": {
+        "manual": "KAWASAKI NINJA ZX-10R MANUAL TALLER 2007",
+        "motorcycle": "kawasaki-ninja zx-10r",
+        "brand": "kawasaki",
+        "model": "ninja zx-10r"
+    },
+    "KAWASAKI NINJA ZX-10R MANUAL TALLER 2008": {
+        "manual": "KAWASAKI NINJA ZX-10R MANUAL TALLER 2008",
+        "motorcycle": "kawasaki-ninja zx-10r",
+        "brand": "kawasaki",
+        "model": "ninja zx-10r"
+    },
+    "KAWASAKI NINJA ZX-12R MANUAL TALLER 2004": {
+        "manual": "KAWASAKI NINJA ZX-12R MANUAL TALLER 2004",
+        "motorcycle": "kawasaki-ninja zx-12r",
+        "brand": "kawasaki",
+        "model": "ninja zx-12r"
+    },
+    "KAWASAKI NINJA ZX-6R (ZX600P7F) MANUAL TALLER 2007": {
+        "manual": "KAWASAKI NINJA ZX-6R (ZX600P7F) MANUAL TALLER 2007",
+        "motorcycle": "kawasaki-ninja zx-6r (zx600p7f)",
+        "brand": "kawasaki",
+        "model": "ninja zx-6r (zx600p7f)"
+    },
+    "KAWASAKI NINJA ZX-6R ABS MANUAL TALLER 2013": {
+        "manual": "KAWASAKI NINJA ZX-6R ABS MANUAL TALLER 2013",
+        "motorcycle": "kawasaki-ninja zx-6r",
+        "brand": "kawasaki",
+        "model": "ninja zx-6r"
+    },
+    "KAWASAKI NINJA ZX-6R MANUAL TALLER 2005": {
+        "manual": "KAWASAKI NINJA ZX-6R MANUAL TALLER 2005",
+        "motorcycle": "kawasaki-ninja zx-6r",
+        "brand": "kawasaki",
+        "model": "ninja zx-6r"
+    },
+    "KAWASAKI NINJA ZX-6R MANUAL TALLER 2009": {
+        "manual": "KAWASAKI NINJA ZX-6R MANUAL TALLER 2009",
+        "motorcycle": "kawasaki-ninja zx-6r",
+        "brand": "kawasaki",
+        "model": "ninja zx-6r"
+    },
+    "KAWASAKI VERSYS 1000 (KLZ1000BF) MANUAL TALLER 2015": {
+        "manual": "KAWASAKI VERSYS 1000 (KLZ1000BF) MANUAL TALLER 2015",
+        "motorcycle": "kawasaki-versys 1000 (klz1000bf)",
+        "brand": "kawasaki",
+        "model": "versys 1000 (klz1000bf)"
+    },
+    "KAWASAKI VERSYS 1000 MANUAL TALLER 2012": {
+        "manual": "KAWASAKI VERSYS 1000 MANUAL TALLER 2012",
+        "motorcycle": "kawasaki-versys 1000",
+        "brand": "kawasaki",
+        "model": "versys 1000"
+    },
+    "KAWASAKI VERSYS 650 ABS MANUAL TALLER 2015": {
+        "manual": "KAWASAKI VERSYS 650 ABS MANUAL TALLER 2015",
+        "motorcycle": "kawasaki-versys 650",
+        "brand": "kawasaki",
+        "model": "versys 650"
+    },
+    "KAWASAKI VERSYS 650 MANUAL DE GARANTIA Y MANTENIMIENTO 2020": {
+        "manual": "KAWASAKI VERSYS 650 MANUAL DE GARANTIA Y MANTENIMIENTO 2020",
+        "motorcycle": "kawasaki-versys 650",
+        "brand": "kawasaki",
+        "model": "versys 650"
+    },
+    "KAWASAKI VERSYS 650 MANUAL DE PARTES 2020": {
+        "manual": "KAWASAKI VERSYS 650 MANUAL DE PARTES 2020",
+        "motorcycle": "kawasaki-versys 650",
+        "brand": "kawasaki",
+        "model": "versys 650"
+    },
+    "KAWASAKI VERSYS 650ABS MANUAL TALLER 2017": {
+        "manual": "KAWASAKI VERSYS 650ABS MANUAL TALLER 2017",
+        "motorcycle": "kawasaki-versys 650",
+        "brand": "kawasaki",
+        "model": "versys 650"
+    },
+    "KAWASAKI VERSYS X 300 MANUAL DE GARANTIA Y MANTENIMIENTO 2020": {
+        "manual": "KAWASAKI VERSYS X 300 MANUAL DE GARANTIA Y MANTENIMIENTO 2020",
+        "motorcycle": "kawasaki-versys x 300",
+        "brand": "kawasaki",
+        "model": "versys x 300"
+    },
+    "KAWASAKI VERSYS X-300 MANUAL PARTES 2019": {
+        "manual": "KAWASAKI VERSYS X-300 MANUAL PARTES 2019",
+        "motorcycle": "kawasaki-versys x-300",
+        "brand": "kawasaki",
+        "model": "versys x-300"
+    },
+    "KAWASAKI VERSYS-X 300 ABS MANUAL TALLER 2017": {
+        "manual": "KAWASAKI VERSYS-X 300 ABS MANUAL TALLER 2017",
+        "motorcycle": "kawasaki-versys-x 300",
+        "brand": "kawasaki",
+        "model": "versys-x 300"
+    },
+    "KAWASAKI VERSYS-X 300 ABS MANUAL TALLER 2018": {
+        "manual": "KAWASAKI VERSYS-X 300 ABS MANUAL TALLER 2018",
+        "motorcycle": "kawasaki-versys-x 300",
+        "brand": "kawasaki",
+        "model": "versys-x 300"
+    },
+    "KAWASAKI VERSYSY (KLE650A7F) MANUAL TALLER 2007": {
+        "manual": "KAWASAKI VERSYSY (KLE650A7F) MANUAL TALLER 2007",
+        "motorcycle": "kawasaki-versysy (kle650a7f)",
+        "brand": "kawasaki",
+        "model": "versysy (kle650a7f)"
+    },
+    "KAWASAKI VICTOR (S-M) MANUAL PARTES 2007": {
+        "manual": "KAWASAKI VICTOR (S-M) MANUAL PARTES 2007",
+        "motorcycle": "kawasaki-victor (s-m)",
+        "brand": "kawasaki",
+        "model": "victor (s-m)"
+    },
+    "KAWASAKI VICTOR M-S MANUAL TALLER 1997": {
+        "manual": "KAWASAKI VICTOR M-S MANUAL TALLER 1997",
+        "motorcycle": "kawasaki-victor m-s",
+        "brand": "kawasaki",
+        "model": "victor m-s"
+    },
+    "KAWASAKI VULCAN 900 CLASSIC LT MANUAL TALLER 2006": {
+        "manual": "KAWASAKI VULCAN 900 CLASSIC LT MANUAL TALLER 2006",
+        "motorcycle": "kawasaki-vulcan 900 classic lt",
+        "brand": "kawasaki",
+        "model": "vulcan 900 classic lt"
+    },
+    "KAWASAKI VULCAN S ABS MANUAL TALLER 2015": {
+        "manual": "KAWASAKI VULCAN S ABS MANUAL TALLER 2015",
+        "motorcycle": "kawasaki-vulcan s",
+        "brand": "kawasaki",
+        "model": "vulcan s"
+    },
+    "KAWASAKI WIND 125": {
+        "manual": "KAWASAKI WIND 125",
+        "motorcycle": "kawasaki-wind 125",
+        "brand": "kawasaki",
+        "model": "wind 125"
+    },
+    "KAWASAKI Z 900 ABS MANUAL TALLER 2019": {
+        "manual": "KAWASAKI Z 900 ABS MANUAL TALLER 2019",
+        "motorcycle": "kawasaki-z 900",
+        "brand": "kawasaki",
+        "model": "z 900"
+    },
+    "KAWASAKI Z1000 (ABS) MANUAL TALLER 2012": {
+        "manual": "KAWASAKI Z1000 (ABS) MANUAL TALLER 2012",
+        "motorcycle": "kawasaki-z1000",
+        "brand": "kawasaki",
+        "model": "z1000"
+    },
+    "KAWASAKI Z1000 (ABS) MANUAL TALLER 2014": {
+        "manual": "KAWASAKI Z1000 (ABS) MANUAL TALLER 2014",
+        "motorcycle": "kawasaki-z1000",
+        "brand": "kawasaki",
+        "model": "z1000"
+    },
+    "KAWASAKI Z1000 ABS MANUAL TALLER 2007": {
+        "manual": "KAWASAKI Z1000 ABS MANUAL TALLER 2007",
+        "motorcycle": "kawasaki-z1000",
+        "brand": "kawasaki",
+        "model": "z1000"
+    },
+    "KAWASAKI Z1000 ABS MANUAL TALLER 2015": {
+        "manual": "KAWASAKI Z1000 ABS MANUAL TALLER 2015",
+        "motorcycle": "kawasaki-z1000",
+        "brand": "kawasaki",
+        "model": "z1000"
+    },
+    "KAWASAKI Z1000 MANUAL PARTES 2014": {
+        "manual": "KAWASAKI Z1000 MANUAL PARTES 2014",
+        "motorcycle": "kawasaki-z1000",
+        "brand": "kawasaki",
+        "model": "z1000"
+    },
+    "KAWASAKI Z1000 MANUAL TALLER 2005": {
+        "manual": "KAWASAKI Z1000 MANUAL TALLER 2005",
+        "motorcycle": "kawasaki-z1000",
+        "brand": "kawasaki",
+        "model": "z1000"
+    },
+    "KAWASAKI Z125 PRO MANUAL TALLER 2017": {
+        "manual": "KAWASAKI Z125 PRO MANUAL TALLER 2017",
+        "motorcycle": "kawasaki-z125 pro",
+        "brand": "kawasaki",
+        "model": "z125 pro"
+    },
+    "KAWASAKI Z250 ABS MANUAL TALLER 2015": {
+        "manual": "KAWASAKI Z250 ABS MANUAL TALLER 2015",
+        "motorcycle": "kawasaki-z250",
+        "brand": "kawasaki",
+        "model": "z250"
+    },
+    "KAWASAKI Z250 ABS MANUAL TALLER 2018": {
+        "manual": "KAWASAKI Z250 ABS MANUAL TALLER 2018",
+        "motorcycle": "kawasaki-z250",
+        "brand": "kawasaki",
+        "model": "z250"
+    },
+    "KAWASAKI Z250 MANUAL PARTES 2013": {
+        "manual": "KAWASAKI Z250 MANUAL PARTES 2013",
+        "motorcycle": "kawasaki-z250",
+        "brand": "kawasaki",
+        "model": "z250"
+    },
+    "KAWASAKI Z250 MANUAL PARTES 2018": {
+        "manual": "KAWASAKI Z250 MANUAL PARTES 2018",
+        "motorcycle": "kawasaki-z250",
+        "brand": "kawasaki",
+        "model": "z250"
+    },
+    "KAWASAKI Z250SL ABS MANUAL TALLER 2014": {
+        "manual": "KAWASAKI Z250SL ABS MANUAL TALLER 2014",
+        "motorcycle": "kawasaki-z250sl",
+        "brand": "kawasaki",
+        "model": "z250sl"
+    },
+    "KAWASAKI Z250SL ABS MANUAL TALLER 2016": {
+        "manual": "KAWASAKI Z250SL ABS MANUAL TALLER 2016",
+        "motorcycle": "kawasaki-z250sl",
+        "brand": "kawasaki",
+        "model": "z250sl"
+    },
+    "KAWASAKI Z250SL MANUAL PARTES 2016": {
+        "manual": "KAWASAKI Z250SL MANUAL PARTES 2016",
+        "motorcycle": "kawasaki-z250sl",
+        "brand": "kawasaki",
+        "model": "z250sl"
+    },
+    "KAWASAKI Z750 ABS MANUAL TALLER 2007": {
+        "manual": "KAWASAKI Z750 ABS MANUAL TALLER 2007",
+        "motorcycle": "kawasaki-z750",
+        "brand": "kawasaki",
+        "model": "z750"
+    },
+    "KAWASAKI Z800 (ABS) MANUAL TALLER 2014": {
+        "manual": "KAWASAKI Z800 (ABS) MANUAL TALLER 2014",
+        "motorcycle": "kawasaki-z800",
+        "brand": "kawasaki",
+        "model": "z800"
+    },
+    "KAWASAKI Z800 (ABS) MANUAL USUARIO 2012": {
+        "manual": "KAWASAKI Z800 (ABS) MANUAL USUARIO 2012",
+        "motorcycle": "kawasaki-z800",
+        "brand": "kawasaki",
+        "model": "z800"
+    },
+    "KAWASAKI Z800 ABS MANUAL TALLER 2013": {
+        "manual": "KAWASAKI Z800 ABS MANUAL TALLER 2013",
+        "motorcycle": "kawasaki-z800",
+        "brand": "kawasaki",
+        "model": "z800"
+    },
+    "KAWASAKI ZR800 MANUAL PARTES 2014": {
+        "manual": "KAWASAKI ZR800 MANUAL PARTES 2014",
+        "motorcycle": "kawasaki-zr800",
+        "brand": "kawasaki",
+        "model": "zr800"
+    },
+    "KAWASAKI ZX130 MANUAL PARTES 2008": {
+        "manual": "KAWASAKI ZX130 MANUAL PARTES 2008",
+        "motorcycle": "kawasaki-zx130",
+        "brand": "kawasaki",
+        "model": "zx130"
+    },
+    "KAWASAKI ZZR1400R MANUAL TALLER 2006": {
+        "manual": "KAWASAKI ZZR1400R MANUAL TALLER 2006",
+        "motorcycle": "kawasaki-zzr1400r",
+        "brand": "kawasaki",
+        "model": "zzr1400r"
+    },
+    "KAWASAKI ZZR250 MANUAL TALLER 2007": {
+        "manual": "KAWASAKI ZZR250 MANUAL TALLER 2007",
+        "motorcycle": "kawasaki-zzr250",
+        "brand": "kawasaki",
+        "model": "zzr250"
+    },
+    "KEEWAY RKV 200 MANUAL PARTES 2012": {
+        "manual": "KEEWAY RKV 200 MANUAL PARTES 2012",
+        "motorcycle": "keeway-rkv 200",
+        "brand": "keeway",
+        "model": "rkv 200"
+    },
+    "KEEWAY SILVERBLADE 125 FI MANUAL TALLER": {
+        "manual": "KEEWAY SILVERBLADE 125 FI MANUAL TALLER",
+        "motorcycle": "keeway-silverblade 125 fi",
+        "brand": "keeway",
+        "model": "silverblade 125 fi"
+    },
+    "KEEWAY TX RKV MANUAL PARTES 2012": {
+        "manual": "KEEWAY TX RKV MANUAL PARTES 2012",
+        "motorcycle": "keeway-tx rkv",
+        "brand": "keeway",
+        "model": "tx rkv"
+    },
+    "KEEWAY TX200 MANUAL USUARIO 20": {
+        "manual": "KEEWAY TX200 MANUAL USUARIO 20",
+        "motorcycle": "keeway-tx200",
+        "brand": "keeway",
+        "model": "tx200"
+    },
+    "KTM 450SMR MANUAL TALLER 2013": {
+        "manual": "KTM 450SMR MANUAL TALLER 2013",
+        "motorcycle": "ktm-450smr",
+        "brand": "ktm",
+        "model": "450smr"
+    },
+    "KTM 450SMR MANUAL TALLER SUPLEMENTARIO": {
+        "manual": "KTM 450SMR MANUAL TALLER SUPLEMENTARIO",
+        "motorcycle": "ktm-450smr",
+        "brand": "ktm",
+        "model": "450smr"
+    },
+    "KTM 450SMR MANUAL USUARIO 2013": {
+        "manual": "KTM 450SMR MANUAL USUARIO 2013",
+        "motorcycle": "ktm-450smr",
+        "brand": "ktm",
+        "model": "450smr"
+    },
+    "KTM 690 ENDURO MANUAL TALLER 2008": {
+        "manual": "KTM 690 ENDURO MANUAL TALLER 2008",
+        "motorcycle": "ktm-690 enduro",
+        "brand": "ktm",
+        "model": "690 enduro"
+    },
+    "KTM 790 ADVENTURE MANUAL USUARIO 2019": {
+        "manual": "KTM 790 ADVENTURE MANUAL USUARIO 2019",
+        "motorcycle": "ktm-790 adventure",
+        "brand": "ktm",
+        "model": "790 adventure"
+    },
+    "KTM ADVENTURE 1090 R MANUAL SETUP 2017": {
+        "manual": "KTM ADVENTURE 1090 R MANUAL SETUP 2017",
+        "motorcycle": "ktm-adventure 1090 r",
+        "brand": "ktm",
+        "model": "adventure 1090 r"
+    },
+    "KTM ADVENTURE 1190 R MANUAL TALLER 2014": {
+        "manual": "KTM ADVENTURE 1190 R MANUAL TALLER 2014",
+        "motorcycle": "ktm-adventure 1190 r",
+        "brand": "ktm",
+        "model": "adventure 1190 r"
+    },
+    "KTM ADVENTURE 950 MANUAL TALLER 2003": {
+        "manual": "KTM ADVENTURE 950 MANUAL TALLER 2003",
+        "motorcycle": "ktm-adventure 950",
+        "brand": "ktm",
+        "model": "adventure 950"
+    },
+    "KTM DUKE 125 MANUAL TALLER 2011": {
+        "manual": "KTM DUKE 125 MANUAL TALLER 2011",
+        "motorcycle": "ktm-duke 125",
+        "brand": "ktm",
+        "model": "duke 125"
+    },
+    "KTM DUKE 200 MANUAL PARTES 2019": {
+        "manual": "KTM DUKE 200 MANUAL PARTES 2019",
+        "motorcycle": "ktm-duke 200",
+        "brand": "ktm",
+        "model": "duke 200"
+    },
+    "KTM DUKE 200 MANUAL PARTES": {
+        "manual": "KTM DUKE 200 MANUAL PARTES",
+        "motorcycle": "ktm-duke 200",
+        "brand": "ktm",
+        "model": "duke 200"
+    },
+    "KTM DUKE 200 MANUAL TALLER 2013": {
+        "manual": "KTM DUKE 200 MANUAL TALLER 2013",
+        "motorcycle": "ktm-duke 200",
+        "brand": "ktm",
+        "model": "duke 200"
+    },
+    "KTM DUKE 200 MANUAL USUARIO 2012": {
+        "manual": "KTM DUKE 200 MANUAL USUARIO 2012",
+        "motorcycle": "ktm-duke 200",
+        "brand": "ktm",
+        "model": "duke 200"
+    },
+    "KTM DUKE 390 MANUAL PARTES 2017": {
+        "manual": "KTM DUKE 390 MANUAL PARTES 2017",
+        "motorcycle": "ktm-duke 390",
+        "brand": "ktm",
+        "model": "duke 390"
+    },
+    "KTM DUKE 390 MANUAL TALLER 2014": {
+        "manual": "KTM DUKE 390 MANUAL TALLER 2014",
+        "motorcycle": "ktm-duke 390",
+        "brand": "ktm",
+        "model": "duke 390"
+    },
+    "KTM DUKE 390 MANUAL TALLER 2018": {
+        "manual": "KTM DUKE 390 MANUAL TALLER 2018",
+        "motorcycle": "ktm-duke 390",
+        "brand": "ktm",
+        "model": "duke 390"
+    },
+    "KTM DUKE 790 MANUAL TALLER 2018": {
+        "manual": "KTM DUKE 790 MANUAL TALLER 2018",
+        "motorcycle": "ktm-duke 790",
+        "brand": "ktm",
+        "model": "duke 790"
+    },
+    "KTM DUKE 790 MANUAL USUARIO 2019": {
+        "manual": "KTM DUKE 790 MANUAL USUARIO 2019",
+        "motorcycle": "ktm-duke 790",
+        "brand": "ktm",
+        "model": "duke 790"
+    },
+    "KTM EXC 250 450 MANUAL TALLER 2004": {
+        "manual": "KTM EXC 250 450 MANUAL TALLER 2004",
+        "motorcycle": "ktm-exc 250 450",
+        "brand": "ktm",
+        "model": "exc 250 450"
+    },
+    "KTM RC200 MANUAL PARTES 2017": {
+        "manual": "KTM RC200 MANUAL PARTES 2017",
+        "motorcycle": "ktm-rc200",
+        "brand": "ktm",
+        "model": "rc200"
+    },
+    "KTM SUPER ADVENTURE R 1290 MANUAL USUARIO 2018": {
+        "manual": "KTM SUPER ADVENTURE R 1290 MANUAL USUARIO 2018",
+        "motorcycle": "ktm-super adventure r 1290",
+        "brand": "ktm",
+        "model": "super adventure r 1290"
+    },
+    "KTM SUPER DUKE 1290 MANUAL USUARIO 2015": {
+        "manual": "KTM SUPER DUKE 1290 MANUAL USUARIO 2015",
+        "motorcycle": "ktm-super duke 1290",
+        "brand": "ktm",
+        "model": "super duke 1290"
+    },
+    "KTM SUPER DUKE 990 MANUAL TALLER 2003-2005": {
+        "manual": "KTM SUPER DUKE 990 MANUAL TALLER 2003-2005",
+        "motorcycle": "ktm-super duke 990",
+        "brand": "ktm",
+        "model": "super duke 990"
+    },
+    "KYMCO ACTIV 110 MANUAL TALLER": {
+        "manual": "KYMCO ACTIV 110 MANUAL TALLER",
+        "motorcycle": "kymco-activ 110",
+        "brand": "kymco",
+        "model": "activ 110"
+    },
+    "KYMCO AGILITT RS MANUAL PARTES 2010": {
+        "manual": "KYMCO AGILITT RS MANUAL PARTES 2010",
+        "motorcycle": "kymco-agilitt rs",
+        "brand": "kymco",
+        "model": "agilitt rs"
+    },
+    "KYMCO AGILITY (FLY - NAKED - XTREME) 125 MANUAL TALLER": {
+        "manual": "KYMCO AGILITY (FLY - NAKED - XTREME) 125 MANUAL TALLER",
+        "motorcycle": "kymco-agility (fly - naked - xtreme) 125",
+        "brand": "kymco",
+        "model": "agility (fly - naked - xtreme) 125"
+    },
+    "KYMCO AGILITY 1215-150 WIRING DIAGRAM": {
+        "manual": "KYMCO AGILITY 1215-150 WIRING DIAGRAM",
+        "motorcycle": "kymco-agility 1215-150",
+        "brand": "kymco",
+        "model": "agility 1215-150"
+    },
+    "KYMCO AGILITY 125 (LDF7) MANUAL TALLER": {
+        "manual": "KYMCO AGILITY 125 (LDF7) MANUAL TALLER",
+        "motorcycle": "kymco-agility 125 (ldf7)",
+        "brand": "kymco",
+        "model": "agility 125 (ldf7)"
+    },
+    "KYMCO AGILITY 125 NAKED XTREM": {
+        "manual": "KYMCO AGILITY 125 NAKED XTREM",
+        "motorcycle": "kymco-agility 125 naked xtrem",
+        "brand": "kymco",
+        "model": "agility 125 naked xtrem"
+    },
+    "KYMCO AGILITY 50 2T SCOOTER WIRING DIAGRAM": {
+        "manual": "KYMCO AGILITY 50 2T SCOOTER WIRING DIAGRAM",
+        "motorcycle": "kymco-agility 50 2t scooter",
+        "brand": "kymco",
+        "model": "agility 50 2t scooter"
+    },
+    "KYMCO AGILITY ALL NEW MANUAL TALLER": {
+        "manual": "KYMCO AGILITY ALL NEW MANUAL TALLER",
+        "motorcycle": "kymco-agility all new",
+        "brand": "kymco",
+        "model": "agility all new"
+    },
+    "KYMCO AGILITY CITY 150 MANUAL PARTES 2011": {
+        "manual": "KYMCO AGILITY CITY 150 MANUAL PARTES 2011",
+        "motorcycle": "kymco-agility city 150",
+        "brand": "kymco",
+        "model": "agility city 150"
+    },
+    "KYMCO AGILITY CITY 150 MANUAL TALLER": {
+        "manual": "KYMCO AGILITY CITY 150 MANUAL TALLER",
+        "motorcycle": "kymco-agility city 150",
+        "brand": "kymco",
+        "model": "agility city 150"
+    },
+    "KYMCO AGILITY DIGITAL 3": {
+        "manual": "KYMCO AGILITY DIGITAL 3",
+        "motorcycle": "kymco-agility digital 3",
+        "brand": "kymco",
+        "model": "agility digital 3"
+    },
+    "KYMCO AGILITY RS NAKED MANUAL PARTES 2011": {
+        "manual": "KYMCO AGILITY RS NAKED MANUAL PARTES 2011",
+        "motorcycle": "kymco-agility rs naked",
+        "brand": "kymco",
+        "model": "agility rs naked"
+    },
+    "KYMCO AGLITY 50 MANUAL TALLER": {
+        "manual": "KYMCO AGLITY 50 MANUAL TALLER",
+        "motorcycle": "kymco-aglity 50",
+        "brand": "kymco",
+        "model": "aglity 50"
+    },
+    "KYMCO DOWNTOWN 300i ABS MANUAL TALLER 2010": {
+        "manual": "KYMCO DOWNTOWN 300i ABS MANUAL TALLER 2010",
+        "motorcycle": "kymco-downtown 300i",
+        "brand": "kymco",
+        "model": "downtown 300i"
+    },
+    "KYMCO DOWNTOWN 300I MANUAL PARTES 2016": {
+        "manual": "KYMCO DOWNTOWN 300I MANUAL PARTES 2016",
+        "motorcycle": "kymco-downtown 300i",
+        "brand": "kymco",
+        "model": "downtown 300i"
+    },
+    "KYMCO DOWNTOWN 300i MANUAL TALLER": {
+        "manual": "KYMCO DOWNTOWN 300i MANUAL TALLER",
+        "motorcycle": "kymco-downtown 300i",
+        "brand": "kymco",
+        "model": "downtown 300i"
+    },
+    "KYMCO FLY 125-150 MANUAL PARTES 2017": {
+        "manual": "KYMCO FLY 125-150 MANUAL PARTES 2017",
+        "motorcycle": "kymco-fly 125-150",
+        "brand": "kymco",
+        "model": "fly 125-150"
+    },
+    "KYMCO JETIX 125 MANUAL TALLER": {
+        "manual": "KYMCO JETIX 125 MANUAL TALLER",
+        "motorcycle": "kymco-jetix 125",
+        "brand": "kymco",
+        "model": "jetix 125"
+    },
+    "KYMCO LIKE 125 MANUAL TALLER 2011": {
+        "manual": "KYMCO LIKE 125 MANUAL TALLER 2011",
+        "motorcycle": "kymco-like 125",
+        "brand": "kymco",
+        "model": "like 125"
+    },
+    "KYMCO MOVIE 125 MANUAL TALLER": {
+        "manual": "KYMCO MOVIE 125 MANUAL TALLER",
+        "motorcycle": "kymco-movie 125",
+        "brand": "kymco",
+        "model": "movie 125"
+    },
+    "KYMCO ROCKET 125 MANUAL TALLER": {
+        "manual": "KYMCO ROCKET 125 MANUAL TALLER",
+        "motorcycle": "kymco-rocket 125",
+        "brand": "kymco",
+        "model": "rocket 125"
+    },
+    "KYMCO SUPER DINK 300i MANUAL PARTES 2009": {
+        "manual": "KYMCO SUPER DINK 300i MANUAL PARTES 2009",
+        "motorcycle": "kymco-super dink 300i",
+        "brand": "kymco",
+        "model": "super dink 300i"
+    },
+    "KYMCO UNI-K 110 MANUAL TALLER": {
+        "manual": "KYMCO UNI-K 110 MANUAL TALLER",
+        "motorcycle": "kymco-uni-k 110",
+        "brand": "kymco",
+        "model": "uni-k 110"
+    },
+    "KYMCO XCITING 500 MANUAL TALLER 2007": {
+        "manual": "KYMCO XCITING 500 MANUAL TALLER 2007",
+        "motorcycle": "kymco-xciting 500",
+        "brand": "kymco",
+        "model": "xciting 500"
+    },
+    "KYMCO XTOWN 300 MANNUAL TALLER": {
+        "manual": "KYMCO XTOWN 300 MANNUAL TALLER",
+        "motorcycle": "kymco-xtown 300",
+        "brand": "kymco",
+        "model": "xtown 300"
+    },
+    "LONGJIA LJ125-9A WIRING DIAGRAM": {
+        "manual": "LONGJIA LJ125-9A WIRING DIAGRAM",
+        "motorcycle": "longjia-lj125-9a",
+        "brand": "longjia",
+        "model": "lj125-9a"
+    },
+    "LONGJIA LJ50QT-6E SCOOTER WIRING DIAGRAM": {
+        "manual": "LONGJIA LJ50QT-6E SCOOTER WIRING DIAGRAM",
+        "motorcycle": "longjia-lj50qt-6e scooter",
+        "brand": "longjia",
+        "model": "lj50qt-6e scooter"
+    },
+    "LONGJIA MOTORCYCLE DIAGNOSTIC CODES": {
+        "manual": "LONGJIA MOTORCYCLE DIAGNOSTIC CODES",
+        "motorcycle": "longjia-motorcycle",
+        "brand": "longjia",
+        "model": "motorcycle"
+    },
+    "LONGJIA MOTORCYCLE DTC LIST": {
+        "manual": "LONGJIA MOTORCYCLE DTC LIST",
+        "motorcycle": "longjia-motorcycle",
+        "brand": "longjia",
+        "model": "motorcycle"
+    },
+    "ROYAL ENDFIELD INTERCEPTOR 650 MANUAL TALLER 2018": {
+        "manual": "ROYAL ENDFIELD INTERCEPTOR 650 MANUAL TALLER 2018",
+        "motorcycle": "royal enfield-royal endfield interceptor 650",
+        "brand": "royal enfield",
+        "model": "royal endfield interceptor 650"
+    },
+    "ROYAL ENFIELD HIMALAYAN BS 3 MANUAL TALLER  2017": {
+        "manual": "ROYAL ENFIELD HIMALAYAN BS 3 MANUAL TALLER  2017",
+        "motorcycle": "royal enfield-himalayan bs 3",
+        "brand": "royal enfield",
+        "model": "himalayan bs 3"
+    },
+    "ROYAL ENFIELD HIMALAYAN FI WIRING DIAGRAM": {
+        "manual": "ROYAL ENFIELD HIMALAYAN FI WIRING DIAGRAM",
+        "motorcycle": "royal enfield-himalayan fi",
+        "brand": "royal enfield",
+        "model": "himalayan fi"
+    },
+    "ROYAL ENFIELD HIMALAYAN MANUAL TALLER 2017": {
+        "manual": "ROYAL ENFIELD HIMALAYAN MANUAL TALLER 2017",
+        "motorcycle": "royal enfield-himalayan",
+        "brand": "royal enfield",
+        "model": "himalayan"
+    },
+    "GN 125 MANUAL DE TALLER ESPA\u00d1OL": {
+        "manual": "GN 125 MANUAL DE TALLER ESPA\u00d1OL",
+        "motorcycle": "suzuki-gn 125",
+        "brand": "suzuki",
+        "model": "gn 125"
+    },
+    "SUZUKI ACCESS 125 (UZ125) MANUAL TALLER 2019": {
+        "manual": "SUZUKI ACCESS 125 (UZ125) MANUAL TALLER 2019",
+        "motorcycle": "suzuki-access 125 (uz125)",
+        "brand": "suzuki",
+        "model": "access 125 (uz125)"
+    },
+    "SUZUKI AN 100 MANUAL TALLER": {
+        "manual": "SUZUKI AN 100 MANUAL TALLER",
+        "motorcycle": "suzuki-an 100",
+        "brand": "suzuki",
+        "model": "an 100"
+    },
+    "SUZUKI AX4 (GD110) MANUAL TALLER 2010": {
+        "manual": "SUZUKI AX4 (GD110) MANUAL TALLER 2010",
+        "motorcycle": "suzuki-ax4 (gd110)",
+        "brand": "suzuki",
+        "model": "ax4 (gd110)"
+    },
+    "SUZUKI BEST 125 (FL125DW) MANUAL TALLER 2020": {
+        "manual": "SUZUKI BEST 125 (FL125DW) MANUAL TALLER 2020",
+        "motorcycle": "suzuki-best 125 (fl125dw)",
+        "brand": "suzuki",
+        "model": "best 125 (fl125dw)"
+    },
+    "SUZUKI DR 150 MANUAL TALLER": {
+        "manual": "SUZUKI DR 150 MANUAL TALLER",
+        "motorcycle": "suzuki-dr 150",
+        "brand": "suzuki",
+        "model": "dr 150"
+    },
+    "SUZUKI DR650 MANUAL USUARIO": {
+        "manual": "SUZUKI DR650 MANUAL USUARIO",
+        "motorcycle": "suzuki-dr650",
+        "brand": "suzuki",
+        "model": "dr650"
+    },
+    "SUZUKI DR650SE MANUAL TALLER 1995": {
+        "manual": "SUZUKI DR650SE MANUAL TALLER 1995",
+        "motorcycle": "suzuki-dr650se",
+        "brand": "suzuki",
+        "model": "dr650se"
+    },
+    "SUZUKI DR650SE MANUAL TALLER": {
+        "manual": "SUZUKI DR650SE MANUAL TALLER",
+        "motorcycle": "suzuki-dr650se",
+        "brand": "suzuki",
+        "model": "dr650se"
+    },
+    "SUZUKI DR750S-800S MANUAL TALLER 1990": {
+        "manual": "SUZUKI DR750S-800S MANUAL TALLER 1990",
+        "motorcycle": "suzuki-dr750s-800s",
+        "brand": "suzuki",
+        "model": "dr750s-800s"
+    },
+    "SUZUKI FREEWIND XF650 MANUAL PARTES 2001-2006": {
+        "manual": "SUZUKI FREEWIND XF650 MANUAL PARTES 2001-2006",
+        "motorcycle": "suzuki-freewind xf650",
+        "brand": "suzuki",
+        "model": "freewind xf650"
+    },
+    "SUZUKI FREEWIND XF650 MANUAL TALLER 1996": {
+        "manual": "SUZUKI FREEWIND XF650 MANUAL TALLER 1996",
+        "motorcycle": "suzuki-freewind xf650",
+        "brand": "suzuki",
+        "model": "freewind xf650"
+    },
+    "SUZUKI FREEWIND XF650 MANUAL USUARIO 1999": {
+        "manual": "SUZUKI FREEWIND XF650 MANUAL USUARIO 1999",
+        "motorcycle": "suzuki-freewind xf650",
+        "brand": "suzuki",
+        "model": "freewind xf650"
+    },
+    "SUZUKI GE110D MANUAL TALLER": {
+        "manual": "SUZUKI GE110D MANUAL TALLER",
+        "motorcycle": "suzuki-ge110d",
+        "brand": "suzuki",
+        "model": "ge110d"
+    },
+    "SUZUKI GIXXER FI DATOS TECNICOS": {
+        "manual": "SUZUKI GIXXER FI DATOS TECNICOS",
+        "motorcycle": "suzuki-gixxer fi",
+        "brand": "suzuki",
+        "model": "gixxer fi"
+    },
+    "SUZUKI GN125F MANUAL TALLER 2014 ": {
+        "manual": "SUZUKI GN125F MANUAL TALLER 2014 ",
+        "motorcycle": "suzuki-gn125f",
+        "brand": "suzuki",
+        "model": "gn125f"
+    },
+    "SUZUKI GN125F MANUAL TALLER 2014": {
+        "manual": "SUZUKI GN125F MANUAL TALLER 2014",
+        "motorcycle": "suzuki-gn125f",
+        "brand": "suzuki",
+        "model": "gn125f"
+    },
+    "SUZUKI GS125 - EN125 MANUAL TALLER": {
+        "manual": "SUZUKI GS125 - EN125 MANUAL TALLER",
+        "motorcycle": "suzuki-gs125 - en125",
+        "brand": "suzuki",
+        "model": "gs125 - en125"
+    },
+    "SUZUKI GS500E MANUAL TALLER 2006": {
+        "manual": "SUZUKI GS500E MANUAL TALLER 2006",
+        "motorcycle": "suzuki-gs500e",
+        "brand": "suzuki",
+        "model": "gs500e"
+    },
+    "SUZUKI GSF650 (A-S-SA-F)(K7) MANUAL TALLER 2007": {
+        "manual": "SUZUKI GSF650 (A-S-SA-F)(K7) MANUAL TALLER 2007",
+        "motorcycle": "suzuki-gsf650 (a-s-sa-f)(k7)",
+        "brand": "suzuki",
+        "model": "gsf650 (a-s-sa-f)(k7)"
+    },
+    "SUZUKI GSF650 (S) (K4) MANUAL TALLER 2004": {
+        "manual": "SUZUKI GSF650 (S) (K4) MANUAL TALLER 2004",
+        "motorcycle": "suzuki-gsf650 (s) (k4)",
+        "brand": "suzuki",
+        "model": "gsf650 (s) (k4)"
+    },
+    "SUZUKI GSF650 (S) MANUAL TALLER": {
+        "manual": "SUZUKI GSF650 (S) MANUAL TALLER",
+        "motorcycle": "suzuki-gsf650 (s)",
+        "brand": "suzuki",
+        "model": "gsf650 (s)"
+    },
+    "SUZUKI GSR 750 MANUAL TALLER 2011": {
+        "manual": "SUZUKI GSR 750 MANUAL TALLER 2011",
+        "motorcycle": "suzuki-gsr 750",
+        "brand": "suzuki",
+        "model": "gsr 750"
+    },
+    "SUZUKI GSR600 MANUAL TALLER 2005": {
+        "manual": "SUZUKI GSR600 MANUAL TALLER 2005",
+        "motorcycle": "suzuki-gsr600",
+        "brand": "suzuki",
+        "model": "gsr600"
+    },
+    "SUZUKI GSX-R600 MANUAL TALLER 2005": {
+        "manual": "SUZUKI GSX-R600 MANUAL TALLER 2005",
+        "motorcycle": "suzuki-gsx-r600",
+        "brand": "suzuki",
+        "model": "gsx-r600"
+    },
+    "SUZUKI GSX-R750 GSX-R1000 MANUAL TALLER": {
+        "manual": "SUZUKI GSX-R750 GSX-R1000 MANUAL TALLER",
+        "motorcycle": "suzuki-gsx-r750 gsx-r1000",
+        "brand": "suzuki",
+        "model": "gsx-r750 gsx-r1000"
+    },
+    "SUZUKI GSX1300BK (K8) MANUAL TALLER 2007": {
+        "manual": "SUZUKI GSX1300BK (K8) MANUAL TALLER 2007",
+        "motorcycle": "suzuki-gsx1300bk (k8)",
+        "brand": "suzuki",
+        "model": "gsx1300bk (k8)"
+    },
+    "SUZUKI GSX150 GIXXER MANUAL TALLER 2014": {
+        "manual": "SUZUKI GSX150 GIXXER MANUAL TALLER 2014",
+        "motorcycle": "suzuki-gsx150 gixxer",
+        "brand": "suzuki",
+        "model": "gsx150 gixxer"
+    },
+    "SUZUKI GSX150 MANUAL TALLER 2004": {
+        "manual": "SUZUKI GSX150 MANUAL TALLER 2004",
+        "motorcycle": "suzuki-gsx150",
+        "brand": "suzuki",
+        "model": "gsx150"
+    },
+    "SUZUKI GSX150 MANUAL TALLER 2014": {
+        "manual": "SUZUKI GSX150 MANUAL TALLER 2014",
+        "motorcycle": "suzuki-gsx150",
+        "brand": "suzuki",
+        "model": "gsx150"
+    },
+    "SUZUKI GSX250F MANUAL TALLER 2019": {
+        "manual": "SUZUKI GSX250F MANUAL TALLER 2019",
+        "motorcycle": "suzuki-gsx250f",
+        "brand": "suzuki",
+        "model": "gsx250f"
+    },
+    "SUZUKI GSXR 150 MANUAL TALLER 2017": {
+        "manual": "SUZUKI GSXR 150 MANUAL TALLER 2017",
+        "motorcycle": "suzuki-gsxr 150",
+        "brand": "suzuki",
+        "model": "gsxr 150"
+    },
+    "SUZUKI GSXR 750 (K8-K9) MANUAL PARTES": {
+        "manual": "SUZUKI GSXR 750 (K8-K9) MANUAL PARTES",
+        "motorcycle": "suzuki-gsxr 750 (k8-k9)",
+        "brand": "suzuki",
+        "model": "gsxr 750 (k8-k9)"
+    },
+    "SUZUKI GSXR600 (K8)MANUAL TALLER 2008": {
+        "manual": "SUZUKI GSXR600 (K8)MANUAL TALLER 2008",
+        "motorcycle": "suzuki-gsxr600 (k8)",
+        "brand": "suzuki",
+        "model": "gsxr600 (k8)"
+    },
+    "SUZUKI GSXR750 (K2-K3) MANUAL PARTES 2000-2003": {
+        "manual": "SUZUKI GSXR750 (K2-K3) MANUAL PARTES 2000-2003",
+        "motorcycle": "suzuki-gsxr750 (k2-k3)",
+        "brand": "suzuki",
+        "model": "gsxr750 (k2-k3)"
+    },
+    "SUZUKI GSXR750 (K6) MANUAL TALLER 2005": {
+        "manual": "SUZUKI GSXR750 (K6) MANUAL TALLER 2005",
+        "motorcycle": "suzuki-gsxr750 (k6)",
+        "brand": "suzuki",
+        "model": "gsxr750 (k6)"
+    },
+    "SUZUKI GSXR750 (K8) MANUAL TALLER 2008": {
+        "manual": "SUZUKI GSXR750 (K8) MANUAL TALLER 2008",
+        "motorcycle": "suzuki-gsxr750 (k8)",
+        "brand": "suzuki",
+        "model": "gsxr750 (k8)"
+    },
+    "SUZUKI GW250 MANUAL TALLER 2015": {
+        "manual": "SUZUKI GW250 MANUAL TALLER 2015",
+        "motorcycle": "suzuki-gw250",
+        "brand": "suzuki",
+        "model": "gw250"
+    },
+    "SUZUKI GZ250 MANUAL TALLER 1998": {
+        "manual": "SUZUKI GZ250 MANUAL TALLER 1998",
+        "motorcycle": "suzuki-gz250",
+        "brand": "suzuki",
+        "model": "gz250"
+    },
+    "SUZUKI INAZUMA GW250 MANUAL TALLER 2012": {
+        "manual": "SUZUKI INAZUMA GW250 MANUAL TALLER 2012",
+        "motorcycle": "suzuki-inazuma gw250",
+        "brand": "suzuki",
+        "model": "inazuma gw250"
+    },
+    "SUZUKI LT-R450 K8 (AL41A) MANUAL PARTES 2007": {
+        "manual": "SUZUKI LT-R450 K8 (AL41A) MANUAL PARTES 2007",
+        "motorcycle": "suzuki-lt-r450 k8 (al41a)",
+        "brand": "suzuki",
+        "model": "lt-r450 k8 (al41a)"
+    },
+    "SUZUKI LT-Z250 K8 (AJ4AA) MANUAL PARTES 2007": {
+        "manual": "SUZUKI LT-Z250 K8 (AJ4AA) MANUAL PARTES 2007",
+        "motorcycle": "suzuki-lt-z250 k8 (aj4aa)",
+        "brand": "suzuki",
+        "model": "lt-z250 k8 (aj4aa)"
+    },
+    "SUZUKI LT-Z400Z(K8) MANUAL PARTES 2007": {
+        "manual": "SUZUKI LT-Z400Z(K8) MANUAL PARTES 2007",
+        "motorcycle": "suzuki-lt-z400z(k8)",
+        "brand": "suzuki",
+        "model": "lt-z400z(k8)"
+    },
+    "SUZUKI LTF-250 MANUAL TALLER 2001": {
+        "manual": "SUZUKI LTF-250 MANUAL TALLER 2001",
+        "motorcycle": "suzuki-ltf-250",
+        "brand": "suzuki",
+        "model": "ltf-250"
+    },
+    "SUZUKI RM-Z250 MANUAL TALLER 2009": {
+        "manual": "SUZUKI RM-Z250 MANUAL TALLER 2009",
+        "motorcycle": "suzuki-rm-z250",
+        "brand": "suzuki",
+        "model": "rm-z250"
+    },
+    "SUZUKI RM-Z450 MANUAL TALLER 2007": {
+        "manual": "SUZUKI RM-Z450 MANUAL TALLER 2007",
+        "motorcycle": "suzuki-rm-z450",
+        "brand": "suzuki",
+        "model": "rm-z450"
+    },
+    "SUZUKI TS125ER MANUAL DE TALLER": {
+        "manual": "SUZUKI TS125ER MANUAL DE TALLER",
+        "motorcycle": "suzuki-ts125er",
+        "brand": "suzuki",
+        "model": "ts125er"
+    },
+    "SUZUKI V-STROM 650 ABS MANUAL TECNICO": {
+        "manual": "SUZUKI V-STROM 650 ABS MANUAL TECNICO",
+        "motorcycle": "suzuki-v-strom 650",
+        "brand": "suzuki",
+        "model": "v-strom 650"
+    },
+    "SUZUKI V-STROM DL1000 (K2) MANUAL TALLER 2002": {
+        "manual": "SUZUKI V-STROM DL1000 (K2) MANUAL TALLER 2002",
+        "motorcycle": "suzuki-v-strom dl1000 (k2)",
+        "brand": "suzuki",
+        "model": "v-strom dl1000 (k2)"
+    },
+    "SUZUKI V-STROM DL650 (K4-K5) MANUAL TALLER 2004": {
+        "manual": "SUZUKI V-STROM DL650 (K4-K5) MANUAL TALLER 2004",
+        "motorcycle": "suzuki-v-strom dl650 (k4-k5)",
+        "brand": "suzuki",
+        "model": "v-strom dl650 (k4-k5)"
+    },
+    "SUZUKI V-STROM DL650 MANUAL TALLER 2004": {
+        "manual": "SUZUKI V-STROM DL650 MANUAL TALLER 2004",
+        "motorcycle": "suzuki-v-strom dl650",
+        "brand": "suzuki",
+        "model": "v-strom dl650"
+    },
+    "SUZUKI V-STROM DL650A (K7) MANUAL TALLER SUPLEMENTARIO 2006": {
+        "manual": "SUZUKI V-STROM DL650A (K7) MANUAL TALLER SUPLEMENTARIO 2006",
+        "motorcycle": "suzuki-v-strom dl650a (k7)",
+        "brand": "suzuki",
+        "model": "v-strom dl650a (k7)"
+    },
+    "SUZUKI V-STROM DL650A MANUAL TALLER 2012": {
+        "manual": "SUZUKI V-STROM DL650A MANUAL TALLER 2012",
+        "motorcycle": "suzuki-v-strom dl650a",
+        "brand": "suzuki",
+        "model": "v-strom dl650a"
+    },
+    "SUZUKI VIVAX 115 (K4-K5-K6) MANUAL PARTES": {
+        "manual": "SUZUKI VIVAX 115 (K4-K5-K6) MANUAL PARTES",
+        "motorcycle": "suzuki-vivax 115 (k4-k5-k6)",
+        "brand": "suzuki",
+        "model": "vivax 115 (k4-k5-k6)"
+    },
+    "SUZUKI VIVAX 115 MANUAL TALLER SUPLEMENTARIO": {
+        "manual": "SUZUKI VIVAX 115 MANUAL TALLER SUPLEMENTARIO",
+        "motorcycle": "suzuki-vivax 115",
+        "brand": "suzuki",
+        "model": "vivax 115"
+    },
+    "SUZUKI VS700GL MANUAL TALLER 2009": {
+        "manual": "SUZUKI VS700GL MANUAL TALLER 2009",
+        "motorcycle": "suzuki-vs700gl",
+        "brand": "suzuki",
+        "model": "vs700gl"
+    },
+    "SYM ATTILA RS-21 EFI 150 MANUAL TALLER": {
+        "manual": "SYM ATTILA RS-21 EFI 150 MANUAL TALLER",
+        "motorcycle": "sym-attila rs-21 efi 150",
+        "brand": "sym",
+        "model": "attila rs-21 efi 150"
+    },
+    "SYM CITYCOM": {
+        "manual": "SYM CITYCOM",
+        "motorcycle": "sym-citycom",
+        "brand": "sym",
+        "model": "citycom"
+    },
+    "SYM DD50 MANUAL TALLER": {
+        "manual": "SYM DD50 MANUAL TALLER",
+        "motorcycle": "sym-dd50",
+        "brand": "sym",
+        "model": "dd50"
+    },
+    "SYM EUROMX 125 MANUAL TALLER": {
+        "manual": "SYM EUROMX 125 MANUAL TALLER",
+        "motorcycle": "sym-euromx 125",
+        "brand": "sym",
+        "model": "euromx 125"
+    },
+    "SYM FIDDIE  II 50 (AW05W-6) MANUAL TALLER": {
+        "manual": "SYM FIDDIE  II 50 (AW05W-6) MANUAL TALLER",
+        "motorcycle": "sym-fiddie ii 50 (aw05w-6)",
+        "brand": "sym",
+        "model": "fiddie ii 50 (aw05w-6)"
+    },
+    "SYM FIDDIE II 125 (AW12W) MANUAL TALLER": {
+        "manual": "SYM FIDDIE II 125 (AW12W) MANUAL TALLER",
+        "motorcycle": "sym-fiddie ii 125 (aw12w)",
+        "brand": "sym",
+        "model": "fiddie ii 125 (aw12w)"
+    },
+    "SYM HD125-200 MANUAL TALLER": {
+        "manual": "SYM HD125-200 MANUAL TALLER",
+        "motorcycle": "sym-hd125-200",
+        "brand": "sym",
+        "model": "hd125-200"
+    },
+    "SYM JET 50-100 MANUAL TALLER": {
+        "manual": "SYM JET 50-100 MANUAL TALLER",
+        "motorcycle": "sym-jet 50-100",
+        "brand": "sym",
+        "model": "jet 50-100"
+    },
+    "SYM JET SPORT X SR50 MANUAL TALLER": {
+        "manual": "SYM JET SPORT X SR50 MANUAL TALLER",
+        "motorcycle": "sym-jet sport x sr50",
+        "brand": "sym",
+        "model": "jet sport x sr50"
+    },
+    "SYM JOYRIDE 125 MANUAL TALLER": {
+        "manual": "SYM JOYRIDE 125 MANUAL TALLER",
+        "motorcycle": "sym-joyride 125",
+        "brand": "sym",
+        "model": "joyride 125"
+    },
+    "SYM JOYRIDE 125-200I EVO X`PRO RV125-200 EFI MANUAL TALLER": {
+        "manual": "SYM JOYRIDE 125-200I EVO X`PRO RV125-200 EFI MANUAL TALLER",
+        "motorcycle": "sym-joyride 125-200i evo x`pro rv125-200 efi",
+        "brand": "sym",
+        "model": "joyride 125-200i evo x`pro rv125-200 efi"
+    },
+    "SYM LM25W5 - LM30W MANUAL TALLER": {
+        "manual": "SYM LM25W5 - LM30W MANUAL TALLER",
+        "motorcycle": "sym-lm25w5 - lm30w",
+        "brand": "sym",
+        "model": "lm25w5 - lm30w"
+    },
+    "SYM MIO 50-100 MANUAL TALLER": {
+        "manual": "SYM MIO 50-100 MANUAL TALLER",
+        "motorcycle": "sym-mio 50-100",
+        "brand": "sym",
+        "model": "mio 50-100"
+    },
+    "SYM NCA250 MNUL TALLER": {
+        "manual": "SYM NCA250 MNUL TALLER",
+        "motorcycle": "sym-nca250",
+        "brand": "sym",
+        "model": "nca250"
+    },
+    "SYM PA12BB-C MANUAL TALLER": {
+        "manual": "SYM PA12BB-C MANUAL TALLER",
+        "motorcycle": "sym-pa12bb-c",
+        "brand": "sym",
+        "model": "pa12bb-c"
+    },
+    "SYM QUAD LANDER 250 MANUAL TALLER": {
+        "manual": "SYM QUAD LANDER 250 MANUAL TALLER",
+        "motorcycle": "sym-quad lander 250",
+        "brand": "sym",
+        "model": "quad lander 250"
+    },
+    "SYM QUAD LANDER 300 MANUAL TALLER": {
+        "manual": "SYM QUAD LANDER 300 MANUAL TALLER",
+        "motorcycle": "sym-quad lander 300",
+        "brand": "sym",
+        "model": "quad lander 300"
+    },
+    "SYM QUAD RAIDER 600 MANUAL TALLER": {
+        "manual": "SYM QUAD RAIDER 600 MANUAL TALLER",
+        "motorcycle": "sym-quad raider 600",
+        "brand": "sym",
+        "model": "quad raider 600"
+    },
+    "SYM RS-50 MANUAL TALLER": {
+        "manual": "SYM RS-50 MANUAL TALLER",
+        "motorcycle": "sym-rs-50",
+        "brand": "sym",
+        "model": "rs-50"
+    },
+    "SYM SYMBA 100 MANUAL TALLER": {
+        "manual": "SYM SYMBA 100 MANUAL TALLER",
+        "motorcycle": "sym-ba 100",
+        "brand": "sym",
+        "model": "ba 100"
+    },
+    "SYM TRACK RUNNER 200 MANUAL TALLER": {
+        "manual": "SYM TRACK RUNNER 200 MANUAL TALLER",
+        "motorcycle": "sym-track runner 200",
+        "brand": "sym",
+        "model": "track runner 200"
+    },
+    "SYM VS150 - VS2 MANUAL TALLER": {
+        "manual": "SYM VS150 - VS2 MANUAL TALLER",
+        "motorcycle": "sym-vs150 - vs2",
+        "brand": "sym",
+        "model": "vs150 - vs2"
+    },
+    "TRIUMPH TIGER 1200 MANUAL USUARIO 2021": {
+        "manual": "TRIUMPH TIGER 1200 MANUAL USUARIO 2021",
+        "motorcycle": "triumph-tiger 1200",
+        "brand": "triumph",
+        "model": "tiger 1200"
+    },
+    "TRIUMPH TIGER 800 MANUAL TALLER 2010": {
+        "manual": "TRIUMPH TIGER 800 MANUAL TALLER 2010",
+        "motorcycle": "triumph-tiger 800",
+        "brand": "triumph",
+        "model": "tiger 800"
+    },
+    "TRIUMPH TIGER 800 MANUAL USUARIO": {
+        "manual": "TRIUMPH TIGER 800 MANUAL USUARIO",
+        "motorcycle": "triumph-tiger 800",
+        "brand": "triumph",
+        "model": "tiger 800"
+    },
+    "TRIUMPH TIGER EXPLORER 1200 2015": {
+        "manual": "TRIUMPH TIGER EXPLORER 1200 2015",
+        "motorcycle": "triumph-tiger explorer 1200",
+        "brand": "triumph",
+        "model": "tiger explorer 1200"
+    },
+    "TRIUMPH TIGER EXPLORER 1200 MANUAL USUARIO 2013": {
+        "manual": "TRIUMPH TIGER EXPLORER 1200 MANUAL USUARIO 2013",
+        "motorcycle": "triumph-tiger explorer 1200",
+        "brand": "triumph",
+        "model": "tiger explorer 1200"
+    },
+    "MANUAL DE TALLER TVS APACHE 310 RR ESPA\u00d1OL": {
+        "manual": "MANUAL DE TALLER TVS APACHE 310 RR ESPA\u00d1OL",
+        "motorcycle": "tvs-apache 310 rr",
+        "brand": "tvs",
+        "model": "apache 310 rr"
+    },
+    "TVS APACHE 160 MANUAL PARTES": {
+        "manual": "TVS APACHE 160 MANUAL PARTES",
+        "motorcycle": "tvs-apache 160",
+        "brand": "tvs",
+        "model": "apache 160"
+    },
+    "TVS APACHE 160-200 CC COMPARATIVO MODELOS": {
+        "manual": "TVS APACHE 160-200 CC COMPARATIVO MODELOS",
+        "motorcycle": "tvs-apache 160-200 cc",
+        "brand": "tvs",
+        "model": "apache 160-200 cc"
+    },
+    "TVS APACHE 180 MANUAL PARTES 2009": {
+        "manual": "TVS APACHE 180 MANUAL PARTES 2009",
+        "motorcycle": "tvs-apache 180",
+        "brand": "tvs",
+        "model": "apache 180"
+    },
+    "TVS APACHE RR310 MANUAL TALLER 2020": {
+        "manual": "TVS APACHE RR310 MANUAL TALLER 2020",
+        "motorcycle": "tvs-apache rr310",
+        "brand": "tvs",
+        "model": "apache rr310"
+    },
+    "TVS APACHE RR310 MANUAL TALLER": {
+        "manual": "TVS APACHE RR310 MANUAL TALLER",
+        "motorcycle": "tvs-apache rr310",
+        "brand": "tvs",
+        "model": "apache rr310"
+    },
+    "TVS APACHE RR310 MANUAL USUARIO 2017": {
+        "manual": "TVS APACHE RR310 MANUAL USUARIO 2017",
+        "motorcycle": "tvs-apache rr310",
+        "brand": "tvs",
+        "model": "apache rr310"
+    },
+    "TVS APACHE RR310 MANUAL USUARIO 2018": {
+        "manual": "TVS APACHE RR310 MANUAL USUARIO 2018",
+        "motorcycle": "tvs-apache rr310",
+        "brand": "tvs",
+        "model": "apache rr310"
+    },
+    "TVS APACHE RR310 MANUAL USUARIO 2020": {
+        "manual": "TVS APACHE RR310 MANUAL USUARIO 2020",
+        "motorcycle": "tvs-apache rr310",
+        "brand": "tvs",
+        "model": "apache rr310"
+    },
+    "TVS APACHE RR310 PRESENTACION": {
+        "manual": "TVS APACHE RR310 PRESENTACION",
+        "motorcycle": "tvs-apache rr310",
+        "brand": "tvs",
+        "model": "apache rr310"
+    },
+    "TVS APACHE RTR150 MANUAL TALLER 2010": {
+        "manual": "TVS APACHE RTR150 MANUAL TALLER 2010",
+        "motorcycle": "tvs-apache rtr150",
+        "brand": "tvs",
+        "model": "apache rtr150"
+    },
+    "TVS APACHE RTR160 4V FI MANUAL TALLER": {
+        "manual": "TVS APACHE RTR160 4V FI MANUAL TALLER",
+        "motorcycle": "tvs-apache rtr160 4v fi",
+        "brand": "tvs",
+        "model": "apache rtr160 4v fi"
+    },
+    "TVS APACHE RTR160 4V MANUAL USUARIO 2018": {
+        "manual": "TVS APACHE RTR160 4V MANUAL USUARIO 2018",
+        "motorcycle": "tvs-apache rtr160 4v",
+        "brand": "tvs",
+        "model": "apache rtr160 4v"
+    },
+    "TVS APACHE RTR160-180 MANUAL TALLER 2010": {
+        "manual": "TVS APACHE RTR160-180 MANUAL TALLER 2010",
+        "motorcycle": "tvs-apache rtr160-180",
+        "brand": "tvs",
+        "model": "apache rtr160-180"
+    },
+    "TVS APACHE RTR180 MANUAL TALLER": {
+        "manual": "TVS APACHE RTR180 MANUAL TALLER",
+        "motorcycle": "tvs-apache rtr180",
+        "brand": "tvs",
+        "model": "apache rtr180"
+    },
+    "TVS APACHE RTR200 4V FI MANUAL TALLER": {
+        "manual": "TVS APACHE RTR200 4V FI MANUAL TALLER",
+        "motorcycle": "tvs-apache rtr200 4v fi",
+        "brand": "tvs",
+        "model": "apache rtr200 4v fi"
+    },
+    "TVS APACHE RTR200 4V FI MANUAL USUARIO 2016": {
+        "manual": "TVS APACHE RTR200 4V FI MANUAL USUARIO 2016",
+        "motorcycle": "tvs-apache rtr200 4v fi",
+        "brand": "tvs",
+        "model": "apache rtr200 4v fi"
+    },
+    "TVS APACHE RTR200 4V MANUAL TALLER": {
+        "manual": "TVS APACHE RTR200 4V MANUAL TALLER",
+        "motorcycle": "tvs-apache rtr200 4v",
+        "brand": "tvs",
+        "model": "apache rtr200 4v"
+    },
+    "TVS KING DELUXE MANUAL TALLER": {
+        "manual": "TVS KING DELUXE MANUAL TALLER",
+        "motorcycle": "tvs-king deluxe",
+        "brand": "tvs",
+        "model": "king deluxe"
+    },
+    "TVS NTORQ 125 MANUAL TALLER": {
+        "manual": "TVS NTORQ 125 MANUAL TALLER",
+        "motorcycle": "tvs-ntorq 125",
+        "brand": "tvs",
+        "model": "ntorq 125"
+    },
+    "TVS NTORQ 125 MANUAL USUARIO 2018": {
+        "manual": "TVS NTORQ 125 MANUAL USUARIO 2018",
+        "motorcycle": "tvs-ntorq 125",
+        "brand": "tvs",
+        "model": "ntorq 125"
+    },
+    "TVS RAIDER 125 MANUAL TALLER 2022": {
+        "manual": "TVS RAIDER 125 MANUAL TALLER 2022",
+        "motorcycle": "tvs-raider 125",
+        "brand": "tvs",
+        "model": "raider 125"
+    },
+    "TVS STAR SPORT 100 MANUAL PARTES": {
+        "manual": "TVS STAR SPORT 100 MANUAL PARTES",
+        "motorcycle": "tvs-star sport 100",
+        "brand": "tvs",
+        "model": "star sport 100"
+    },
+    "VICTORY ADVANCE 110 MANUAL TALLER 2016": {
+        "manual": "VICTORY ADVANCE 110 MANUAL TALLER 2016",
+        "motorcycle": "victory-advance 110",
+        "brand": "victory",
+        "model": "advance 110"
+    },
+    "VICTORY ADVANCE R 125 MANUAL TALLER 2020": {
+        "manual": "VICTORY ADVANCE R 125 MANUAL TALLER 2020",
+        "motorcycle": "victory-advance r 125",
+        "brand": "victory",
+        "model": "advance r 125"
+    },
+    "VICTORY BLACK MANUAL TALLER": {
+        "manual": "VICTORY BLACK MANUAL TALLER",
+        "motorcycle": "victory-black",
+        "brand": "victory",
+        "model": "black"
+    },
+    "VICTORY MACH 110 MANUAL TALLER 2019": {
+        "manual": "VICTORY MACH 110 MANUAL TALLER 2019",
+        "motorcycle": "victory-mach 110",
+        "brand": "victory",
+        "model": "mach 110"
+    },
+    "VICTORY MRX 125 MANUAL PARTES 2017": {
+        "manual": "VICTORY MRX 125 MANUAL PARTES 2017",
+        "motorcycle": "victory-mrx 125",
+        "brand": "victory",
+        "model": "mrx 125"
+    },
+    "VICTORY MRX 125-150 MANUAL TALLER 1029": {
+        "manual": "VICTORY MRX 125-150 MANUAL TALLER 1029",
+        "motorcycle": "victory-mrx 125-150 1029",
+        "brand": "victory",
+        "model": "mrx 125-150 1029"
+    },
+    "VICTORY MRX 125-150 MANUAL TALLER": {
+        "manual": "VICTORY MRX 125-150 MANUAL TALLER",
+        "motorcycle": "victory-mrx 125-150",
+        "brand": "victory",
+        "model": "mrx 125-150"
+    },
+    "VICTORY NITRO 125 MANUAL TALLER 2019": {
+        "manual": "VICTORY NITRO 125 MANUAL TALLER 2019",
+        "motorcycle": "victory-nitro 125",
+        "brand": "victory",
+        "model": "nitro 125"
+    },
+    "VICTORY NITRO 151 R MANUAL TALLER 2019": {
+        "manual": "VICTORY NITRO 151 R MANUAL TALLER 2019",
+        "motorcycle": "victory-nitro 151 r",
+        "brand": "victory",
+        "model": "nitro 151 r"
+    },
+    "VICTORY ONE 100 MANUAL TALLER": {
+        "manual": "VICTORY ONE 100 MANUAL TALLER",
+        "motorcycle": "victory-one 100",
+        "brand": "victory",
+        "model": "one 100"
+    },
+    "VICTORY SWITCH 150 MANUAL TALLER 2019": {
+        "manual": "VICTORY SWITCH 150 MANUAL TALLER 2019",
+        "motorcycle": "victory-switch 150",
+        "brand": "victory",
+        "model": "switch 150"
+    },
+    "VICTORY ZS125 MANUAL TALLER 2019": {
+        "manual": "VICTORY ZS125 MANUAL TALLER 2019",
+        "motorcycle": "victory-zs125",
+        "brand": "victory",
+        "model": "zs125"
+    },
+    "YAMAHA FZ6-NS (1B39) MANUAL PARTES 2005": {
+        "manual": "YAMAHA FZ6-NS (1B39) MANUAL PARTES 2005",
+        "motorcycle": "yamaha-fz6-ns (1b39)",
+        "brand": "yamaha",
+        "model": "fz6-ns (1b39)"
+    },
+    "YAMAHA FZ6-S(T) MANUAL TALLER SUMPLEMENTARIO 2005": {
+        "manual": "YAMAHA FZ6-S(T) MANUAL TALLER SUMPLEMENTARIO 2005",
+        "motorcycle": "yamaha-fz6-s(t)",
+        "brand": "yamaha",
+        "model": "fz6-s(t)"
+    },
+    "YAMAHA FZ6-SR (5VX8) MANUAL PARTES 2004": {
+        "manual": "YAMAHA FZ6-SR (5VX8) MANUAL PARTES 2004",
+        "motorcycle": "yamaha-fz6-sr (5vx8)",
+        "brand": "yamaha",
+        "model": "fz6-sr (5vx8)"
+    },
+    "YAMAHA FZN150D-6 MANUAL TALLER COMPLEMENTARIO 2018": {
+        "manual": "YAMAHA FZN150D-6 MANUAL TALLER COMPLEMENTARIO 2018",
+        "motorcycle": "yamaha-fzn150d-6",
+        "brand": "yamaha",
+        "model": "fzn150d-6"
+    },
+    "YAMAHA FZS1000(R) (FZ1)MANUAL TALLER SUPLEMENTARIO 2003": {
+        "manual": "YAMAHA FZS1000(R) (FZ1)MANUAL TALLER SUPLEMENTARIO 2003",
+        "motorcycle": "yamaha-fzs1000(r) (fz1)",
+        "brand": "yamaha",
+        "model": "fzs1000(r) (fz1)"
+    },
+    "YAMAHA FZS10V (3C34) MANUAL PARTES 2006": {
+        "manual": "YAMAHA FZS10V (3C34) MANUAL PARTES 2006",
+        "motorcycle": "yamaha-fzs10v (3c34)",
+        "brand": "yamaha",
+        "model": "fzs10v (3c34)"
+    },
+    "YAMAHA FZS10X (3C3L) MANUAL PARTES 2007 (2)": {
+        "manual": "YAMAHA FZS10X (3C3L) MANUAL PARTES 2007 (2)",
+        "motorcycle": "yamaha-fzs10x (3c3l) (2)",
+        "brand": "yamaha",
+        "model": "fzs10x (3c3l) (2)"
+    },
+    "YAMAHA JOG (4MN1) MANUAL PARTES 1994": {
+        "manual": "YAMAHA JOG (4MN1) MANUAL PARTES 1994",
+        "motorcycle": "yamaha-jog (4mn1)",
+        "brand": "yamaha",
+        "model": "jog (4mn1)"
+    },
+    "YAMAHA JOG (4MN5) MANUAL PARTES 1998": {
+        "manual": "YAMAHA JOG (4MN5) MANUAL PARTES 1998",
+        "motorcycle": "yamaha-jog (4mn5)",
+        "brand": "yamaha",
+        "model": "jog (4mn5)"
+    },
+    "YAMAHA JOG CY50 (4MN4) MANUAL PARTES 1996": {
+        "manual": "YAMAHA JOG CY50 (4MN4) MANUAL PARTES 1996",
+        "motorcycle": "yamaha-jog cy50 (4mn4)",
+        "brand": "yamaha",
+        "model": "jog cy50 (4mn4)"
+    },
+    "YAMAHA LB80II-A (3VS3) MANUAL PARTES 1998": {
+        "manual": "YAMAHA LB80II-A (3VS3) MANUAL PARTES 1998",
+        "motorcycle": "yamaha-lb80ii-a (3vs3)",
+        "brand": "yamaha",
+        "model": "lb80ii-a (3vs3)"
+    },
+    "YAMAHA LIBERO CRUX (5KA1) MANUAL TALLER": {
+        "manual": "YAMAHA LIBERO CRUX (5KA1) MANUAL TALLER",
+        "motorcycle": "yamaha-libero crux (5ka1)",
+        "brand": "yamaha",
+        "model": "libero crux (5ka1)"
+    },
+    "YAMAHA MT-07 MTN690A MANUAL USUARIO 2017": {
+        "manual": "YAMAHA MT-07 MTN690A MANUAL USUARIO 2017",
+        "motorcycle": "yamaha-mt-07 mtn690a",
+        "brand": "yamaha",
+        "model": "mt-07 mtn690a"
+    },
+    "YAMAHA MT-10 MAUAL TALLER 2016": {
+        "manual": "YAMAHA MT-10 MAUAL TALLER 2016",
+        "motorcycle": "yamaha-mt-10",
+        "brand": "yamaha",
+        "model": "mt-10"
+    },
+    "YAMAHA MT01(W) MANUAL TALLER 2007": {
+        "manual": "YAMAHA MT01(W) MANUAL TALLER 2007",
+        "motorcycle": "yamaha-mt01(w)",
+        "brand": "yamaha",
+        "model": "mt01(w)"
+    },
+    "YAMAHA MT07A (1XB1) MANUAL PARTES 2014": {
+        "manual": "YAMAHA MT07A (1XB1) MANUAL PARTES 2014",
+        "motorcycle": "yamaha-mt07a (1xb1)",
+        "brand": "yamaha",
+        "model": "mt07a (1xb1)"
+    },
+    "YAMAHA MW125F TRICITY MANUAL TALLER 2015": {
+        "manual": "YAMAHA MW125F TRICITY MANUAL TALLER 2015",
+        "motorcycle": "yamaha-mw125f tricity",
+        "brand": "yamaha",
+        "model": "mw125f tricity"
+    },
+    "YAMAHA NEXT AT115 MANUAL TALLER 2004": {
+        "manual": "YAMAHA NEXT AT115 MANUAL TALLER 2004",
+        "motorcycle": "yamaha-next at115",
+        "brand": "yamaha",
+        "model": "next at115"
+    },
+    "YAMAHA NMAX (GPD150-A) MANUAL TALLER 2016": {
+        "manual": "YAMAHA NMAX (GPD150-A) MANUAL TALLER 2016",
+        "motorcycle": "yamaha-nmax (gpd150-a)",
+        "brand": "yamaha",
+        "model": "nmax (gpd150-a)"
+    },
+    "YAMAHA NMAX155 (GPD155-A) MANUAL USUARIO 2020": {
+        "manual": "YAMAHA NMAX155 (GPD155-A) MANUAL USUARIO 2020",
+        "motorcycle": "yamaha-nmax155 (gpd155-a)",
+        "brand": "yamaha",
+        "model": "nmax155 (gpd155-a)"
+    },
+    "YAMAHA PW50W MANUAL TALLER 2006": {
+        "manual": "YAMAHA PW50W MANUAL TALLER 2006",
+        "motorcycle": "yamaha-pw50w",
+        "brand": "yamaha",
+        "model": "pw50w"
+    },
+    "YAMAHA R1 (YZF-R1M) MANUAL TALLER 2020": {
+        "manual": "YAMAHA R1 (YZF-R1M) MANUAL TALLER 2020",
+        "motorcycle": "yamaha-r1 (yzf-r1m)",
+        "brand": "yamaha",
+        "model": "r1 (yzf-r1m)"
+    },
+    "YAMAHA R1 (YZFR1) (W) MANUAL TALLER 2007": {
+        "manual": "YAMAHA R1 (YZFR1) (W) MANUAL TALLER 2007",
+        "motorcycle": "yamaha-r1 (yzfr1) (w)",
+        "brand": "yamaha",
+        "model": "r1 (yzfr1) (w)"
+    },
+    "YAMAHA R15 MANUAL DE SERVCIO 2008 YZF-R15": {
+        "manual": "YAMAHA R15 MANUAL DE SERVCIO 2008 YZF-R15",
+        "motorcycle": "yamaha-r15 -r15",
+        "brand": "yamaha",
+        "model": "r15 -r15"
+    },
+    "YAMAHA R15 MANUAL TALLER 2019": {
+        "manual": "YAMAHA R15 MANUAL TALLER 2019",
+        "motorcycle": "yamaha-r15",
+        "brand": "yamaha",
+        "model": "r15"
+    },
+    "YAMAHA R6 YZR6X(C) MANUAL TALLER 2008": {
+        "manual": "YAMAHA R6 YZR6X(C) MANUAL TALLER 2008",
+        "motorcycle": "yamaha-r6 yzr6x(c)",
+        "brand": "yamaha",
+        "model": "r6 yzr6x(c)"
+    },
+    "YAMAHA RAPTOR YFM250RX MANUAL TALLER 2008": {
+        "manual": "YAMAHA RAPTOR YFM250RX MANUAL TALLER 2008",
+        "motorcycle": "yamaha-raptor yfm250rx",
+        "brand": "yamaha",
+        "model": "raptor yfm250rx"
+    },
+    "YAMAHA RAPTOR YFM35XV MANUAL TALLER 2005": {
+        "manual": "YAMAHA RAPTOR YFM35XV MANUAL TALLER 2005",
+        "motorcycle": "yamaha-raptor yfm35xv",
+        "brand": "yamaha",
+        "model": "raptor yfm35xv"
+    },
+    "YAMAHA RHINO YXR70FX MANUAL TALLER 2008": {
+        "manual": "YAMAHA RHINO YXR70FX MANUAL TALLER 2008",
+        "motorcycle": "yamaha-rhino yxr70fx",
+        "brand": "yamaha",
+        "model": "rhino yxr70fx"
+    },
+    "YAMAHA RX-S (3HB8) MANUAL PARTES 1999": {
+        "manual": "YAMAHA RX-S (3HB8) MANUAL PARTES 1999",
+        "motorcycle": "yamaha-rx-s (3hb8)",
+        "brand": "yamaha",
+        "model": "rx-s (3hb8)"
+    },
+    "YAMAHA RXZ100S (3HS2) MANUAL PARTES 1995": {
+        "manual": "YAMAHA RXZ100S (3HS2) MANUAL PARTES 1995",
+        "motorcycle": "yamaha-rxz100s (3hs2)",
+        "brand": "yamaha",
+        "model": "rxz100s (3hs2)"
+    },
+    "YAMAHA SCR950 MANUAL TALLER 2017": {
+        "manual": "YAMAHA SCR950 MANUAL TALLER 2017",
+        "motorcycle": "yamaha-scr950",
+        "brand": "yamaha",
+        "model": "scr950"
+    },
+    "YAMAHA SUPER TENERE (XT1200Z) MANUAL TALLER 2014": {
+        "manual": "YAMAHA SUPER TENERE (XT1200Z) MANUAL TALLER 2014",
+        "motorcycle": "yamaha-super tenere (xt1200z)",
+        "brand": "yamaha",
+        "model": "super tenere (xt1200z)"
+    },
+    "YAMAHA SUPER TENER\u00c9 XT1200ZE MANUAL USUARIO 2018": {
+        "manual": "YAMAHA SUPER TENER\u00c9 XT1200ZE MANUAL USUARIO 2018",
+        "motorcycle": "yamaha-super tener\u00e9 xt1200ze",
+        "brand": "yamaha",
+        "model": "super tener\u00e9 xt1200ze"
+    },
+    "YAMAHA SZ15RR MANUAL TALLER 2016": {
+        "manual": "YAMAHA SZ15RR MANUAL TALLER 2016",
+        "motorcycle": "yamaha-sz15rr",
+        "brand": "yamaha",
+        "model": "sz15rr"
+    },
+    "YAMAHA SZ16R MANUAL TALLER 2011": {
+        "manual": "YAMAHA SZ16R MANUAL TALLER 2011",
+        "motorcycle": "yamaha-sz16r",
+        "brand": "yamaha",
+        "model": "sz16r"
+    },
+    "YAMAHA T-115 CRYPTON MANUAL TALLER 2008": {
+        "manual": "YAMAHA T-115 CRYPTON MANUAL TALLER 2008",
+        "motorcycle": "yamaha-t-115 crypton",
+        "brand": "yamaha",
+        "model": "t-115 crypton"
+    },
+    "YAMAHA T135SE MANUAL TALLER 2005": {
+        "manual": "YAMAHA T135SE MANUAL TALLER 2005",
+        "motorcycle": "yamaha-t135se",
+        "brand": "yamaha",
+        "model": "t135se"
+    },
+    "YAMAHA TDM900 (ABS) MANUAL TALLER 2008": {
+        "manual": "YAMAHA TDM900 (ABS) MANUAL TALLER 2008",
+        "motorcycle": "yamaha-tdm900",
+        "brand": "yamaha",
+        "model": "tdm900"
+    },
+    "YAMAHA TDM900(P) MANUAL TALLER 2002": {
+        "manual": "YAMAHA TDM900(P) MANUAL TALLER 2002",
+        "motorcycle": "yamaha-tdm900(p)",
+        "brand": "yamaha",
+        "model": "tdm900(p)"
+    },
+    "YAMAHA TDM900(R) MANUAL TALLER SUPLEMENTARIO 2003": {
+        "manual": "YAMAHA TDM900(R) MANUAL TALLER SUPLEMENTARIO 2003",
+        "motorcycle": "yamaha-tdm900(r)",
+        "brand": "yamaha",
+        "model": "tdm900(r)"
+    },
+    "YAMAHA TDM900(S)MANUAL TALLER SUPLEMENTARIO 2004": {
+        "manual": "YAMAHA TDM900(S)MANUAL TALLER SUPLEMENTARIO 2004",
+        "motorcycle": "yamaha-tdm900(s)",
+        "brand": "yamaha",
+        "model": "tdm900(s)"
+    },
+    "YAMAHA TDM900A MANUAL TALLER 2007": {
+        "manual": "YAMAHA TDM900A MANUAL TALLER 2007",
+        "motorcycle": "yamaha-tdm900a",
+        "brand": "yamaha",
+        "model": "tdm900a"
+    },
+    "YAMAHA TENERE XT660Z MANUAL TALLER 2008": {
+        "manual": "YAMAHA TENERE XT660Z MANUAL TALLER 2008",
+        "motorcycle": "yamaha-tenere xt660z",
+        "brand": "yamaha",
+        "model": "tenere xt660z"
+    },
+    "YAMAHA TRACER 9 (GT) MANUAL TALLER (2021)": {
+        "manual": "YAMAHA TRACER 9 (GT) MANUAL TALLER (2021)",
+        "motorcycle": "yamaha-tracer 9 (gt)",
+        "brand": "yamaha",
+        "model": "tracer 9 (gt)"
+    },
+    "YAMAHA TT-R50E(B) MANUAL TALLER 2012": {
+        "manual": "YAMAHA TT-R50E(B) MANUAL TALLER 2012",
+        "motorcycle": "yamaha-tt-r50e(b)",
+        "brand": "yamaha",
+        "model": "tt-r50e(b)"
+    },
+    "YAMAHA VMAX 1200 MANUAL TALLER  1984": {
+        "manual": "YAMAHA VMAX 1200 MANUAL TALLER  1984",
+        "motorcycle": "yamaha-vmax 1200",
+        "brand": "yamaha",
+        "model": "vmax 1200"
+    },
+    "YAMAHA VMAX1200 (VMX 12N(C)) MANUAL TALLER 2000": {
+        "manual": "YAMAHA VMAX1200 (VMX 12N(C)) MANUAL TALLER 2000",
+        "motorcycle": "yamaha-vmax1200 (vmx 12n(c))",
+        "brand": "yamaha",
+        "model": "vmax1200 (vmx 12n(c))"
+    },
+    "YAMAHA VMX12 MANUAL TALLER 1986": {
+        "manual": "YAMAHA VMX12 MANUAL TALLER 1986",
+        "motorcycle": "yamaha-vmx12",
+        "brand": "yamaha",
+        "model": "vmx12"
+    },
+    "YAMAHA VMX12F (3JPF) MANUAL PARTES 1994": {
+        "manual": "YAMAHA VMX12F (3JPF) MANUAL PARTES 1994",
+        "motorcycle": "yamaha-vmx12f (3jpf)",
+        "brand": "yamaha",
+        "model": "vmx12f (3jpf)"
+    },
+    "YAMAHA VMX12S MANUAL PARTES 2003": {
+        "manual": "YAMAHA VMX12S MANUAL PARTES 2003",
+        "motorcycle": "yamaha-vmx12s",
+        "brand": "yamaha",
+        "model": "vmx12s"
+    },
+    "YAMAHA VMX17 (2S3C) MANUAL PARTES 2009": {
+        "manual": "YAMAHA VMX17 (2S3C) MANUAL PARTES 2009",
+        "motorcycle": "yamaha-vmx17 (2s3c)",
+        "brand": "yamaha",
+        "model": "vmx17 (2s3c)"
+    },
+    "YAMAHA WAVERUNNER FX SVHO MANUAL USUARIO 2016": {
+        "manual": "YAMAHA WAVERUNNER FX SVHO MANUAL USUARIO 2016",
+        "motorcycle": "yamaha-waverunner fx svho",
+        "brand": "yamaha",
+        "model": "waverunner fx svho"
+    },
+    "YAMAHA WAVERUNNER GP1800 MANUAL USUARIO 2016": {
+        "manual": "YAMAHA WAVERUNNER GP1800 MANUAL USUARIO 2016",
+        "motorcycle": "yamaha-waverunner gp1800",
+        "brand": "yamaha",
+        "model": "waverunner gp1800"
+    },
+    "YAMAHA WR250F MANUAL TALLER 2018": {
+        "manual": "YAMAHA WR250F MANUAL TALLER 2018",
+        "motorcycle": "yamaha-wr250f",
+        "brand": "yamaha",
+        "model": "wr250f"
+    },
+    "YAMAHA WR250F(E) MANUAL TALLER 2014": {
+        "manual": "YAMAHA WR250F(E) MANUAL TALLER 2014",
+        "motorcycle": "yamaha-wr250f(e)",
+        "brand": "yamaha",
+        "model": "wr250f(e)"
+    },
+    "YAMAHA WR250FB MANUAL TALLER 2012": {
+        "manual": "YAMAHA WR250FB MANUAL TALLER 2012",
+        "motorcycle": "yamaha-wr250fb",
+        "brand": "yamaha",
+        "model": "wr250fb"
+    },
+    "YAMAHA WR250X (32D2) MANUAL PARTES 2007": {
+        "manual": "YAMAHA WR250X (32D2) MANUAL PARTES 2007",
+        "motorcycle": "yamaha-wr250x (32d2)",
+        "brand": "yamaha",
+        "model": "wr250x (32d2)"
+    },
+    "YAMAHA WR400FK (5BF1) MANUAL PARTES 1998": {
+        "manual": "YAMAHA WR400FK (5BF1) MANUAL PARTES 1998",
+        "motorcycle": "yamaha-wr400fk (5bf1)",
+        "brand": "yamaha",
+        "model": "wr400fk (5bf1)"
+    },
+    "YAMAHA WR426FP (5NG5) MANUAL PARTES 2001": {
+        "manual": "YAMAHA WR426FP (5NG5) MANUAL PARTES 2001",
+        "motorcycle": "yamaha-wr426fp (5ng5)",
+        "brand": "yamaha",
+        "model": "wr426fp (5ng5)"
+    },
+    "YAMAHA WR450 FZ MANUAL TALLER 2010": {
+        "manual": "YAMAHA WR450 FZ MANUAL TALLER 2010",
+        "motorcycle": "yamaha-wr450 fz",
+        "brand": "yamaha",
+        "model": "wr450 fz"
+    },
+    "YAMAHA WR450F MANUAL USUARIO 2008": {
+        "manual": "YAMAHA WR450F MANUAL USUARIO 2008",
+        "motorcycle": "yamaha-wr450f",
+        "brand": "yamaha",
+        "model": "wr450f"
+    },
+    "YAMAHA WR450F(W) MANUAL USUARIO 2006": {
+        "manual": "YAMAHA WR450F(W) MANUAL USUARIO 2006",
+        "motorcycle": "yamaha-wr450f(w)",
+        "brand": "yamaha",
+        "model": "wr450f(w)"
+    },
+    "YAMAHA WR450FG MANUAL TALLER 2016": {
+        "manual": "YAMAHA WR450FG MANUAL TALLER 2016",
+        "motorcycle": "yamaha-wr450fg",
+        "brand": "yamaha",
+        "model": "wr450fg"
+    },
+    "YAMAHA WR450FX MANUAL TALLER 2008": {
+        "manual": "YAMAHA WR450FX MANUAL TALLER 2008",
+        "motorcycle": "yamaha-wr450fx",
+        "brand": "yamaha",
+        "model": "wr450fx"
+    },
+    "YAMAHA WV17PCTB (2D81) MANUAL PARTES 2004": {
+        "manual": "YAMAHA WV17PCTB (2D81) MANUAL PARTES 2004",
+        "motorcycle": "yamaha-wv17pctb (2d81)",
+        "brand": "yamaha",
+        "model": "wv17pctb (2d81)"
+    },
+    "YAMAHA XJ6 (XJ6N(Y)) MANUAL TALLER 2009": {
+        "manual": "YAMAHA XJ6 (XJ6N(Y)) MANUAL TALLER 2009",
+        "motorcycle": "yamaha-xj6 (xj6n(y))",
+        "brand": "yamaha",
+        "model": "xj6 (xj6n(y))"
+    },
+    "YAMAHA XJ6N (Y) MANUAL TALLER 2009": {
+        "manual": "YAMAHA XJ6N (Y) MANUAL TALLER 2009",
+        "motorcycle": "yamaha-xj6n (y)",
+        "brand": "yamaha",
+        "model": "xj6n (y)"
+    },
+    "YAMAHA XJ6S (Y) MANUAL TALLER 2009": {
+        "manual": "YAMAHA XJ6S (Y) MANUAL TALLER 2009",
+        "motorcycle": "yamaha-xj6s (y)",
+        "brand": "yamaha",
+        "model": "xj6s (y)"
+    },
+    "YAMAHA XP500 (4B51) MANUAL PARTES 2007": {
+        "manual": "YAMAHA XP500 (4B51) MANUAL PARTES 2007",
+        "motorcycle": "yamaha-xp500 (4b51)",
+        "brand": "yamaha",
+        "model": "xp500 (4b51)"
+    },
+    "YAMAHA XS650SE MANUAL TALLER": {
+        "manual": "YAMAHA XS650SE MANUAL TALLER",
+        "motorcycle": "yamaha-xs650se",
+        "brand": "yamaha",
+        "model": "xs650se"
+    },
+    "YAMAHA XSR900 (MTM850) MANUAL TALLER 2016": {
+        "manual": "YAMAHA XSR900 (MTM850) MANUAL TALLER 2016",
+        "motorcycle": "yamaha-xsr900 (mtm850)",
+        "brand": "yamaha",
+        "model": "xsr900 (mtm850)"
+    },
+    "YAMAHA XT-225 MANUAL TALLER 1999": {
+        "manual": "YAMAHA XT-225 MANUAL TALLER 1999",
+        "motorcycle": "yamaha-xt-225",
+        "brand": "yamaha",
+        "model": "xt-225"
+    },
+    "YAMAHA XT1200Z (23P1) MANUAL PARTES 2010": {
+        "manual": "YAMAHA XT1200Z (23P1) MANUAL PARTES 2010",
+        "motorcycle": "yamaha-xt1200z (23p1)",
+        "brand": "yamaha",
+        "model": "xt1200z (23p1)"
+    },
+    "YAMAHA XT1200Z (23PB) MANUAL PARTES 2011": {
+        "manual": "YAMAHA XT1200Z (23PB) MANUAL PARTES 2011",
+        "motorcycle": "yamaha-xt1200z (23pb)",
+        "brand": "yamaha",
+        "model": "xt1200z (23pb)"
+    },
+    "YAMAHA XT1200Z(Z) SUPER TENER\u00c9 MANUAL TALLER 2010": {
+        "manual": "YAMAHA XT1200Z(Z) SUPER TENER\u00c9 MANUAL TALLER 2010",
+        "motorcycle": "yamaha-xt1200z(z) super tener\u00e9",
+        "brand": "yamaha",
+        "model": "xt1200z(z) super tener\u00e9"
+    },
+    "YAMAHA XT1200ZE SUPER TENER\u00c9 MANUAL USUARIO 2017": {
+        "manual": "YAMAHA XT1200ZE SUPER TENER\u00c9 MANUAL USUARIO 2017",
+        "motorcycle": "yamaha-xt1200ze super tener\u00e9",
+        "brand": "yamaha",
+        "model": "xt1200ze super tener\u00e9"
+    },
+    "YAMAHA XT225 (4VW3) MANUAL PARTES 1998": {
+        "manual": "YAMAHA XT225 (4VW3) MANUAL PARTES 1998",
+        "motorcycle": "yamaha-xt225 (4vw3)",
+        "brand": "yamaha",
+        "model": "xt225 (4vw3)"
+    },
+    "YAMAHA XT225 MANUAL TALLER 1999": {
+        "manual": "YAMAHA XT225 MANUAL TALLER 1999",
+        "motorcycle": "yamaha-xt225",
+        "brand": "yamaha",
+        "model": "xt225"
+    },
+    "YAMAHA XT350 MANUAL TALLER 1984": {
+        "manual": "YAMAHA XT350 MANUAL TALLER 1984",
+        "motorcycle": "yamaha-xt350",
+        "brand": "yamaha",
+        "model": "xt350"
+    },
+    "YAMAHA XT500E - XT600E MANUAL TALLER 1990": {
+        "manual": "YAMAHA XT500E - XT600E MANUAL TALLER 1990",
+        "motorcycle": "yamaha-xt500e - xt600e",
+        "brand": "yamaha",
+        "model": "xt500e - xt600e"
+    },
+    "YAMAHA XT600 (3TBA) MANUAL PARTES 1994": {
+        "manual": "YAMAHA XT600 (3TBA) MANUAL PARTES 1994",
+        "motorcycle": "yamaha-xt600 (3tba)",
+        "brand": "yamaha",
+        "model": "xt600 (3tba)"
+    },
+    "YAMAHA XT660-R (S) XT660X (S) MANUAL TALLER 2004": {
+        "manual": "YAMAHA XT660-R (S) XT660X (S) MANUAL TALLER 2004",
+        "motorcycle": "yamaha-xt660-r (s) xt660x (s)",
+        "brand": "yamaha",
+        "model": "xt660-r (s) xt660x (s)"
+    },
+    "YAMAHA XT660R (5VKG) MANUAL PARTES 2010": {
+        "manual": "YAMAHA XT660R (5VKG) MANUAL PARTES 2010",
+        "motorcycle": "yamaha-xt660r (5vkg)",
+        "brand": "yamaha",
+        "model": "xt660r (5vkg)"
+    },
+    "YAMAHA XT660R MANUAL TALLER SUPLEMENTARIO 2007": {
+        "manual": "YAMAHA XT660R MANUAL TALLER SUPLEMENTARIO 2007",
+        "motorcycle": "yamaha-xt660r",
+        "brand": "yamaha",
+        "model": "xt660r"
+    },
+    "YAMAHA XT660X (10S3) MANUAL PARTES 2007": {
+        "manual": "YAMAHA XT660X (10S3) MANUAL PARTES 2007",
+        "motorcycle": "yamaha-xt660x (10s3)",
+        "brand": "yamaha",
+        "model": "xt660x (10s3)"
+    },
+    "YAMAHA XT660X (10S5) MANUAL PARTES 2008": {
+        "manual": "YAMAHA XT660X (10S5) MANUAL PARTES 2008",
+        "motorcycle": "yamaha-xt660x (10s5)",
+        "brand": "yamaha",
+        "model": "xt660x (10s5)"
+    },
+    "YAMAHA XT660X MANUAL PARTES 2004": {
+        "manual": "YAMAHA XT660X MANUAL PARTES 2004",
+        "motorcycle": "yamaha-xt660x",
+        "brand": "yamaha",
+        "model": "xt660x"
+    },
+    "YAMAHA XTZ 150 MANUAL TALLER 2019": {
+        "manual": "YAMAHA XTZ 150 MANUAL TALLER 2019",
+        "motorcycle": "yamaha-xtz 150",
+        "brand": "yamaha",
+        "model": "xtz 150"
+    },
+    "YAMAHA XTZ LANDER MANUAL TALLER 2007": {
+        "manual": "YAMAHA XTZ LANDER MANUAL TALLER 2007",
+        "motorcycle": "yamaha-xtz lander",
+        "brand": "yamaha",
+        "model": "xtz lander"
+    },
+    "YAMAHA XTZ-125 MANUAL TALLER 2003": {
+        "manual": "YAMAHA XTZ-125 MANUAL TALLER 2003",
+        "motorcycle": "yamaha-xtz-125",
+        "brand": "yamaha",
+        "model": "xtz-125"
+    },
+    "YAMAHA XTZ-250 MANUAL DE TALLER": {
+        "manual": "YAMAHA XTZ-250 MANUAL DE TALLER",
+        "motorcycle": "yamaha-xtz-250",
+        "brand": "yamaha",
+        "model": "xtz-250"
+    },
+    "YAMAHA XTZ-750 MANUAL TALLER 1989": {
+        "manual": "YAMAHA XTZ-750 MANUAL TALLER 1989",
+        "motorcycle": "yamaha-xtz-750",
+        "brand": "yamaha",
+        "model": "xtz-750"
+    },
+    "YAMAHA XTZ125E (41B4) MANUAL PARTES 2010": {
+        "manual": "YAMAHA XTZ125E (41B4) MANUAL PARTES 2010",
+        "motorcycle": "yamaha-xtz125e (41b4)",
+        "brand": "yamaha",
+        "model": "xtz125e (41b4)"
+    },
+    "YAMAHA XTZ125K (5YM2) MANUAL PARTES 2003": {
+        "manual": "YAMAHA XTZ125K (5YM2) MANUAL PARTES 2003",
+        "motorcycle": "yamaha-xtz125k (5ym2)",
+        "brand": "yamaha",
+        "model": "xtz125k (5ym2)"
+    },
+    "YAMAHA XTZ150 MANUAL TALLER 2019": {
+        "manual": "YAMAHA XTZ150 MANUAL TALLER 2019",
+        "motorcycle": "yamaha-xtz150",
+        "brand": "yamaha",
+        "model": "xtz150"
+    },
+    "YAMAHA XTZ250 (20C1) MANUAL PARTES 2007": {
+        "manual": "YAMAHA XTZ250 (20C1) MANUAL PARTES 2007",
+        "motorcycle": "yamaha-xtz250 (20c1)",
+        "brand": "yamaha",
+        "model": "xtz250 (20c1)"
+    },
+    "YAMAHA XTZ250 (56D2) MANUAL PARTES 2009": {
+        "manual": "YAMAHA XTZ250 (56D2) MANUAL PARTES 2009",
+        "motorcycle": "yamaha-xtz250 (56d2)",
+        "brand": "yamaha",
+        "model": "xtz250 (56d2)"
+    },
+    "YAMAHA XTZ250 LANDER MANUAL TALLER 2020": {
+        "manual": "YAMAHA XTZ250 LANDER MANUAL TALLER 2020",
+        "motorcycle": "yamaha-xtz250 lander",
+        "brand": "yamaha",
+        "model": "xtz250 lander"
+    },
+    "YAMAHA XTZ250 TENERE MANUAL TALLER 2011": {
+        "manual": "YAMAHA XTZ250 TENERE MANUAL TALLER 2011",
+        "motorcycle": "yamaha-xtz250 tenere",
+        "brand": "yamaha",
+        "model": "xtz250 tenere"
+    },
+    "YAMAHA XTZ660K (4UX2) MANUAL PARTES 1998": {
+        "manual": "YAMAHA XTZ660K (4UX2) MANUAL PARTES 1998",
+        "motorcycle": "yamaha-xtz660k (4ux2)",
+        "brand": "yamaha",
+        "model": "xtz660k (4ux2)"
+    },
+    "YAMAHA XTZ750 (3SC2) MANUAL PARTES 1990": {
+        "manual": "YAMAHA XTZ750 (3SC2) MANUAL PARTES 1990",
+        "motorcycle": "yamaha-xtz750 (3sc2)",
+        "brand": "yamaha",
+        "model": "xtz750 (3sc2)"
+    },
+    "YAMAHA XV1100 MANUAL TALLER 1983": {
+        "manual": "YAMAHA XV1100 MANUAL TALLER 1983",
+        "motorcycle": "yamaha-xv1100",
+        "brand": "yamaha",
+        "model": "xv1100"
+    },
+    "YAMAHA XV1600ATP (5GAD) MANUAL PARTES 2001": {
+        "manual": "YAMAHA XV1600ATP (5GAD) MANUAL PARTES 2001",
+        "motorcycle": "yamaha-xv1600atp (5gad)",
+        "brand": "yamaha",
+        "model": "xv1600atp (5gad)"
+    },
+    "YAMAHA XV19MV (4D51) MANUAL PARTES 2005": {
+        "manual": "YAMAHA XV19MV (4D51) MANUAL PARTES 2005",
+        "motorcycle": "yamaha-xv19mv (4d51)",
+        "brand": "yamaha",
+        "model": "xv19mv (4d51)"
+    },
+    "YAMAHA XV250U MANUAL TALLER 1988": {
+        "manual": "YAMAHA XV250U MANUAL TALLER 1988",
+        "motorcycle": "yamaha-xv250u",
+        "brand": "yamaha",
+        "model": "xv250u"
+    },
+    "YAMAHA XV535 (3BTN) MANUAL PARTES1992": {
+        "manual": "YAMAHA XV535 (3BTN) MANUAL PARTES1992",
+        "motorcycle": "yamaha-xv535 (3btn)",
+        "brand": "yamaha",
+        "model": "xv535 (3btn)"
+    },
+    "YAMAHA XV535 MANUAL TALLER 1988": {
+        "manual": "YAMAHA XV535 MANUAL TALLER 1988",
+        "motorcycle": "yamaha-xv535",
+        "brand": "yamaha",
+        "model": "xv535"
+    },
+    "YAMAHA XV750 MAUAL TALLER 1992": {
+        "manual": "YAMAHA XV750 MAUAL TALLER 1992",
+        "motorcycle": "yamaha-xv750",
+        "brand": "yamaha",
+        "model": "xv750"
+    },
+    "YAMAHA XVS1100LC MANUAL TALLER 1998": {
+        "manual": "YAMAHA XVS1100LC MANUAL TALLER 1998",
+        "motorcycle": "yamaha-xvs1100lc",
+        "brand": "yamaha",
+        "model": "xvs1100lc"
+    },
+    "YAMAHA XVS11AWY (23S6) MANUAL PARTES 2008": {
+        "manual": "YAMAHA XVS11AWY (23S6) MANUAL PARTES 2008",
+        "motorcycle": "yamaha-xvs11awy (23s6)",
+        "brand": "yamaha",
+        "model": "xvs11awy (23s6)"
+    },
+    "YAMAHA XVS13CBD (1SJ2) MANUAL PARTES 2011": {
+        "manual": "YAMAHA XVS13CBD (1SJ2) MANUAL PARTES 2011",
+        "motorcycle": "yamaha-xvs13cbd (1sj2)",
+        "brand": "yamaha",
+        "model": "xvs13cbd (1sj2)"
+    },
+    "YAMAHA XVS250 (5KR2) MANUAL PARTES 2000": {
+        "manual": "YAMAHA XVS250 (5KR2) MANUAL PARTES 2000",
+        "motorcycle": "yamaha-xvs250 (5kr2)",
+        "brand": "yamaha",
+        "model": "xvs250 (5kr2)"
+    },
+    "YAMAHA XVS650AK MANUAL TALLER 1997": {
+        "manual": "YAMAHA XVS650AK MANUAL TALLER 1997",
+        "motorcycle": "yamaha-xvs650ak",
+        "brand": "yamaha",
+        "model": "xvs650ak"
+    },
+    "YAMAHA XVS650AT (5SCN) MANUAL PARTES 2004": {
+        "manual": "YAMAHA XVS650AT (5SCN) MANUAL PARTES 2004",
+        "motorcycle": "yamaha-xvs650at (5scn)",
+        "brand": "yamaha",
+        "model": "xvs650at (5scn)"
+    },
+    "YAMAHA XVS65A (3B6K) MANUAL PARTES 2010": {
+        "manual": "YAMAHA XVS65A (3B6K) MANUAL PARTES 2010",
+        "motorcycle": "yamaha-xvs65a (3b6k)",
+        "brand": "yamaha",
+        "model": "xvs65a (3b6k)"
+    },
+    "YAMAHA XVS95CUE MANUAL TALLER 2013": {
+        "manual": "YAMAHA XVS95CUE MANUAL TALLER 2013",
+        "motorcycle": "yamaha-xvs95cue",
+        "brand": "yamaha",
+        "model": "xvs95cue"
+    },
+    "YAMAHA XVS95Y (5S71) MANUAL LPARTES 2009": {
+        "manual": "YAMAHA XVS95Y (5S71) MANUAL LPARTES 2009",
+        "motorcycle": "yamaha-xvs95y (5s71)",
+        "brand": "yamaha",
+        "model": "xvs95y (5s71)"
+    },
+    "YAMAHA XVS95Y(C) (STAR) MANUAL TALLER 2009": {
+        "manual": "YAMAHA XVS95Y(C) (STAR) MANUAL TALLER 2009",
+        "motorcycle": "yamaha-xvs95y(c) (star)",
+        "brand": "yamaha",
+        "model": "xvs95y(c) (star)"
+    },
+    "YAMAHA XVZ13AT MANUAL TALLER 1995": {
+        "manual": "YAMAHA XVZ13AT MANUAL TALLER 1995",
+        "motorcycle": "yamaha-xvz13at",
+        "brand": "yamaha",
+        "model": "xvz13at"
+    },
+    "YAMAHA XVZ13CTSYC (1D6T) MANUAL PARTES 2008": {
+        "manual": "YAMAHA XVZ13CTSYC (1D6T) MANUAL PARTES 2008",
+        "motorcycle": "yamaha-xvz13ctsyc (1d6t)",
+        "brand": "yamaha",
+        "model": "xvz13ctsyc (1d6t)"
+    },
+    "YAMAHA YBA125 (5AP1) MANUAL PARTES 2000": {
+        "manual": "YAMAHA YBA125 (5AP1) MANUAL PARTES 2000",
+        "motorcycle": "yamaha-yba125 (5ap1)",
+        "brand": "yamaha",
+        "model": "yba125 (5ap1)"
+    },
+    "YAMAHA YBR125 MANUAL TALLER 2008": {
+        "manual": "YAMAHA YBR125 MANUAL TALLER 2008",
+        "motorcycle": "yamaha-ybr125",
+        "brand": "yamaha",
+        "model": "ybr125"
+    },
+    "YAMAHA YBR125 MANUAL USUARIO 2013": {
+        "manual": "YAMAHA YBR125 MANUAL USUARIO 2013",
+        "motorcycle": "yamaha-ybr125",
+        "brand": "yamaha",
+        "model": "ybr125"
+    },
+    "YAMAHA YBR125E MANUAL PARTES 2010": {
+        "manual": "YAMAHA YBR125E MANUAL PARTES 2010",
+        "motorcycle": "yamaha-ybr125e",
+        "brand": "yamaha",
+        "model": "ybr125e"
+    },
+    "YAMAHA YBRZ YB125ZR MANUAL TALLER 2016": {
+        "manual": "YAMAHA YBRZ YB125ZR MANUAL TALLER 2016",
+        "motorcycle": "yamaha-ybrz yb125zr",
+        "brand": "yamaha",
+        "model": "ybrz yb125zr"
+    },
+    "YAMAHA YBRZ YBR125ZR MANUAL TALLER 2016": {
+        "manual": "YAMAHA YBRZ YBR125ZR MANUAL TALLER 2016",
+        "motorcycle": "yamaha-ybrz ybr125zr",
+        "brand": "yamaha",
+        "model": "ybrz ybr125zr"
+    },
+    "YAMAHA YFA1S (5VJ4) MANUAL PARTES 2004": {
+        "manual": "YAMAHA YFA1S (5VJ4) MANUAL PARTES 2004",
+        "motorcycle": "yamaha-yfa1s (5vj4)",
+        "brand": "yamaha",
+        "model": "yfa1s (5vj4)"
+    },
+    "YAMAHA YFM25RY MANUAL PARTES 2008": {
+        "manual": "YAMAHA YFM25RY MANUAL PARTES 2008",
+        "motorcycle": "yamaha-yfm25ry",
+        "brand": "yamaha",
+        "model": "yfm25ry"
+    },
+    "YAMAHA YFM350RT (5YT5) MANUAL PARTES 2004": {
+        "manual": "YAMAHA YFM350RT (5YT5) MANUAL PARTES 2004",
+        "motorcycle": "yamaha-yfm350rt (5yt5)",
+        "brand": "yamaha",
+        "model": "yfm350rt (5yt5)"
+    },
+    "YAMAHA YFM350S MANUAL ENSAMBLE 2003": {
+        "manual": "YAMAHA YFM350S MANUAL ENSAMBLE 2003",
+        "motorcycle": "yamaha-yfm350s",
+        "brand": "yamaha",
+        "model": "yfm350s"
+    },
+    "YAMAHA YFM350S MANUAL TALLER SUPLEMENTARIO 2004": {
+        "manual": "YAMAHA YFM350S MANUAL TALLER SUPLEMENTARIO 2004",
+        "motorcycle": "yamaha-yfm350s",
+        "brand": "yamaha",
+        "model": "yfm350s"
+    },
+    "YAMAHA YFM350X(J) MANUAL TALLER 1997": {
+        "manual": "YAMAHA YFM350X(J) MANUAL TALLER 1997",
+        "motorcycle": "yamaha-yfm350x(j)",
+        "brand": "yamaha",
+        "model": "yfm350x(j)"
+    },
+    "YAMAHA YFM350XS (5NFB) MANUAL PARTES 2003": {
+        "manual": "YAMAHA YFM350XS (5NFB) MANUAL PARTES 2003",
+        "motorcycle": "yamaha-yfm350xs (5nfb)",
+        "brand": "yamaha",
+        "model": "yfm350xs (5nfb)"
+    },
+    "YAMAHA YFM35FXG (4KB1) MANUAL PARTES 1995": {
+        "manual": "YAMAHA YFM35FXG (4KB1) MANUAL PARTES 1995",
+        "motorcycle": "yamaha-yfm35fxg (4kb1)",
+        "brand": "yamaha",
+        "model": "yfm35fxg (4kb1)"
+    },
+    "YAMAHA YFM400FAR MANUAL ENSAMBLE 2002": {
+        "manual": "YAMAHA YFM400FAR MANUAL ENSAMBLE 2002",
+        "motorcycle": "yamaha-yfm400far",
+        "brand": "yamaha",
+        "model": "yfm400far"
+    },
+    "YAMAHA YFM400FAR MANUAL TALLER 2002": {
+        "manual": "YAMAHA YFM400FAR MANUAL TALLER 2002",
+        "motorcycle": "yamaha-yfm400far",
+        "brand": "yamaha",
+        "model": "yfm400far"
+    },
+    "YAMAHA YFM400FAR MANUAL TALLER SUPLEMENTARIO 2004": {
+        "manual": "YAMAHA YFM400FAR MANUAL TALLER SUPLEMENTARIO 2004",
+        "motorcycle": "yamaha-yfm400far",
+        "brand": "yamaha",
+        "model": "yfm400far"
+    },
+    "YAMAHA YFM400FWA(M) MANUAL TALLER 2000": {
+        "manual": "YAMAHA YFM400FWA(M) MANUAL TALLER 2000",
+        "motorcycle": "yamaha-yfm400fwa(m)",
+        "brand": "yamaha",
+        "model": "yfm400fwa(m)"
+    },
+    "YAMAHA YFM450FAR MANUAL ENSAMBLE 2002": {
+        "manual": "YAMAHA YFM450FAR MANUAL ENSAMBLE 2002",
+        "motorcycle": "yamaha-yfm450far",
+        "brand": "yamaha",
+        "model": "yfm450far"
+    },
+    "YAMAHA YFM450FAR MANUAL TALLER 2002": {
+        "manual": "YAMAHA YFM450FAR MANUAL TALLER 2002",
+        "motorcycle": "yamaha-yfm450far",
+        "brand": "yamaha",
+        "model": "yfm450far"
+    },
+    "YAMAHA YFM450FAT MANUAL TALLER SUPLEMENTARIO 2004": {
+        "manual": "YAMAHA YFM450FAT MANUAL TALLER SUPLEMENTARIO 2004",
+        "motorcycle": "yamaha-yfm450fat",
+        "brand": "yamaha",
+        "model": "yfm450fat"
+    },
+    "YAMAHA YFM660F(P) MANUAL ENSAMBLE 2002": {
+        "manual": "YAMAHA YFM660F(P) MANUAL ENSAMBLE 2002",
+        "motorcycle": "yamaha-yfm660f(p)",
+        "brand": "yamaha",
+        "model": "yfm660f(p)"
+    },
+    "YAMAHA YFM660F(P) MANUAL TALLER 2002": {
+        "manual": "YAMAHA YFM660F(P) MANUAL TALLER 2002",
+        "motorcycle": "yamaha-yfm660f(p)",
+        "brand": "yamaha",
+        "model": "yfm660f(p)"
+    },
+    "YAMAHA YFM660FP MANUAL TALLER 2001": {
+        "manual": "YAMAHA YFM660FP MANUAL TALLER 2001",
+        "motorcycle": "yamaha-yfm660fp",
+        "brand": "yamaha",
+        "model": "yfm660fp"
+    },
+    "YAMAHA YFM660FR MANUAL TALLER SUPLEMENTARIO 2002": {
+        "manual": "YAMAHA YFM660FR MANUAL TALLER SUPLEMENTARIO 2002",
+        "motorcycle": "yamaha-yfm660fr",
+        "brand": "yamaha",
+        "model": "yfm660fr"
+    },
+    "YAMAHA YFM660R(N) MANUAL TALLER 2001": {
+        "manual": "YAMAHA YFM660R(N) MANUAL TALLER 2001",
+        "motorcycle": "yamaha-yfm660r(n)",
+        "brand": "yamaha",
+        "model": "yfm660r(n)"
+    },
+    "YAMAHA YFM660R(P) MANUAL TALLER SUPLEMENTARIO 2002": {
+        "manual": "YAMAHA YFM660R(P) MANUAL TALLER SUPLEMENTARIO 2002",
+        "motorcycle": "yamaha-yfm660r(p)",
+        "brand": "yamaha",
+        "model": "yfm660r(p)"
+    },
+    "YAMAHA YFM660RP (5LP5) MANUAL PARTES 2001": {
+        "manual": "YAMAHA YFM660RP (5LP5) MANUAL PARTES 2001",
+        "motorcycle": "yamaha-yfm660rp (5lp5)",
+        "brand": "yamaha",
+        "model": "yfm660rp (5lp5)"
+    },
+    "YAMAHA YFM660RS MANUAL ENSAMBLE 2003": {
+        "manual": "YAMAHA YFM660RS MANUAL ENSAMBLE 2003",
+        "motorcycle": "yamaha-yfm660rs",
+        "brand": "yamaha",
+        "model": "yfm660rs"
+    },
+    "YAMAHA YFM700RV MANUAL TALLER 2005": {
+        "manual": "YAMAHA YFM700RV MANUAL TALLER 2005",
+        "motorcycle": "yamaha-yfm700rv",
+        "brand": "yamaha",
+        "model": "yfm700rv"
+    },
+    "YAMAHA YFM700RV MANUAL TALLER 2005XXXXXXXXXXX": {
+        "manual": "YAMAHA YFM700RV MANUAL TALLER 2005XXXXXXXXXXX",
+        "motorcycle": "yamaha-yfm700rv",
+        "brand": "yamaha",
+        "model": "yfm700rv"
+    },
+    "YAMAHA YFM70RSPX (1S3M) MANUAL PARTES 2007": {
+        "manual": "YAMAHA YFM70RSPX (1S3M) MANUAL PARTES 2007",
+        "motorcycle": "yamaha-yfm70rspx (1s3m)",
+        "brand": "yamaha",
+        "model": "yfm70rspx (1s3m)"
+    },
+    "YAMAHA YFM7FGPW MANUAL TALLER 2006": {
+        "manual": "YAMAHA YFM7FGPW MANUAL TALLER 2006",
+        "motorcycle": "yamaha-yfm7fgpw",
+        "brand": "yamaha",
+        "model": "yfm7fgpw"
+    },
+    "YAMAHA YFZ-R1 MANUAL PARTES 2013": {
+        "manual": "YAMAHA YFZ-R1 MANUAL PARTES 2013",
+        "motorcycle": "yamaha-yfz-r1",
+        "brand": "yamaha",
+        "model": "yfz-r1"
+    },
+    "YAMAHA YFZ350M BANSHEE (5FK6) MANUAL TALLER 2000": {
+        "manual": "YAMAHA YFZ350M BANSHEE (5FK6) MANUAL TALLER 2000",
+        "motorcycle": "yamaha-yfz350m banshee (5fk6)",
+        "brand": "yamaha",
+        "model": "yfz350m banshee (5fk6)"
+    },
+    "YAMAHA YP250 (5SJ9) MANUAL PARTES 2002": {
+        "manual": "YAMAHA YP250 (5SJ9) MANUAL PARTES 2002",
+        "motorcycle": "yamaha-yp250 (5sj9)",
+        "brand": "yamaha",
+        "model": "yp250 (5sj9)"
+    },
+    "YAMAHA YP400A MAYESTY MANUAL TALLER 2009": {
+        "manual": "YAMAHA YP400A MAYESTY MANUAL TALLER 2009",
+        "motorcycle": "yamaha-yp400a mayesty",
+        "brand": "yamaha",
+        "model": "yp400a mayesty"
+    },
+    "YAMAHA YW100CF (5XB5) MANUAL PARTES 2007": {
+        "manual": "YAMAHA YW100CF (5XB5) MANUAL PARTES 2007",
+        "motorcycle": "yamaha-yw100cf (5xb5)",
+        "brand": "yamaha",
+        "model": "yw100cf (5xb5)"
+    },
+    "YAMAHA YXR7FA (42SV) MANUAL PARTES 2010": {
+        "manual": "YAMAHA YXR7FA (42SV) MANUAL PARTES 2010",
+        "motorcycle": "yamaha-yxr7fa (42sv)",
+        "brand": "yamaha",
+        "model": "yxr7fa (42sv)"
+    },
+    "YAMAHA YXR7FXSEPA (42SW) MANUAL PARTES 2010": {
+        "manual": "YAMAHA YXR7FXSEPA (42SW) MANUAL PARTES 2010",
+        "motorcycle": "yamaha-yxr7fxsepa (42sw)",
+        "brand": "yamaha",
+        "model": "yxr7fxsepa (42sw)"
+    },
+    "YAMAHA YZ125F1 (4JY2) MANUAL PARTES 1994": {
+        "manual": "YAMAHA YZ125F1 (4JY2) MANUAL PARTES 1994",
+        "motorcycle": "yamaha-yz125f1 (4jy2)",
+        "brand": "yamaha",
+        "model": "yz125f1 (4jy2)"
+    },
+    "YAMAHA YZ125G2 MANUAL USUARIO 2016": {
+        "manual": "YAMAHA YZ125G2 MANUAL USUARIO 2016",
+        "motorcycle": "yamaha-yz125g2",
+        "brand": "yamaha",
+        "model": "yz125g2"
+    },
+    "YAMAHA YZ250F(X) MANUAL USUARIO 2008": {
+        "manual": "YAMAHA YZ250F(X) MANUAL USUARIO 2008",
+        "motorcycle": "yamaha-yz250f(x)",
+        "brand": "yamaha",
+        "model": "yz250f(x)"
+    },
+    "YAMAHA YZ250FA (17DD) MANUAL PARTES 2010": {
+        "manual": "YAMAHA YZ250FA (17DD) MANUAL PARTES 2010",
+        "motorcycle": "yamaha-yz250fa (17dd)",
+        "brand": "yamaha",
+        "model": "yz250fa (17dd)"
+    },
+    "YAMAHA YZ250FB MANUAL TALLER 2012": {
+        "manual": "YAMAHA YZ250FB MANUAL TALLER 2012",
+        "motorcycle": "yamaha-yz250fb",
+        "brand": "yamaha",
+        "model": "yz250fb"
+    },
+    "YAMAHA YZ250FN (5NL1) MANUAL PARTES 2001": {
+        "manual": "YAMAHA YZ250FN (5NL1) MANUAL PARTES 2001",
+        "motorcycle": "yamaha-yz250fn (5nl1)",
+        "brand": "yamaha",
+        "model": "yz250fn (5nl1)"
+    },
+    "YAMAHA YZ250FN MANUAL TALLER 2000": {
+        "manual": "YAMAHA YZ250FN MANUAL TALLER 2000",
+        "motorcycle": "yamaha-yz250fn",
+        "brand": "yamaha",
+        "model": "yz250fn"
+    },
+    "YAMAHA YZ250P (5NX1) MANUAL PARTES 2001": {
+        "manual": "YAMAHA YZ250P (5NX1) MANUAL PARTES 2001",
+        "motorcycle": "yamaha-yz250p (5nx1)",
+        "brand": "yamaha",
+        "model": "yz250p (5nx1)"
+    },
+    "YAMAHA YZ400FK (5BE1) MANUAL PARTES 1998": {
+        "manual": "YAMAHA YZ400FK (5BE1) MANUAL PARTES 1998",
+        "motorcycle": "yamaha-yz400fk (5be1)",
+        "brand": "yamaha",
+        "model": "yz400fk (5be1)"
+    },
+    "YAMAHA YZ426F MANUAL PARTES 2001": {
+        "manual": "YAMAHA YZ426F MANUAL PARTES 2001",
+        "motorcycle": "yamaha-yz426f",
+        "brand": "yamaha",
+        "model": "yz426f"
+    },
+    "YAMAHA YZ426FN (5JG5) MANUAL PARTES 2001": {
+        "manual": "YAMAHA YZ426FN (5JG5) MANUAL PARTES 2001",
+        "motorcycle": "yamaha-yz426fn (5jg5)",
+        "brand": "yamaha",
+        "model": "yz426fn (5jg5)"
+    },
+    "YAMAHA YZ450F(V) MANUAL USUARIO 2005": {
+        "manual": "YAMAHA YZ450F(V) MANUAL USUARIO 2005",
+        "motorcycle": "yamaha-yz450f(v)",
+        "brand": "yamaha",
+        "model": "yz450f(v)"
+    },
+    "YAMAHA YZ450FE MANUAL TALLER 2014": {
+        "manual": "YAMAHA YZ450FE MANUAL TALLER 2014",
+        "motorcycle": "yamaha-yz450fe",
+        "brand": "yamaha",
+        "model": "yz450fe"
+    },
+    "YAMAHA YZ450FMANUAL TALLER 2002": {
+        "manual": "YAMAHA YZ450FMANUAL TALLER 2002",
+        "motorcycle": "yamaha-yz450f",
+        "brand": "yamaha",
+        "model": "yz450f"
+    },
+    "YAMAHA YZ450FR (5TA1) MANUAL PARTES 2002": {
+        "manual": "YAMAHA YZ450FR (5TA1) MANUAL PARTES 2002",
+        "motorcycle": "yamaha-yz450fr (5ta1)",
+        "brand": "yamaha",
+        "model": "yz450fr (5ta1)"
+    },
+    "YAMAHA YZ80F1 (4ES3) MANUAL PARTES 1994": {
+        "manual": "YAMAHA YZ80F1 (4ES3) MANUAL PARTES 1994",
+        "motorcycle": "yamaha-yz80f1 (4es3)",
+        "brand": "yamaha",
+        "model": "yz80f1 (4es3)"
+    },
+    "YAMAHA YZ80N1 (4ESA) MANUL PARTES 2001": {
+        "manual": "YAMAHA YZ80N1 (4ESA) MANUL PARTES 2001",
+        "motorcycle": "yamaha-yz80n1 (4esa)",
+        "brand": "yamaha",
+        "model": "yz80n1 (4esa)"
+    },
+    "YAMAHA YZ85 (5PA7) MANUAL PARTES 2003": {
+        "manual": "YAMAHA YZ85 (5PA7) MANUAL PARTES 2003",
+        "motorcycle": "yamaha-yz85 (5pa7)",
+        "brand": "yamaha",
+        "model": "yz85 (5pa7)"
+    },
+    "YAMAHA YZ85LW(W) MANUAL TALLER 2007": {
+        "manual": "YAMAHA YZ85LW(W) MANUAL TALLER 2007",
+        "motorcycle": "yamaha-yz85lw(w)",
+        "brand": "yamaha",
+        "model": "yz85lw(w)"
+    },
+    "YAMAHA YZ85P (5PA1) MANUAL PARTES 2001": {
+        "manual": "YAMAHA YZ85P (5PA1) MANUAL PARTES 2001",
+        "motorcycle": "yamaha-yz85p (5pa1)",
+        "brand": "yamaha",
+        "model": "yz85p (5pa1)"
+    },
+    "YAMAHA YZF-R1 (1KB8) MANUAL PARTES 2011": {
+        "manual": "YAMAHA YZF-R1 (1KB8) MANUAL PARTES 2011",
+        "motorcycle": "yamaha-yzf-r1 (1kb8)",
+        "brand": "yamaha",
+        "model": "yzf-r1 (1kb8)"
+    },
+    "YAMAHA YZF-R1 (4C88) MANUAL PARTES 2007": {
+        "manual": "YAMAHA YZF-R1 (4C88) MANUAL PARTES 2007",
+        "motorcycle": "yamaha-yzf-r1 (4c88)",
+        "brand": "yamaha",
+        "model": "yzf-r1 (4c88)"
+    },
+    "YAMAHA YZF-R1 (5JJ1) MANUAL PARTES 2000": {
+        "manual": "YAMAHA YZF-R1 (5JJ1) MANUAL PARTES 2000",
+        "motorcycle": "yamaha-yzf-r1 (5jj1)",
+        "brand": "yamaha",
+        "model": "yzf-r1 (5jj1)"
+    },
+    "YAMAHA YZF-R1 (5PW7) MANUAL PARTES 2002": {
+        "manual": "YAMAHA YZF-R1 (5PW7) MANUAL PARTES 2002",
+        "motorcycle": "yamaha-yzf-r1 (5pw7)",
+        "brand": "yamaha",
+        "model": "yzf-r1 (5pw7)"
+    },
+    "YAMAHA YZF-R1 MANUAL TALLER 1998": {
+        "manual": "YAMAHA YZF-R1 MANUAL TALLER 1998",
+        "motorcycle": "yamaha-yzf-r1",
+        "brand": "yamaha",
+        "model": "yzf-r1"
+    },
+    "YAMAHA YZF-R1(M) MANUAL TALLER SUPLEMENTARIO 2000": {
+        "manual": "YAMAHA YZF-R1(M) MANUAL TALLER SUPLEMENTARIO 2000",
+        "motorcycle": "yamaha-yzf-r1(m)",
+        "brand": "yamaha",
+        "model": "yzf-r1(m)"
+    },
+    "YAMAHA YZF-R1(R) MANUAL TALLER SUPLEMENTARIO 2002": {
+        "manual": "YAMAHA YZF-R1(R) MANUAL TALLER SUPLEMENTARIO 2002",
+        "motorcycle": "yamaha-yzf-r1(r)",
+        "brand": "yamaha",
+        "model": "yzf-r1(r)"
+    },
+    "YAMAHA YZF-R1(S) MANUAL TALLER 2004": {
+        "manual": "YAMAHA YZF-R1(S) MANUAL TALLER 2004",
+        "motorcycle": "yamaha-yzf-r1(s)",
+        "brand": "yamaha",
+        "model": "yzf-r1(s)"
+    },
+    "YAMAHA YZF-R1(Y) MANUAL TALLER 2009": {
+        "manual": "YAMAHA YZF-R1(Y) MANUAL TALLER 2009",
+        "motorcycle": "yamaha-yzf-r1(y)",
+        "brand": "yamaha",
+        "model": "yzf-r1(y)"
+    },
+    "YAMAHA YZF-R15 (54C1) MANUAL PARTES 2009": {
+        "manual": "YAMAHA YZF-R15 (54C1) MANUAL PARTES 2009",
+        "motorcycle": "yamaha-yzf-r15 (54c1)",
+        "brand": "yamaha",
+        "model": "yzf-r15 (54c1)"
+    },
+    "YAMAHA YZF-R15 V": {
+        "manual": "YAMAHA YZF-R15 V",
+        "motorcycle": "yamaha-yzf-r15 v",
+        "brand": "yamaha",
+        "model": "yzf-r15 v"
+    },
+    "YAMAHA YZF-R1MF MANUAL TALLER 2015": {
+        "manual": "YAMAHA YZF-R1MF MANUAL TALLER 2015",
+        "motorcycle": "yamaha-yzf-r1mf",
+        "brand": "yamaha",
+        "model": "yzf-r1mf"
+    },
+    "YAMAHA YZF-R3F (R3) MANUAL TALLER 2015": {
+        "manual": "YAMAHA YZF-R3F (R3) MANUAL TALLER 2015",
+        "motorcycle": "yamaha-yzf-r3f (r3)",
+        "brand": "yamaha",
+        "model": "yzf-r3f (r3)"
+    },
+    "YAMAHA YZF-R6 (1JSG)MANUAL PARTES 2011": {
+        "manual": "YAMAHA YZF-R6 (1JSG)MANUAL PARTES 2011",
+        "motorcycle": "yamaha-yzf-r6 (1jsg)",
+        "brand": "yamaha",
+        "model": "yzf-r6 (1jsg)"
+    },
+    "YAMAHA YZF-R6 (R6) MANUAL TALLER 2017": {
+        "manual": "YAMAHA YZF-R6 (R6) MANUAL TALLER 2017",
+        "motorcycle": "yamaha-yzf-r6 (r6)",
+        "brand": "yamaha",
+        "model": "yzf-r6 (r6)"
+    },
+    "YAMAHA YZF-R6 MANUAL TALLER 2017": {
+        "manual": "YAMAHA YZF-R6 MANUAL TALLER 2017",
+        "motorcycle": "yamaha-yzf-r6",
+        "brand": "yamaha",
+        "model": "yzf-r6"
+    },
+    "YAMAHA YZF-R6(R) MANUAL TALLER 2003": {
+        "manual": "YAMAHA YZF-R6(R) MANUAL TALLER 2003",
+        "motorcycle": "yamaha-yzf-r6(r)",
+        "brand": "yamaha",
+        "model": "yzf-r6(r)"
+    },
+    "YAMAHA YZF-R6(S) MANUAL TALLER COMPLEMENTARIO 2004": {
+        "manual": "YAMAHA YZF-R6(S) MANUAL TALLER COMPLEMENTARIO 2004",
+        "motorcycle": "yamaha-yzf-r6(s)",
+        "brand": "yamaha",
+        "model": "yzf-r6(s)"
+    },
+    "YAMAHA YZF-R6(T) MANUAL TALLER COMPLEMENTARIO 2005": {
+        "manual": "YAMAHA YZF-R6(T) MANUAL TALLER COMPLEMENTARIO 2005",
+        "motorcycle": "yamaha-yzf-r6(t)",
+        "brand": "yamaha",
+        "model": "yzf-r6(t)"
+    },
+    "YAMAHA YZF-R6(Y) MANUAL TALLER 2009": {
+        "manual": "YAMAHA YZF-R6(Y) MANUAL TALLER 2009",
+        "motorcycle": "yamaha-yzf-r6(y)",
+        "brand": "yamaha",
+        "model": "yzf-r6(y)"
+    },
+    "YAMAHA YZF-R6S MANUAL TALLER 2003": {
+        "manual": "YAMAHA YZF-R6S MANUAL TALLER 2003",
+        "motorcycle": "yamaha-yzf-r6s",
+        "brand": "yamaha",
+        "model": "yzf-r6s"
+    },
+    "YAMAHA YZF-R6SX MANUAL PARTES 2007": {
+        "manual": "YAMAHA YZF-R6SX MANUAL PARTES 2007",
+        "motorcycle": "yamaha-yzf-r6sx",
+        "brand": "yamaha",
+        "model": "yzf-r6sx"
+    },
+    "YAMAHA YZF450SPX (5D3E) MANUAL PARTES 2007": {
+        "manual": "YAMAHA YZF450SPX (5D3E) MANUAL PARTES 2007",
+        "motorcycle": "yamaha-yzf450spx (5d3e)",
+        "brand": "yamaha",
+        "model": "yzf450spx (5d3e)"
+    },
+    "YAMAHA YZFR1W MANUAL TALLER 2006": {
+        "manual": "YAMAHA YZFR1W MANUAL TALLER 2006",
+        "motorcycle": "yamaha-yzfr1w",
+        "brand": "yamaha",
+        "model": "yzfr1w"
+    }
+}

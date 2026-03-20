@@ -1,6 +1,7 @@
 import json
 from langgraph.graph import StateGraph, END
 
+import config
 from src.commons import (
     AWSClient, get_brands, get_llm, extract_moto_models
 )
@@ -17,15 +18,18 @@ def domain_guard(state: AssistantState):
     app_logger.info("INSIDE intent NODE")
     app_logger.info("New question sent")
     prompt = f"""
-    Determine if the query is about motorcycles.
+    Determine if the query is motorcycles related, non related or user saying hello.
     Query: {state['query']}
-    Answer ONLY TRUE or FALSE.
+    TRUE: If the query is motorcycle related
+    FALSE: If the query is non motorcycle related
+    HELLO: If the query is user saying hello
+    Answer without introductory text or additional comments.
     """
     result = llm.invoke(prompt)
     app_logger.info(f"query: {state['query']}")
     app_logger.info(f"Intent: {result.content.upper()}")
     return {
-        "is_motorcycle_related": "TRUE" in result.content.upper()
+        "is_motorcycle_related": result.content.upper()
     }
 
 def ask_clarification(state):
@@ -34,8 +38,13 @@ def ask_clarification(state):
     models = state["detected_models"]
     options = [m['brand'] for m in models]
     app_logger.info(f"Possible motorcycle options: {options}")
+    if len(options):
+        options = "  \n- " + "  \n- ".join(options)
+        return {
+            "answer": f"Encontré las siguientes motocicletas que pueden coincidir con tu búsqueda:\n {options}"
+        }
     return {
-        "answer": f"Which motorcycle do you mean? {options}"
+        "answer": "No encontré la motocicleta que buscas ¿Puedes ser mas especifico?"
     }
 
 def model_extraction(state: AssistantState):
@@ -72,12 +81,14 @@ def query_rewriter(state: AssistantState):
     Motorcycle: {model['brand']}
     User query: {state['query']}
     Provide the rewritten query without introductory text or additional comments.
-    Provide a single version, the best for the query.
+    Provide a single version in english, the best for the query.
     """
-    result = llm.invoke(prompt)
-    app_logger.info(f"Rewritten query: {result.content}")
+    brand, mod = model["brand"].split('-')
+    rewritten_query = llm.invoke(prompt).content.lower()
+    rewritten_query = rewritten_query.replace(brand, '').replace(mod, '')
+    app_logger.info(f"Rewritten query: {rewritten_query}")
     return {
-        "rewritten_query": result.content
+        "rewritten_query": rewritten_query
     }
 
 def vector_retrieval(state: AssistantState):
@@ -112,45 +123,34 @@ def grade_chunks(state):
     """
     app_logger.info("INSIDE grade_chunks NODE")
     chunks = state.get("retrieved_chunks", [])
-    prompt = f"""
-        You are filtering relevant documents.
-        Question:
-        {state['query']}
-        Documents:
-        {chr(10).join([f"{i}. {c}" for i, c in enumerate(chunks)])}
-        Return a list of relevant document indices (e.g., [0,2,3]).
-        """
+    chunk_string = '\n'.join([f"{i}. {c}" for i, c in enumerate(chunks)])
+    prompt = config.prompts['grade_chunks_prompt'].format(query=state["query"], chunk_string=chunk_string)
     result = llm.invoke(prompt)
     try:
         indices = json.loads(result.content)
     except Exception:
         indices = []
     relevant = [chunks[i] for i in indices if i < len(chunks)]
-    app_logger.info(f"Chunks after filtering: {relevant}")
+    chunks_string = '\n- '+'\n- '.join(relevant)
+    app_logger.info(f"Chunks after filtering: {chunks_string}")
     return {"relevant_chunks": relevant}
-
-def retry_retrieval(state):
-    app_logger.info("INSIDE retry_retrieval NODE")
-    return {
-        "retries_retrieval": state["retries_retrieval"] + 1
-    }
 
 def answer_generation(state: AssistantState):
     app_logger.info("INSIDE answer_generation NODE")
-    context = "\n\n".join(state["relevant_chunks"])
-    prompt = f"""Answer the question using ONLY the context.
-            Context:
-            {context}
-            Question:
-            {state['query']}
-            In case there isn't enough context, return "No pude encontrar la información solicitada en los manuales."
-            Answer ONLY in spanish
-            """
+    context = "" if "relevant_chunks" not in state else "\n".join(state["relevant_chunks"])
+    prompt = config.prompts['answer_prompt'].format(context=context, query=state["query"], language=config.language)
     result = llm.invoke(prompt)
     app_logger.info(f"Answer: {result.content}")
-    return {"answer": result.content}
+    answer = result.content if 'selected_model' not in state else\
+        f"Encontré la respuesta para la motocicleta {state['selected_model']['brand'].upper()}:  \n{result.content}"
+    return {"answer": answer}
 
 def grounding_validator(state):
+    if "relevant_chunks" not in state:
+        return {
+            "validated": True,
+            "streamlit_state": True
+        }
     app_logger.info("INSIDE grounding_validator NODE")
     context = "\n\n".join(state["relevant_chunks"])
     prompt = f"""Question:
@@ -165,12 +165,16 @@ def grounding_validator(state):
     result = llm.invoke(prompt)
     if "SUPPORTED" in result.content:
         app_logger.success("Answer validated, the system will respond with the final answer")
-        state['streamlit_session'].solved = True
-        return {"validated": True}
+        return {
+            "validated": True,
+            "streamlit_state": True
+        }
     return {"validated": False}
 
 def route_domain(state: AssistantState):
-    return "model_extraction" if state["is_motorcycle_related"] else "out_of_scope"
+    if "HELLO" in state["is_motorcycle_related"]:
+        return "answer_generation"
+    return "model_extraction" if "TRUE" in state["is_motorcycle_related"] else "out_of_scope"
 
 def retry_generation(state):
     return {
@@ -179,20 +183,19 @@ def retry_generation(state):
 
 def unknown_answer(state):
     app_logger.info("INSIDE unknown_answer NODE")
-    app_logger.warning("No answer found, the agent respond with no information available")
+    app_logger.warning("No answer found, the agent will respond with no information available")
     return {
-        "answer": "I could not find this information in the motorcycle manual."
+        "answer": "No pude encontrar la información solicitada en los manuales."
     }
 
 def route_model(state):
     return "query_rewriter" if state["model_confident"] else "ask_clarification"
 
 def route_retrieval(state):
-    if state["relevant_chunks"]:
-        return "answer_generation"
-    if state["retries_retrieval"] < 2:
-        return "retry_retrieval"
-    return "unknown_answer"
+    return "grade_chunks" if state["retrieved_chunks"] else "unknown_answer"
+
+def route_retrieval_grade(state):
+    return "answer_generation" if state["relevant_chunks"] else "unknown_answer"
 
 def route_validation(state):
     if state["validated"]:
@@ -215,7 +218,6 @@ builder.add_node("ask_clarification", ask_clarification)
 builder.add_node("query_rewriter", query_rewriter)
 builder.add_node("vector_retrieval", vector_retrieval)
 builder.add_node("grade_chunks", grade_chunks)
-builder.add_node("retry_retrieval", retry_retrieval)
 builder.add_node("answer_generation", answer_generation)
 builder.add_node("grounding_validator", grounding_validator)
 builder.add_node("retry_generation", retry_generation)
@@ -228,7 +230,8 @@ builder.add_conditional_edges(
     route_domain,
     {
         "model_extraction": "model_extraction",
-        "out_of_scope": "unknown_answer"
+        "out_of_scope": "unknown_answer",
+        "answer_generation": "answer_generation"
     }
 )
 
@@ -244,19 +247,24 @@ builder.add_conditional_edges(
 )
 
 builder.add_edge("query_rewriter", "vector_retrieval")
-builder.add_edge("vector_retrieval", "grade_chunks")
 
 builder.add_conditional_edges(
-    "grade_chunks",
+    "vector_retrieval",
     route_retrieval,
     {
-        "answer_generation": "answer_generation",
-        "retry_retrieval": "retry_retrieval",
+        "grade_chunks": "grade_chunks",
         "unknown_answer": "unknown_answer"
     }
 )
 
-builder.add_edge("retry_retrieval", "vector_retrieval")
+builder.add_conditional_edges(
+    "grade_chunks",
+    route_retrieval_grade,
+    {
+        "answer_generation": "answer_generation",
+        "unknown_answer": "unknown_answer"
+    }
+)
 
 builder.add_edge("answer_generation", "grounding_validator")
 

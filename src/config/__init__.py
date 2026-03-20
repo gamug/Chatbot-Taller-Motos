@@ -1,4 +1,4 @@
-from config.general import path, agent_name
+from config.general import path, agent_name, language
 from config.prompts import prompts
 from config.database import db_config, brand_regexes
 from config.llm_config import llm_config

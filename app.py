@@ -26,8 +26,9 @@ if "messages" not in st.session_state:
     st.session_state.messages = [{ "role": "assistant", "content": f"Hola, soy tu asistente {config.agent_name} ¿En qué te puedo ayudar hoy? Proporciona marca, modelo y descripción de la consulta para proceder a ayudarte ☺️"}]
 
 if "solved" not in st.session_state or st.session_state.solved:
+    st.session_state.queries = []
     st.session_state.solved = False
-    conversation = load_assistant_graph()
+    st.session_state.conversation = load_assistant_graph()
 
 # ----------------------------
 # UI
@@ -53,14 +54,18 @@ if user_input := st.chat_input("Realiza tu consulta..."):
     # Generate response
     with st.chat_message("assistant"):
         with st.spinner("Consultando manual..."):
-            response = conversation.invoke({
-                "query": user_input,
-                "retries_retrieval": 0,
+            st.session_state.queries.append(user_input)
+            query = 'Message history: \n -' + '\n -'.join(st.session_state.queries)
+            response = st.session_state.conversation.invoke({
+                "query": query,
                 "retries_generation": 0,
                 "embedding_cache": {},
-                "streamlit_state": st.session_state
+                "streamlit_state": False
             })
             st.markdown(response["answer"])
+            
+    # Update session state
+    st.session_state.solved = response["streamlit_state"]
 
     st.session_state.messages.append({
         "role": "assistant",

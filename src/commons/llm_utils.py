@@ -146,9 +146,9 @@ class AWSClient:
         cache: AssistantState = None) -> list[dict]:
         if cache and query in cache['embedding_cache']:
             embedding = cache['embedding_cache'][query]
+            cache['embedding_cache'][query] = embedding
         else:
             embedding = self.retrieve_embedding(query)
-            cache['embedding_cache'][query] = embedding
         # Perform a similarity query
         query = self.safe_aws_call(
             self.s3_client.query_vectors,
