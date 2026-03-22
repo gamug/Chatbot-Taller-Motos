@@ -4,4 +4,4 @@ from src.commons import AppLogger
 
 check_directories()
 
-app_logger = AppLogger(config.agent_name)
+app_logger = AppLogger(config.agent['agent_name'])

@@ -27,11 +27,25 @@ class AppLogger(logging.Logger):
         self.addHandler(console_handler)
 
     # Succeeded logs
-    def success(self, message: str) -> None:
-        """Personalized log for successes"""
-        self.log(logging.INFO, f"SUCCESS ✅: {message}")
+    def success(self, msg: str) -> None:
+        """Personalized log for successes
+        
+        Args:
+            message (str): Message to log
+        
+        Returns:
+            None
+        """
+        self.log(logging.INFO, f"SUCCESS ✅: {msg}")
     
     # Warning logs
     def warning(self, msg: object) -> None:
-        """Personalized log for warnings"""
+        """Personalized log for warnings
+        
+        Args:
+            msg (object): Message to log
+        
+        Returns:
+            None
+        """
         self.log(logging.WARNING, f"⚠️ {msg}")

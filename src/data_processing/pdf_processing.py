@@ -1,14 +1,15 @@
 import fitz, json, os, pytesseract, re
+from typing import Any
 
 from commons.utils import get_output_path, get_nlp_tools, process_image
-from tools.tools import extract_moto_models
+from commons.utils import get_brands
 from commons import AWSClient
 
 pytesseract.pytesseract.tesseract_cmd = os.environ['TESSERACT_PATH']
 
 splitter, aws_client = get_nlp_tools(), AWSClient()
 
-def process_pdf(text: list[str], base_path: str, file: str, brands: dict[dict[str, str]]) -> None:
+def process_pdf(text: list[str], base_path: str, file: str, brands: dict[str, dict[str, str]]) -> None:
     """Processes a single pdf file.
 
     Args:
@@ -38,7 +39,7 @@ def process_pdf(text: list[str], base_path: str, file: str, brands: dict[dict[st
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(metadatas, f, ensure_ascii=False, indent=4, default=str)
 
-def process_database(base_path: str, errors: dict[str, str], brands: dict[dict[str, str]] = None) -> None:
+def process_database(base_path: str, errors: dict[str, str], brands: Any = None) -> None:
     """Processes a single file or folder of files.
 
     Args:
@@ -64,23 +65,40 @@ def process_database(base_path: str, errors: dict[str, str], brands: dict[dict[s
             errors[base_path] = str(e)
     
 def get_pdf_images(file: str) -> list:
+    """Extracts images from a pdf file that does not contain text.
+
+    Args:
+        file (str): The path to the pdf file.
+
+    Returns:
+        list: A list of images extracted from the pdf file."""
     doc = fitz.open(file)
 
     pdf_images = []
-    # Iterar por las páginas
+    # Iterate along the pages
     for page_index in range(len(doc)):
         page = doc[page_index]
-        # Obtener las imágenes de la página
+        # Get images from the page
         images = page.get_images(full=True)
         
         for img in images:
-            xref = img[0]  # referencia interna de la imagen
+            xref = img[0]  # Internal image reference
             base_image = doc.extract_image(xref)
             pdf_images.append(process_image(base_image["image"]))
     return pdf_images
 
 def process_pdf_images(errors: dict[str, str]) -> dict[str, str]:
+    """Processes a single file or folder of files to extract content from images.
+
+    Args:
+        base_path (str): The path to the file or folder to process.
+        errors (dict): A dictionary with previous PDF not processed due to abcense
+        of text.
+
+    Returns:
+        dict: A dictionary with the errors."""
     errors_image = {}
+    brands = get_brands()
     for base_path in errors:
         folder = os.path.dirname(base_path)
         file = os.path.basename(base_path)
@@ -90,7 +108,7 @@ def process_pdf_images(errors: dict[str, str]) -> dict[str, str]:
                 print(f'\tprocessing {file}')
                 pdf_images = get_pdf_images(base_path)
                 text = [pytesseract.image_to_string(img, lang='"spa+eng') for img in pdf_images]
-                process_pdf(text, base_path, file)
+                process_pdf(text, base_path, file, brands=brands)
             except Exception as e:
                 errors_image[folder] = str(e)
     return errors_image

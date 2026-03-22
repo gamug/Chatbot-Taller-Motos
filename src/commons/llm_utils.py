@@ -1,19 +1,9 @@
 import boto3, json, math, secrets, time
-from langchain_openai import ChatOpenAI
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from typing import Any
 from tqdm import tqdm
 
 import config
-from src.types.state import AssistantState
-
-
-def get_llm() -> ChatOpenAI:
-    return ChatOpenAI(
-            api_key=config.llm_config["api_key"],
-            model=config.llm_config["model"],
-            base_url=config.llm_config["base_url"],
-            temperature=config.llm_config["temperature"]
-        )
 
 
 class AWSClient:
@@ -27,7 +17,17 @@ class AWSClient:
         )
         self.bedrock_client = boto3.client("bedrock-runtime", region_name=config.db_config['aws_region'])
 
-    def safe_aws_call(self, func, retries=5, **kwargs):
+    def safe_aws_call(self, func, retries=5, **kwargs) -> Any:
+        """Retry AWS calls in case of throttling.
+
+        Args:
+            func: The function to call.
+            retries: The number of retries.
+            **kwargs: The arguments to pass to the function.
+
+        Returns:
+            The result of the function.
+        """
         for i in range(retries):
             try:
                 return func(**kwargs)
@@ -38,10 +38,26 @@ class AWSClient:
                     raise e
         raise Exception("Max retries exceeded")
 
-    def embed_documents(self, documents: list[str], max_workers: int = 6):
+    def embed_documents(self, documents: list[str], max_workers: int = 6) -> list[list[float]]:
+        """Generate embeddings for a list of documents. Uses Bedrock to generate embeddings
+        and multiple threads to speed up the process.
 
-        def embed_single(text: str):
+        Args:
+            documents (list[str]): The documents to embed.
+            max_workers (int, optional): The maximum number of workers to use. Defaults to 6.
 
+        Returns:
+            list: A list of embeddings.
+        """
+        def embed_single(text: str) -> list[float]:
+            """Generate embeddings for a single document.
+
+            Args:
+                text (str): The document to embed.
+
+            Returns:
+                list[float]: The embeddings.
+            """
             body = json.dumps({
                 "inputText": text,
                 "dimensions": config.db_config['embed_truncate'],
@@ -77,7 +93,16 @@ class AWSClient:
 
         return embeddings
 
-    def store_vectors_with_progress(self, vectors, batch_size=100):
+    def store_vectors_with_progress(self, vectors, batch_size=100) -> None:
+        """Store vectors in S3 with progress bar.
+
+        Args:
+            vectors (list): A list of vectors to store.
+            batch_size (int, optional): The batch size to use. Defaults to 100.
+        
+        Returns:
+            None
+        """
         total_batches = math.ceil(len(vectors) / batch_size)
 
         with tqdm(total=total_batches, desc="Uploading vectors", unit="batch", leave=False) as pbar:
@@ -93,7 +118,16 @@ class AWSClient:
 
         print(f"{len(vectors)} vectors placed in the index {config.db_config['s3_index']}.")
     
-    def insert_vectors(self, texts: list[str], metadatas: list[dict]):
+    def insert_vectors(self, texts: list[str], metadatas: list[dict]) -> None:
+        """Insert vectors into the database.
+
+        Args:
+            texts (list[str]): A list of text chunks.
+            metadatas (list[dict]): A list of metadata for each text chunk.
+
+        Returns:
+            None
+        """
         embeddings = self.embed_documents(texts)
         vectors = [
             {"key": secrets.token_hex(16), "data": {"float32": embedding}, "metadata": metadata}
@@ -101,7 +135,8 @@ class AWSClient:
         ]
         self.store_vectors_with_progress(vectors)
     
-    def clean_vectors(self):
+    def clean_vectors(self) -> None:
+        """Delete all vectors from the database."""
         response = self.safe_aws_call(
             self.s3_client.list_vectors,
             vectorBucketName=self.bucket_name,
@@ -117,6 +152,14 @@ class AWSClient:
             )
 
     def retrieve_embedding(self, query: str) -> list[float]:
+        """Get a single embedding from the bedrock service
+
+        Args:
+            query (str): The query to embed.
+
+        Returns:
+            list[float]: The embedding.
+        """
         request = json.dumps({
             "inputText": query,
             "dimensions": config.db_config['embed_truncate'],
@@ -141,14 +184,19 @@ class AWSClient:
     def query_db(
         self,
         query: str,
-        filtering: dict[str, str],
-        top_k: int = 5,
-        cache: AssistantState = None) -> list[dict]:
-        if cache and query in cache['embedding_cache']:
-            embedding = cache['embedding_cache'][query]
-            cache['embedding_cache'][query] = embedding
-        else:
-            embedding = self.retrieve_embedding(query)
+        filtering: dict[str, list[dict[str, dict[str, str]]]],
+        top_k: int = 3) -> list[dict[str, str]]:
+        """Query the database searching for question related chunks.
+
+        Args:
+            query (str): The query to search for.
+            filtering (dict[str, list[dict[str, dict[str, str]]]]): The metadata filter to apply in database.
+            top_k (int, optional): The number of results to return. Defaults to 3.
+
+        Returns:
+            list[str]: A list of text chunks.
+        """
+        embedding = self.retrieve_embedding(query)
         # Perform a similarity query
         query = self.safe_aws_call(
             self.s3_client.query_vectors,
@@ -160,4 +208,4 @@ class AWSClient:
             returnDistance=True,
             returnMetadata=True
         )
-        return [result['metadata']['text'] for result in query['vectors']]
+        return [result['metadata'] for result in query['vectors']]
