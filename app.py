@@ -5,8 +5,8 @@ import streamlit as st
 load_dotenv()
 
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))
-import config
-import agents as agents_module
+import src.config as config
+import src.agents as agents_module
 
 st.set_page_config(page_title="Manual de Motos", page_icon="🏍️")
 

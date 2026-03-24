@@ -162,7 +162,8 @@ async def query_knowledge_async(queries: list[str], canonical_brand_model: str) 
         str: path to the enriched chunks in json format.
     """
     app_logger.info("Querying knowledge database searching for question related chunks")
-    brand, mod = canonical_brand_model.split('-')
+    brand = canonical_brand_model.split('-')[0]
+    mod = '-'.join(canonical_brand_model.split('-')[1:])
     filtering = {"$and": [{"brand": {"$eq": brand}}, {"model": {"$eq": mod}}]}
 
     # retrieve chunks in parallel

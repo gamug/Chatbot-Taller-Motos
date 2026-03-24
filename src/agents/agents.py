@@ -1,4 +1,4 @@
-import json, markdown, os, threading
+import json, markdown, os, re, threading
 from strands import Agent, tool
 from strands.agent.agent_result import AgentResult
 from strands.models.openai import OpenAIModel
@@ -136,19 +136,30 @@ def answer_agent(chunks_path: str, user_question: str) -> str:
             system_prompt=config.prompts['ANSWER_PROMPT'].format(language=config.agent['answer_language']),
             callback_handler=_callback_handler
         )
-        result["content"] = agent(
-            f"Answer the user's question '{user_question}' with a high-rich-technical markdown content. "
-            f"Base your response on these enriched chunks: '{enriched_chunks}'"
-            "Don't limit your answer to the user question: provide more related information contained in the chunks."
-        )
+        if len(enriched_chunks):
+            result["content"] = agent(
+                f"Answer the user's question '{user_question}' with a high-rich-technical markdown content. "
+                f"Base your response on these enriched chunks: '{enriched_chunks}'"
+                "Don't limit your answer to the user question: provide more related information contained in the chunks."
+            )
+        else:
+            result["content"] = agent(
+                "There's no chunks to answer the user's question. Answer the question with a clarification message."
+                "Follow the instructions"
+                "a. You should misunderstood the brand-model, ask user to be more specific. Providing canonical brand-model."
+                "b. You should misunderstood the user's question, ask user to be more specific and provide the query versions"
+                "you tried."
+            )
 
     thread = threading.Thread(target=create_and_run)
     thread.start()
     thread.join()
-
-    filename = 'html_content.html'
-    output_path = generate_html(filename, result["content"])
-    return f'User query was successfully answered and placed in {output_path}'
+    if len(enriched_chunks):
+        filename = re.sub(r'\W+', '_', user_question)+'.html'
+        output_path = generate_html(filename, result["content"])
+        return f'User query was successfully answered and placed in {output_path}'
+    else:
+        return 'User query was successfully answered but no chunks were found. Close the interaction.'
 
 @tool
 def export_results_agent(markdown_content: str) -> AgentResult:
