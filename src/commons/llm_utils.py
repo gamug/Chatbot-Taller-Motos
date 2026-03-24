@@ -1,4 +1,4 @@
-import boto3, json, math, secrets, time
+import asyncio, boto3, json, math, secrets, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any
 from tqdm import tqdm
@@ -209,3 +209,58 @@ class AWSClient:
             returnMetadata=True
         )
         return [result['metadata'] for result in query['vectors']]
+    
+    async def query_db_async(
+        self,
+        queries: list[str],
+        filtering: dict[str, list[dict[str, dict[str, str]]]],
+        top_k: int = 3) -> list[dict[str, str]]:
+        """Query the database searching for question related chunks asynchronously.
+            The goal is to perform many queries in parallel to increase performance.
+
+        Args:
+            queries (list[str]): The queries to search for.
+            filtering (dict[str, list[dict[str, dict[str, str]]]]): The metadata filter to apply in database.
+            top_k (int, optional): The number of results to return. Defaults to 3.
+
+        Returns:
+            list[str]: A list of text chunks with metadata and duplication count.
+        """
+        loop = asyncio.get_event_loop()
+
+        async def query_single(query: str) -> list[dict[str, str]]:
+            embedding = await loop.run_in_executor(
+                None, self.retrieve_embedding, query
+            )
+            query_result = await loop.run_in_executor(
+                None,
+                lambda: self.safe_aws_call(
+                    self.s3_client.query_vectors,
+                    vectorBucketName=config.db_config['s3_bucket'],
+                    indexName=config.db_config['s3_index'],
+                    queryVector={"float32": embedding},
+                    topK=top_k,
+                    filter=filtering,
+                    returnDistance=True,
+                    returnMetadata=True
+                )
+            )
+            return [result['metadata'] for result in query_result['vectors']]
+
+        # run all queries in parallel
+        results = await asyncio.gather(*[query_single(q) for q in queries])
+
+        # count duplications per chunk
+        seen = {}  # key -> {chunk, count}
+        for result_list in results:
+            for chunk in result_list:
+                key = str(chunk)
+                if key not in seen:
+                    seen[key] = {**chunk, "duplications": 1}
+                else:
+                    seen[key]["duplications"] += 1
+
+        # sort by duplications descending — most repeated chunks are most relevant
+        chunks = sorted(seen.values(), key=lambda x: x["duplications"], reverse=True)
+
+        return chunks

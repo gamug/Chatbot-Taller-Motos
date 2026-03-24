@@ -14,5 +14,6 @@ agent = {
     'query_copies': os.environ.get("QUERY_COPIES", 3),
     'folder_size_limit': os.environ.get("FOLDER_SIZE_LIMIT", 20),
     'knowledge_output': os.environ.get("KNOWLEDGE_OUTPUT", 'knowledge_output'),
-    'pdf_output': os.environ.get("PDF_OUTPUT", 'pdf_output')
+    'html_output': os.environ.get("HTML_OUTPUT", 'html_output'),
+    'enriched_chunks': os.environ.get("ENRICHED_CHUNKS", 'enriched_chunks')
 }

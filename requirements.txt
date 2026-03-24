@@ -6,7 +6,6 @@ markdown==3.10.2
 orjson==3.11.7
 opencv-python-headless
 pandas
-pdfkit==1.0.0
 strands-agents==1.32.0
 strands-agents[openai]
 strands-agents-tools==0.2.23

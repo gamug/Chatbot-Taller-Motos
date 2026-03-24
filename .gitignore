@@ -212,3 +212,5 @@ __marimo__/
 /output/*
 /logs/*
 /knowledge_output/*
+/html_output/*
+/enriched_chunks/*
