@@ -4,6 +4,7 @@ from strands.models.openai import OpenAIModel
 
 import config
 import src.agents.agents as agents_module
+import src.agents.utils as agent_utils
 from src.agents.handler import OrchestratorCallbackHandler, AnswerCallbackHandler
 
 model = OpenAIModel(
@@ -15,8 +16,10 @@ model = OpenAIModel(
 )
 
 def build_orchestrator_agent(q: queue.Queue, text_q: queue.Queue, download_q: queue.Queue, done_event: threading.Event):
-    agents_module._callback_handler = AnswerCallbackHandler(text_q, done_event)
-    agents_module._download_q = download_q
+    agents_module._callback_handler.text_q = text_q
+    agents_module._callback_handler.done_event = done_event
+    
+    agent_utils._download_q = download_q
 
     return Agent(
         model=model,
@@ -28,7 +31,8 @@ def build_orchestrator_agent(q: queue.Queue, text_q: queue.Queue, download_q: qu
         ],
         callback_handler=OrchestratorCallbackHandler(q, download_q),
         system_prompt=config.prompts['ORCHESTRATION_PROMPT'].format(
-            name=config.agent['agent_name']
+            name=config.agent['agent_name'],
+            language=config.agent['answer_language']
         )
     )
 
