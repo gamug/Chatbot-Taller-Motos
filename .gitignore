@@ -214,3 +214,5 @@ __marimo__/
 /knowledge_output/*
 /html_output/*
 /enriched_chunks/*
+credentials.json
+token.json
