@@ -1,5 +1,7 @@
 # Ecta Chatbot
 
+## Input data
+The input data consists of a collection of about 20 gb of PDF manuals for various motorcycle brands and models. Each PDF contains technical information about motorcycle maintenance, repairs, and service procedures. The PDFs are organized in a directory structure that allows for easy association with specific brands and models. The data, after being processed, is stored in an AWS S3-based vector database, where each chunk of text from the manuals is represented as a vector embedding along with metadata such as file name, page number, and brand-model information.
 
 ## Description
 The Ecta Chatbot is an agent‑based conversational system designed to support a motorcycle repair shop by answering customer inquiries about motorcycle maintenance, repairs, and service information. Its core functionality revolves around processing a PDF database of motorcycle manuals, extracting technical knowledge, and using that knowledge to generate natural‑language responses.
