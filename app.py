@@ -11,7 +11,8 @@ load_dotenv()
 
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))
 import src.config as config
-import src.agents as agents_module
+import src.agents.agents as agents_module
+from src.agents.motorcycle_assistant import orchestrator_agent
 from ui.utils import render_messages
 
 st.set_page_config(page_title="Manual de Motos", page_icon="🏍️")
@@ -81,8 +82,8 @@ if user_input := st.chat_input("Realiza tu consulta..."):
 
         def run_agent():
             handler = StreamlitCallbackHandler(q, text_q, download_q)
-            agents_module.agents._callback_handler = handler
-            result_container["response"] = agents_module.orchestrator_agent(user_input)
+            agents_module._callback_handler = handler
+            result_container["response"] = orchestrator_agent(user_input, callback_handler=handler)
             q.put("__DONE__")
 
         thread = threading.Thread(target=run_agent)
