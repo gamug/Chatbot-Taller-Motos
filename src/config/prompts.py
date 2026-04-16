@@ -36,6 +36,7 @@ prompts = {
                     - If the user question is not related to motorcycles, call the answer_agent tool with arguments:
                         1. chunks_path: "NON MOTORCYCLE RELATED QUESTION"
                         2. user_question: user initial question.
+                    - Don't close the interaction with flags like "INTERACTION COMPLETE", just close the process without any message when the interaction is complete.
                     - When answer_agent returns 'INTERACTION COMPLETE', immediately stop and do not call any more tools.
                     """,
     "BRAND_MODEL_PROMPT": """You're a motorcycle expert intent to answer motorcycles user related questions.

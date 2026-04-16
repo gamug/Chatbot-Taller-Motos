@@ -13,6 +13,7 @@ sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))
 import src.config as config
 import src.agents.agents as agents_module
 from src.agents.motorcycle_assistant import orchestrator_agent
+import src.agents.utils as agent_utils
 from ui.utils import render_messages
 
 st.set_page_config(page_title="Manual de Motos", page_icon="🏍️")
@@ -22,7 +23,20 @@ if "messages" not in st.session_state:
 if "downloads" not in st.session_state:
     st.session_state.downloads = {}
 
-render_messages()
+for i, msg in enumerate(st.session_state.messages):
+    with st.chat_message(msg["role"]):
+        st.markdown(msg["content"])
+        if i in st.session_state.downloads:
+            for html_path in st.session_state.downloads[i]:
+                if os.path.exists(html_path):
+                    with open(html_path, "rb") as f:
+                        st.download_button(
+                            label=f"📄 Descargar {os.path.basename(html_path)}",
+                            data=f.read(),
+                            file_name=os.path.basename(html_path),
+                            mime="text/html",
+                            key=f"download_{i}_{html_path}"
+                        )
 
 class StreamlitCallbackHandler:
     def __init__(self, q: queue.Queue, text_q: queue.Queue, download_q: queue.Queue):
@@ -84,6 +98,7 @@ if user_input := st.chat_input("Realiza tu consulta..."):
             try:
                 handler = StreamlitCallbackHandler(q, text_q, download_q)
                 agents_module._callback_handler = handler
+                agent_utils._download_q = download_q  # inject download queue into utils for tool access
                 result_container["response"] = orchestrator_agent(user_input, callback_handler=handler)
             except Exception as e:
                 result_container["response"] = "Estoy ocupado atendiendo tu consulta, por favor espera un momento..."
