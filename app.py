@@ -14,7 +14,6 @@ import src.config as config
 import src.agents.agents as agents_module
 from src.agents.motorcycle_assistant import orchestrator_agent
 import src.agents.utils as agent_utils
-from ui.utils import render_messages
 
 st.set_page_config(page_title="Manual de Motos", page_icon="🏍️")
 
