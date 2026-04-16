@@ -19,42 +19,6 @@ model = OpenAIModel(
 )
 
 @tool
-async def file_write(path: str, content: str) -> str:
-    """Write content to a file without confirmation.
-        This tool can be used in parallel with the generate_html tool.
-    
-    Args:
-        path (str): The path to the file.
-        content (str): The content to write to the file.
-    Returns:
-        str: file_path where the file was created.
-    """
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    loop = asyncio.get_event_loop()
-    await loop.run_in_executor(
-        None,
-        lambda: open(path, "w", encoding="utf-8").write(content)
-    )
-    return path
-
-@tool
-def folder_integrity(folder_path: str) -> None:
-    """Prevents the folder to increase in size without control.
-    Args:
-        folder_path (str): The folder path to check.
-    Returns:
-        None: Erase the folder in case of high folder size.
-        create the folder in case it doesn't exist.
-    """
-    app_logger.info("Checking folder integrity")
-    if os.path.exists(folder_path) and\
-        len(os.listdir(folder_path))>config.agent['folder_size_limit']:
-            shutil.rmtree(folder_path)
-    if not os.path.exists(folder_path):
-        os.mkdir(folder_path)
-    app_logger.info("Folder integrity checked")
-
-@tool
 async def canonical_brand_models(brand_model: str) -> dict:
     """Given an identified tentative brand and model, returns the best fit of possible brands
     and models with a similarity score.
