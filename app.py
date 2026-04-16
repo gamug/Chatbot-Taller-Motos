@@ -1,4 +1,9 @@
-import os, sys, queue, threading, time
+import os, sys
+import queue
+import threading
+import time
+# inject download queue into tool
+
 from dotenv import load_dotenv
 import streamlit as st
 
@@ -7,37 +12,51 @@ load_dotenv()
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))
 import src.config as config
 import src.agents as agents_module
+from ui.utils import render_messages
 
 st.set_page_config(page_title="Manual de Motos", page_icon="🏍️")
 
-# --- Session state ---
 if "messages" not in st.session_state:
-    st.session_state.messages = [{"role": "assistant", "content": f"Hola, soy tu asistente {config.agent['agent_name']} ¿En qué te puedo ayudar hoy?"}]
+    st.session_state.messages = [{"role": "assistant", "content": f"Hola, soy tu asistente {config.agent['agent_name']} ¿En qué te puedo ayudar hoy? Proporciona marca, modelo y descripción de la consulta para proceder a ayudarte ☺️"}]
 if "downloads" not in st.session_state:
     st.session_state.downloads = {}
 
-# --- Render previous messages ---
-for i, msg in enumerate(st.session_state.messages):
-    with st.chat_message(msg["role"]):
-        st.markdown(msg["content"])
-        if i in st.session_state.downloads:
-            for pdf_path in st.session_state.downloads[i]:
-                if os.path.exists(pdf_path):
-                    with open(pdf_path, "rb") as f:
-                        st.download_button(
-                            label=f"📄 Descargar {os.path.basename(pdf_path)}",
-                            data=f.read(),
-                            file_name=os.path.basename(pdf_path),
-                            mime="application/pdf",
-                            key=f"download_{i}_{pdf_path}"
-                        )
+render_messages()
 
-# --- Chat input ---
+class StreamlitCallbackHandler:
+    def __init__(self, q: queue.Queue, text_q: queue.Queue, download_q: queue.Queue):
+        self.q = q
+        self.text_q = text_q
+        self.download_q = download_q
+        self.current_tool = None
+        self.tool_executing = False
+
+    def __call__(self, **kwargs):
+        event = kwargs.get("event", {})
+
+        text = event.get("contentBlockDelta", {}).get("delta", {}).get("text", "")
+        if text:
+            self.text_q.put(text)
+            return
+
+        tool_use = event.get("contentBlockStart", {}).get("start", {}).get("toolUse", {})
+        if tool_use:
+            self.current_tool = tool_use.get("name", "tool")
+            self.tool_executing = True
+            self.q.put(f"⚙️ Ejecutando: `{self.current_tool}`...")
+            return
+
+        if "messageStart" in event and self.tool_executing:
+            self.tool_executing = False
+            self.q.put(f"✅ `{self.current_tool}` completado")
+            self.current_tool = None
+            return
+
 if user_input := st.chat_input("Realiza tu consulta..."):
     with st.chat_message("user"):
         st.markdown(user_input)
     st.session_state.messages.append({"role": "user", "content": user_input})
-
+    
     msg_index = len(st.session_state.messages)
 
     with st.chat_message("assistant"):
@@ -51,17 +70,19 @@ if user_input := st.chat_input("Realiza tu consulta..."):
             log_placeholder = st.empty()
 
         text_placeholder = st.empty()
+        download_placeholder = st.empty()  # download button goes here
 
-        result_container = {"response": None}
+        result_container = dict()
         q = queue.Queue()
         text_q = queue.Queue()
         download_q = queue.Queue()
-        done_event = threading.Event()  # controls text freezing
+        done_event = threading.Event()
         start_time = time.time()
 
         def run_agent():
-            agent = agents_module.build_orchestrator_agent(q, text_q, download_q, done_event)
-            result_container["response"] = agent(user_input)
+            handler = StreamlitCallbackHandler(q, text_q, download_q)
+            agents_module.agents._callback_handler = handler
+            result_container["response"] = agents_module.orchestrator_agent(user_input)
             q.put("__DONE__")
 
         thread = threading.Thread(target=run_agent)
@@ -70,7 +91,7 @@ if user_input := st.chat_input("Realiza tu consulta..."):
         logs = []
         streamed_text = ""
         generated_files = []
-
+        
         while True:
             elapsed = time.time() - start_time
             timer_placeholder.markdown(f"⏱️ `{elapsed:.1f}s`")

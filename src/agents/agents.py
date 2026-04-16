@@ -11,7 +11,8 @@ from src.agents.agent_tools import (
     canonical_brand_models, query_knowledge_async, web_search
 )
 
-_callback_handler = AnswerCallbackHandler(text_q=queue.Queue(), done_event=threading.Event())
+# Initialize as None - will be set by build_orchestrator_agent
+_callback_handler = None
 
 model = OpenAIModel(
     model_id=config.llm_config['model'],
