@@ -2,8 +2,8 @@ from strands import Agent
 from strands.models.openai import OpenAIModel
 
 import config
-from src.agents.agents import brand_model_agent, query_versioning_agent, query_knowledge_agent
-from src.agents.agent_tools import folder_integrity, file_write
+from src.agents.agents import brand_model_agent, query_versioning_agent, query_knowledge_agent, answer_agent
+from src.agents.agent_tools import folder_integrity
 
 model = OpenAIModel(
     model_id=config.llm_config['model'],
@@ -15,7 +15,7 @@ model = OpenAIModel(
 
 orchestrator_agent = Agent(
     model=model,
-    tools=[brand_model_agent, query_versioning_agent, query_knowledge_agent, folder_integrity, file_write],
+    tools=[brand_model_agent, query_versioning_agent, query_knowledge_agent, folder_integrity, answer_agent],
     system_prompt=config.prompts['ORCHESTRATION_PROMPT'].format(
         name=config.agent['agent_name'],
         language=config.agent['answer_language'],

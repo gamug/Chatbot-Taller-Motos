@@ -81,9 +81,12 @@ if user_input := st.chat_input("Realiza tu consulta..."):
         start_time = time.time()
 
         def run_agent():
-            handler = StreamlitCallbackHandler(q, text_q, download_q)
-            agents_module._callback_handler = handler
-            result_container["response"] = orchestrator_agent(user_input, callback_handler=handler)
+            try:
+                handler = StreamlitCallbackHandler(q, text_q, download_q)
+                agents_module._callback_handler = handler
+                result_container["response"] = orchestrator_agent(user_input, callback_handler=handler)
+            except Exception as e:
+                result_container["response"] = "Estoy ocupado atendiendo tu consulta, por favor espera un momento..."
             q.put("__DONE__")
 
         thread = threading.Thread(target=run_agent)
