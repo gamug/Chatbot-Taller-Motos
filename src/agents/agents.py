@@ -5,7 +5,6 @@ from strands.models.openai import OpenAIModel
 
 import config
 from src import app_logger
-from src.agents.handler import AnswerCallbackHandler
 from src.agents.utils import get_available_brands_models, generate_html
 from src.agents.agent_tools import (
     canonical_brand_models, query_knowledge_async, web_search
